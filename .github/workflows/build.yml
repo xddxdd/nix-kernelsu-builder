@@ -54,13 +54,6 @@ jobs:
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
             extra-platforms = i686-linux aarch64-linux arm-linux
 
-      - name: Setup cachix
-        uses: cachix/cachix-action@v13
-        with:
-          name: xddxdd
-          signingKey: '${{ secrets.CACHIX_SIGNING_KEY }}'
-          authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
-
       - name: Set nix daemon tmpdir path
         run: |
           sudo mkdir -p /nix/tmpdir
