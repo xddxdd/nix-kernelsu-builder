@@ -1,4 +1,44 @@
 {
+    "anykernel-kernelsu": {
+        "cargoLocks": null,
+        "date": "2023-10-30",
+        "extract": null,
+        "name": "anykernel-kernelsu",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "Kernel-SU",
+            "repo": "AnyKernel3",
+            "rev": "ee30bad85a483cad2b1e4ff34e69f983a04f875a",
+            "sha256": "sha256-QJS4+1teNcgUOy2gD+KuoEG/9pUNd/6uSH84AkAlVoQ=",
+            "type": "github"
+        },
+        "version": "ee30bad85a483cad2b1e4ff34e69f983a04f875a"
+    },
+    "anykernel-osm0sis": {
+        "cargoLocks": null,
+        "date": "2023-11-06",
+        "extract": null,
+        "name": "anykernel-osm0sis",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "osm0sis",
+            "repo": "AnyKernel3",
+            "rev": "458caeda335554c58930bf6dbfa23e829911e338",
+            "sha256": "sha256-qKAyUJH0/YBZOgkmNqy0XlkvwaayNUf+ks+U5y6w5Lw=",
+            "type": "github"
+        },
+        "version": "458caeda335554c58930bf6dbfa23e829911e338"
+    },
     "gcc-aarch64-linux-android": {
         "cargoLocks": null,
         "date": "2020-02-22",
@@ -38,26 +78,6 @@
             "type": "github"
         },
         "version": "3ecb542702c2ca0e502533c3f6d02f0f06f584f1"
-    },
-    "kernelsu-anykernel3": {
-        "cargoLocks": null,
-        "date": "2023-10-30",
-        "extract": null,
-        "name": "kernelsu-anykernel3",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "Kernel-SU",
-            "repo": "AnyKernel3",
-            "rev": "ee30bad85a483cad2b1e4ff34e69f983a04f875a",
-            "sha256": "sha256-QJS4+1teNcgUOy2gD+KuoEG/9pUNd/6uSH84AkAlVoQ=",
-            "type": "github"
-        },
-        "version": "ee30bad85a483cad2b1e4ff34e69f983a04f875a"
     },
     "kernelsu-stable": {
         "cargoLocks": null,

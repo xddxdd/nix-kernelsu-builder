@@ -6,6 +6,7 @@
   pipeline = callPackage ./pipeline {};
 in {
   amazon-fire-hd-karnak = pipeline {
+    anyKernelVariant = "osm0sis";
     kernelDefconfigs = ["lineageos_karnak_defconfig"];
     kernelImageName = "Image.gz-dtb";
     kernelMakeFlags = [
@@ -17,6 +18,7 @@ in {
   };
 
   moto-rtwo-lineageos-21 = pipeline {
+    anyKernelVariant = "kernelsu";
     clangVersion = "latest";
     kernelDefconfigs = [
       "gki_defconfig"
@@ -30,6 +32,7 @@ in {
   };
 
   oneplus-8t-blu-spark = pipeline {
+    anyKernelVariant = "osm0sis";
     clangVersion = "latest";
     kernelDefconfigs = ["blu_spark_defconfig"];
     kernelImageName = "Image";

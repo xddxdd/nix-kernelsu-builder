@@ -1,3 +1,11 @@
+[anykernel-kernelsu]
+src.git = "https://github.com/Kernel-SU/AnyKernel3.git"
+fetch.github = "Kernel-SU/AnyKernel3"
+
+[anykernel-osm0sis]
+src.git = "https://github.com/osm0sis/AnyKernel3.git"
+fetch.github = "osm0sis/AnyKernel3"
+
 [gcc-aarch64-linux-android]
 src.git = "https://github.com/kindle4jerry/aarch64-linux-android-4.9-bakup.git"
 fetch.github = "kindle4jerry/aarch64-linux-android-4.9-bakup"
@@ -5,10 +13,6 @@ fetch.github = "kindle4jerry/aarch64-linux-android-4.9-bakup"
 [gcc-arm-linux-androideabi]
 src.git = "https://github.com/KudProject/arm-linux-androideabi-4.9.git"
 fetch.github = "KudProject/arm-linux-androideabi-4.9"
-
-[kernelsu-anykernel3]
-src.git = "https://github.com/Kernel-SU/AnyKernel3.git"
-fetch.github = "Kernel-SU/AnyKernel3"
 
 [kernelsu-stable]
 src.github = "tiann/KernelSU"

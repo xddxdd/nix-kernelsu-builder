@@ -5,6 +5,7 @@
   ...
 }: {
   arch ? "arm64",
+  anyKernelVariant ? "osm0sis",
   clangVersion ? null,
   enableKernelSU ? true,
   kernelDefconfigs ? [],
@@ -42,6 +43,7 @@
   anykernelZip = callPackage ./build-anykernel-zip.nix {
     inherit arch kernelImageName;
     kernel = kernelBuild;
+    variant = anyKernelVariant;
   };
 
   bootImg = callPackage ./build-boot-img.nix {
