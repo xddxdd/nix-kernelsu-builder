@@ -51,19 +51,17 @@
               ${inputs.nvfetcher.packages."${system}".default}/bin/nvfetcher $KEY_FLAG -c nvfetcher.toml -o _sources "$@"
             '';
           };
-      in rec {
-        packages = {
-          gcc-aarch64-linux-android = pkgs.callPackage pkgs/gcc-aarch64-linux-android.nix {};
-          gcc-arm-linux-androideabi = pkgs.callPackage pkgs/gcc-arm-linux-androideabi.nix {};
 
-          test = pkgs.callPackage ./pipeline {
-            kernelDefconfigs = ["lineageos_karnak_defconfig"];
-            kernelImageName = "Image.gz-dtb";
-            kernelSrc = sources.linux-amazon-karnak.src;
-            kernelPatches = [];
-            oemBootImg = boot/amazon-fire-hd-karnak.img;
-          };
+        kernelPackages = pkgs.callPackage ./kernels.nix {
+          inherit sources;
         };
+      in {
+        packages =
+          {
+            gcc-aarch64-linux-android = pkgs.callPackage pkgs/gcc-aarch64-linux-android.nix {};
+            gcc-arm-linux-androideabi = pkgs.callPackage pkgs/gcc-arm-linux-androideabi.nix {};
+          }
+          // kernelPackages;
 
         formatter = pkgs.alejandra;
 
