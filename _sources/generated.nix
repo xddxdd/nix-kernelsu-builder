@@ -56,9 +56,17 @@
       url = "https://github.com/tiann/KernelSU.git";
       rev = "v0.7.6";
       fetchSubmodules = false;
-      deepClone = true;
-      leaveDotGit = true;
-      sha256 = "sha256-eENd73Klbu/kC+6JpdizzS8IBjnbOY+k0UysGIt6sgU=";
+      deepClone = false;
+      leaveDotGit = false;
+      sha256 = "sha256-dwkiiGDp/lbo+rXzo5TVxDfSKeuWza/8A9cjcuro9Nc=";
+    };
+  };
+  kernelsu-stable-revision-code = {
+    pname = "kernelsu-stable-revision-code";
+    version = "11458";
+    src = fetchurl {
+      url = "https://github.com/tiann/KernelSU";
+      sha256 = "sha256-+zBndlRGvD9uifk4bNoJH/pPvVQgNLpVHQB9+PHqtn8=";
     };
   };
   linux-amazon-karnak = {

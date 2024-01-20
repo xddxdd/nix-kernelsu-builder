@@ -17,8 +17,13 @@ fetch.github = "KudProject/arm-linux-androideabi-4.9"
 [kernelsu-stable]
 src.github = "tiann/KernelSU"
 fetch.git = "https://github.com/tiann/KernelSU.git"
-git.deepClone = true
-git.leaveDotGit = true
+
+[kernelsu-stable-revision-code]
+src.webpage = "https://api.github.com/repos/tiann/KernelSU/releases?per_page=1"
+src.regex = "KernelSU_v([0-9\\._]+)-release\\.apk"
+src.from_pattern = "(.+)_(.+)"
+src.to_pattern = "\\2"
+fetch.url = "https://github.com/tiann/KernelSU"
 
 [linux-amazon-karnak]
 src.git = "https://github.com/mt8163/android_kernel_amazon_karnak_4.9.git"
