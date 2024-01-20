@@ -1,0 +1,20 @@
+[gcc-aarch64-linux-android]
+src.git = "https://github.com/kindle4jerry/aarch64-linux-android-4.9-bakup.git"
+fetch.github = "kindle4jerry/aarch64-linux-android-4.9-bakup"
+
+[gcc-arm-linux-androideabi]
+src.git = "https://github.com/KudProject/arm-linux-androideabi-4.9.git"
+fetch.github = "KudProject/arm-linux-androideabi-4.9"
+
+[kernelsu-anykernel3]
+src.git = "https://github.com/Kernel-SU/AnyKernel3.git"
+fetch.github = "Kernel-SU/AnyKernel3"
+
+[kernelsu-stable]
+src.github = "tiann/KernelSU"
+fetch.github = "tiann/KernelSU"
+
+[linux-amazon-karnak]
+src.git = "https://github.com/mt8163/android_kernel_amazon_karnak_4.9.git"
+src.branch = "lineage-20.0"
+fetch.github = "mt8163/android_kernel_amazon_karnak_4.9"

@@ -1,0 +1,102 @@
+{
+    "gcc-aarch64-linux-android": {
+        "cargoLocks": null,
+        "date": "2020-02-22",
+        "extract": null,
+        "name": "gcc-aarch64-linux-android",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "kindle4jerry",
+            "repo": "aarch64-linux-android-4.9-bakup",
+            "rev": "5797d7f622321e734558bd3372a9ab5ad6e6a48e",
+            "sha256": "sha256-ZrQmFyiDOKg+qcgdpZqtz+LgDDaao2W27kdZZ2As8XU=",
+            "type": "github"
+        },
+        "version": "5797d7f622321e734558bd3372a9ab5ad6e6a48e"
+    },
+    "gcc-arm-linux-androideabi": {
+        "cargoLocks": null,
+        "date": "2019-11-25",
+        "extract": null,
+        "name": "gcc-arm-linux-androideabi",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "KudProject",
+            "repo": "arm-linux-androideabi-4.9",
+            "rev": "3ecb542702c2ca0e502533c3f6d02f0f06f584f1",
+            "sha256": "sha256-5aF2Pl+h6J8/5TfQf2ojp3FCnoKakWH6KBCkWdy5ho8=",
+            "type": "github"
+        },
+        "version": "3ecb542702c2ca0e502533c3f6d02f0f06f584f1"
+    },
+    "kernelsu-anykernel3": {
+        "cargoLocks": null,
+        "date": "2023-10-30",
+        "extract": null,
+        "name": "kernelsu-anykernel3",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "Kernel-SU",
+            "repo": "AnyKernel3",
+            "rev": "ee30bad85a483cad2b1e4ff34e69f983a04f875a",
+            "sha256": "sha256-QJS4+1teNcgUOy2gD+KuoEG/9pUNd/6uSH84AkAlVoQ=",
+            "type": "github"
+        },
+        "version": "ee30bad85a483cad2b1e4ff34e69f983a04f875a"
+    },
+    "kernelsu-stable": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "kernelsu-stable",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "tiann",
+            "repo": "KernelSU",
+            "rev": "v0.7.6",
+            "sha256": "sha256-dwkiiGDp/lbo+rXzo5TVxDfSKeuWza/8A9cjcuro9Nc=",
+            "type": "github"
+        },
+        "version": "v0.7.6"
+    },
+    "linux-amazon-karnak": {
+        "cargoLocks": null,
+        "date": "2023-10-09",
+        "extract": null,
+        "name": "linux-amazon-karnak",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "mt8163",
+            "repo": "android_kernel_amazon_karnak_4.9",
+            "rev": "e22c713c7c4f0c8d08267f6bba98b8c4cde8310f",
+            "sha256": "sha256-viqlQBPd2SuiAphFKiwjtckC3gDTGkbLv2dgZKMP3Oc=",
+            "type": "github"
+        },
+        "version": "e22c713c7c4f0c8d08267f6bba98b8c4cde8310f"
+    }
+}
