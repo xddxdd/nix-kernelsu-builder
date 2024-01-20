@@ -2,8 +2,10 @@
   lib,
   callPackage,
   runCommand,
-  # User args
+  ...
+}: {
   arch ? "arm64",
+  clangVersion ? null,
   enableKernelSU ? true,
   kernelDefconfigs ? [],
   kernelImageName ? "Image",
@@ -11,12 +13,18 @@
   kernelPatches ? [],
   kernelSrc,
   oemBootImg ? null,
-  ...
 }: let
   patchedKernelSrc = callPackage ./patch-kernel-src.nix {
     inherit enableKernelSU;
     src = kernelSrc;
     patches = kernelPatches;
+  };
+
+  kernelBuildClang = callPackage ./build-kernel-clang.nix {
+    inherit arch clangVersion enableKernelSU;
+    src = patchedKernelSrc;
+    defconfigs = kernelDefconfigs;
+    makeFlags = kernelMakeFlags;
   };
 
   kernelBuildGcc = callPackage ./build-kernel-gcc.nix {
@@ -26,8 +34,10 @@
     makeFlags = kernelMakeFlags;
   };
 
-  # TODO: switch between GCC and CLANG
-  kernelBuild = kernelBuildGcc;
+  kernelBuild =
+    if clangVersion == null
+    then kernelBuildGcc
+    else kernelBuildClang;
 
   anykernelZip = callPackage ./build-anykernel-zip.nix {
     inherit arch kernelImageName;

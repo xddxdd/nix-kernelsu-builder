@@ -1,34 +1,4 @@
 {
-    "clang-aarch64-android-13": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "clang-aarch64-android-13",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-Ab40bVZJe9g945d01Eua89ihYNRleE68zJpg+hN+7zk=",
-            "type": "url",
-            "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-r487747c.tar.gz"
-        },
-        "version": "r450784e"
-    },
-    "clang-aarch64-android-14": {
-        "cargoLocks": null,
-        "date": null,
-        "extract": null,
-        "name": "clang-aarch64-android-14",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-Ab40bVZJe9g945d01Eua89ihYNRleE68zJpg+hN+7zk=",
-            "type": "url",
-            "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-r487747c.tar.gz"
-        },
-        "version": "r487747c"
-    },
     "gcc-aarch64-linux-android": {
         "cargoLocks": null,
         "date": "2020-02-22",
@@ -127,5 +97,45 @@
             "type": "github"
         },
         "version": "e22c713c7c4f0c8d08267f6bba98b8c4cde8310f"
+    },
+    "linux-moto-rtwo-lineageos-21": {
+        "cargoLocks": null,
+        "date": "2024-01-18",
+        "extract": null,
+        "name": "linux-moto-rtwo-lineageos-21",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "moto-sm8550",
+            "repo": "android_kernel_motorola_sm8550",
+            "rev": "67ec06efe78c51c3206cd0675d6a8802e53619b3",
+            "sha256": "sha256-TZXZqfpKLGbBb4rUnTXPIE6vHidIYxfxUv51VK4/5Vo=",
+            "type": "github"
+        },
+        "version": "67ec06efe78c51c3206cd0675d6a8802e53619b3"
+    },
+    "linux-oneplus-8t-blu-spark": {
+        "cargoLocks": null,
+        "date": "2024-01-10",
+        "extract": null,
+        "name": "linux-oneplus-8t-blu-spark",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "engstk",
+            "repo": "op8",
+            "rev": "57574d8b1014abccb1c4f424796004f511ff7d22",
+            "sha256": "sha256-6Skg3iIfcw2Hu5Z4uRQBBF9IYaKdK1ULvfz0wP7PG3g=",
+            "type": "github"
+        },
+        "version": "57574d8b1014abccb1c4f424796004f511ff7d22"
     }
 }

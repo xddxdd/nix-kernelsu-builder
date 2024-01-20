@@ -1,11 +1,3 @@
-[clang-aarch64-android-13]
-src.manual = "r450784e"
-fetch.url = "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-r487747c.tar.gz"
-
-[clang-aarch64-android-14]
-src.manual = "r487747c"
-fetch.url = "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-r487747c.tar.gz"
-
 [gcc-aarch64-linux-android]
 src.git = "https://github.com/kindle4jerry/aarch64-linux-android-4.9-bakup.git"
 fetch.github = "kindle4jerry/aarch64-linux-android-4.9-bakup"
@@ -28,3 +20,13 @@ git.leaveDotGit = true
 src.git = "https://github.com/mt8163/android_kernel_amazon_karnak_4.9.git"
 src.branch = "lineage-20.0"
 fetch.github = "mt8163/android_kernel_amazon_karnak_4.9"
+
+[linux-moto-rtwo-lineageos-21]
+src.git = "https://github.com/moto-sm8550/android_kernel_motorola_sm8550.git"
+src.branch = "lineage-21"
+fetch.github = "moto-sm8550/android_kernel_motorola_sm8550"
+
+[linux-oneplus-8t-blu-spark]
+src.git = "https://github.com/engstk/op8.git"
+src.branch = "blu_spark-13-custom"
+fetch.github = "engstk/op8"

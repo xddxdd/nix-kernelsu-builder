@@ -1,14 +1,15 @@
 {
   pkgs,
   lib,
-  stdenv,
   bc,
   bison,
   coreutils,
   flex,
   openssl,
   perl,
+  which,
   # User args
+  clangVersion,
   src,
   arch,
   defconfigs,
@@ -16,23 +17,25 @@
   makeFlags,
   ...
 }: let
-  gcc-aarch64-linux-android = pkgs.callPackage ../pkgs/gcc-aarch64-linux-android.nix {};
-  gcc-arm-linux-androideabi = pkgs.callPackage ../pkgs/gcc-arm-linux-androideabi.nix {};
-
   finalMakeFlags =
     [
       "-j$(nproc --all)"
       "ARCH=${arch}"
-      "CROSS_COMPILE=aarch64-linux-android-"
-      "CROSS_COMPILE_ARM32=arm-linux-androideabi-"
+      "CC=clang"
       "O=$out"
+      "LD=ld.lld"
+      "LLVM=1"
+      "LLVM_IAS=1"
+      "CLANG_TRIPLE=aarch64-linux-gnu-"
     ]
     ++ makeFlags;
 
   defconfig = lib.last defconfigs;
+
+  usedLLVMPackages = pkgs."llvmPackages_${builtins.toString clangVersion}";
 in
-  stdenv.mkDerivation {
-    name = "gcc-kernel";
+  usedLLVMPackages.stdenv.mkDerivation {
+    name = "clang-kernel-${builtins.toString clangVersion}";
     src = src;
 
     nativeBuildInputs = [
@@ -40,10 +43,11 @@ in
       bison
       coreutils
       flex
+      usedLLVMPackages.bintools
       openssl
       perl
-      gcc-aarch64-linux-android
-      gcc-arm-linux-androideabi
+      which
+      # clangCompiler
     ];
 
     buildPhase =
