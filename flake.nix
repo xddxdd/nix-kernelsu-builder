@@ -58,6 +58,8 @@
       in {
         packages =
           {
+            clang-aarch64-android-13 = pkgs.callPackage pkgs/clang-aarch64-android-13.nix {};
+            clang-aarch64-android-14 = pkgs.callPackage pkgs/clang-aarch64-android-14.nix {};
             gcc-aarch64-linux-android = pkgs.callPackage pkgs/gcc-aarch64-linux-android.nix {};
             gcc-arm-linux-androideabi = pkgs.callPackage pkgs/gcc-arm-linux-androideabi.nix {};
           }

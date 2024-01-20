@@ -1,3 +1,11 @@
+[clang-aarch64-android-13]
+src.manual = "r450784e"
+fetch.url = "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-r487747c.tar.gz"
+
+[clang-aarch64-android-14]
+src.manual = "r487747c"
+fetch.url = "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-r487747c.tar.gz"
+
 [gcc-aarch64-linux-android]
 src.git = "https://github.com/kindle4jerry/aarch64-linux-android-4.9-bakup.git"
 fetch.github = "kindle4jerry/aarch64-linux-android-4.9-bakup"

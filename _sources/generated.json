@@ -1,4 +1,34 @@
 {
+    "clang-aarch64-android-13": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "clang-aarch64-android-13",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-Ab40bVZJe9g945d01Eua89ihYNRleE68zJpg+hN+7zk=",
+            "type": "url",
+            "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-r487747c.tar.gz"
+        },
+        "version": "r450784e"
+    },
+    "clang-aarch64-android-14": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "clang-aarch64-android-14",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-Ab40bVZJe9g945d01Eua89ihYNRleE68zJpg+hN+7zk=",
+            "type": "url",
+            "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-r487747c.tar.gz"
+        },
+        "version": "r487747c"
+    },
     "gcc-aarch64-linux-android": {
         "cargoLocks": null,
         "date": "2020-02-22",
