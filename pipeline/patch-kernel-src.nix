@@ -3,8 +3,10 @@
   lib,
   callPackage,
   writeShellScriptBin,
-  git,
   coreutils,
+  git,
+  perl,
+  python3,
   # User args
   src,
   patches,
@@ -21,7 +23,12 @@ in
     name = "patched-kernel";
     inherit src patches;
 
-    nativeBuildInputs = [fakeGit coreutils];
+    nativeBuildInputs = [
+      coreutils
+      fakeGit
+      perl
+      python3
+    ];
 
     postPatch =
       (lib.optionalString enableKernelSU ''
