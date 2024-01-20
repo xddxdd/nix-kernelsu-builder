@@ -10,7 +10,6 @@
 }:
 stdenv.mkDerivation {
   name = "boot-img";
-  src = kernel;
   dontUnpack = true;
 
   nativeBuildInputs = [android-tools];
@@ -22,7 +21,7 @@ stdenv.mkDerivation {
     echo "Image format: \"$IMG_FORMAT\""
 
     unpack_bootimg --boot_img ${bootImg}
-    cp $src/arch/${arch}/boot/${kernelImageName} out/kernel
+    cp ${kernel}/arch/${arch}/boot/${kernelImageName} out/kernel
 
     runHook postBuild
   '';

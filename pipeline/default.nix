@@ -1,6 +1,7 @@
 {
   lib,
   callPackage,
+  runCommand,
   # User args
   arch ? "arm64",
   kernelDefconfigs ? [],
@@ -24,10 +25,23 @@
   # TODO: switch between GCC and CLANG
   kernelBuild = kernelBuildGcc;
 
+  anykernelZip = callPackage ./build-anykernel-zip.nix {
+    inherit arch kernelImageName;
+    kernel = kernelBuild;
+  };
+
   bootImg = callPackage ./build-boot-img.nix {
     inherit arch kernelImageName;
     bootImg = oemBootImg;
     kernel = kernelBuild;
   };
 in
-  bootImg
+  runCommand "kernel-bundle" {} ''
+    mkdir -p $out
+    cp ${kernelBuild}/arch/${arch}/boot/${kernelImageName} $out/
+      if [ -f ${kernelBuild}/arch/${arch}/boot/dtbo.img ]; then
+        cp ${kernelBuild}/arch/${arch}/boot/dtbo.img $out/
+      fi
+    cp ${anykernelZip}/anykernel.zip $out/
+    cp ${bootImg}/boot.img $out/
+  ''
