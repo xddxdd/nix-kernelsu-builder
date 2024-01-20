@@ -1,10 +1,12 @@
 {
   stdenv,
+  lib,
   callPackage,
   writeShellScriptBin,
   # User args
   src,
   patches,
+  enableKernelSU,
   ...
 }: let
   sources = callPackage ../_sources/generated.nix {};
@@ -19,13 +21,20 @@ in
 
     nativeBuildInputs = [fakeGit];
 
-    postPatch = ''
-      cp -r ${sources.kernelsu-stable.src} KernelSU
-      chmod -R +w KernelSU
-      patchShebangs .
-      bash KernelSU/kernel/setup.sh
-      sed -i "s|/bin/||g" Makefile
-    '';
+    postPatch =
+      (lib.optionalString enableKernelSU ''
+        cp -r ${sources.kernelsu-stable.src} KernelSU
+        chmod -R +w KernelSU
+      '')
+      + ''
+        patchShebangs .
+      ''
+      + (lib.optionalString enableKernelSU ''
+        bash KernelSU/kernel/setup.sh
+      '')
+      + ''
+        sed -i "s|/bin/||g" Makefile
+      '';
 
     dontBuild = true;
 

@@ -9,20 +9,21 @@
   src,
   arch,
   defconfigs,
+  makeFlags,
   ...
 }: let
   gcc-aarch64-linux-android = pkgs.callPackage ../pkgs/gcc-aarch64-linux-android.nix {};
   gcc-arm-linux-androideabi = pkgs.callPackage ../pkgs/gcc-arm-linux-androideabi.nix {};
 
-  makeFlags = [
-    "-j$(nproc --all)"
-    "ARCH=${arch}"
-    "CROSS_COMPILE=aarch64-linux-android-"
-    "CROSS_COMPILE_ARM32=arm-linux-androideabi-"
-    "O=$out"
-    "KCFLAGS=\"-w\""
-    "KCPPFLAGS=\"-w\""
-  ];
+  finalMakeFlags =
+    [
+      "-j$(nproc --all)"
+      "ARCH=${arch}"
+      "CROSS_COMPILE=aarch64-linux-android-"
+      "CROSS_COMPILE_ARM32=arm-linux-androideabi-"
+      "O=$out"
+    ]
+    ++ makeFlags;
 
   defconfig = lib.last defconfigs;
 in
@@ -46,7 +47,7 @@ in
       echo "CONFIG_OVERLAY_FS=y" >> $CFG_PATH
 
       mkdir -p $out
-      make ${builtins.concatStringsSep " " (makeFlags ++ defconfigs)}
+      make ${builtins.concatStringsSep " " (finalMakeFlags ++ defconfigs)}
 
       runHook postBuild
     '';
@@ -54,7 +55,7 @@ in
     installPhase = ''
       runHook preInstall
 
-      make ${builtins.concatStringsSep " " makeFlags}
+      make ${builtins.concatStringsSep " " finalMakeFlags}
 
       runHook postInstall
     '';
