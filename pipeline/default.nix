@@ -20,7 +20,7 @@
   };
 
   kernelBuildGcc = callPackage ./build-kernel-gcc.nix {
-    inherit arch;
+    inherit arch enableKernelSU;
     src = patchedKernelSrc;
     defconfigs = kernelDefconfigs;
     makeFlags = kernelMakeFlags;

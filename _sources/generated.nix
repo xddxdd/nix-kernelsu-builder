@@ -56,12 +56,13 @@
   kernelsu-stable = {
     pname = "kernelsu-stable";
     version = "v0.7.6";
-    src = fetchFromGitHub {
-      owner = "tiann";
-      repo = "KernelSU";
+    src = fetchgit {
+      url = "https://github.com/tiann/KernelSU.git";
       rev = "v0.7.6";
       fetchSubmodules = false;
-      sha256 = "sha256-dwkiiGDp/lbo+rXzo5TVxDfSKeuWza/8A9cjcuro9Nc=";
+      deepClone = true;
+      leaveDotGit = true;
+      sha256 = "sha256-eENd73Klbu/kC+6JpdizzS8IBjnbOY+k0UysGIt6sgU=";
     };
   };
   linux-amazon-karnak = {

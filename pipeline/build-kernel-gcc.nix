@@ -9,6 +9,7 @@
   src,
   arch,
   defconfigs,
+  enableKernelSU,
   makeFlags,
   ...
 }: let
@@ -31,26 +32,27 @@ in
     name = "kernel";
     src = src;
 
-    nativeBuildInputs = [bc openssl perl];
+    nativeBuildInputs = [bc openssl perl gcc-aarch64-linux-android gcc-arm-linux-androideabi];
 
-    buildPhase = ''
-      runHook preBuild
+    buildPhase =
+      ''
+        runHook preBuild
+      ''
+      + (lib.optionalString enableKernelSU ''
+        # Inject KernelSU options
+        export CFG_PATH=arch/${arch}/configs/${defconfig}
+        echo "CONFIG_MODULES=y" >> $CFG_PATH
+        echo "CONFIG_KPROBES=y" >> $CFG_PATH
+        echo "CONFIG_HAVE_KPROBES=y" >> $CFG_PATH
+        echo "CONFIG_KPROBE_EVENTS=y" >> $CFG_PATH
+        echo "CONFIG_OVERLAY_FS=y" >> $CFG_PATH
+      '')
+      + ''
+        mkdir -p $out
+        make ${builtins.concatStringsSep " " (finalMakeFlags ++ defconfigs)}
 
-      export PATH=${gcc-aarch64-linux-android}/bin:${gcc-arm-linux-androideabi}/bin:$PATH
-      export CFG_PATH=arch/${arch}/configs/${defconfig}
-
-      # Inject KernelSU options
-      echo "CONFIG_MODULES=y" >> $CFG_PATH
-      echo "CONFIG_KPROBES=y" >> $CFG_PATH
-      echo "CONFIG_HAVE_KPROBES=y" >> $CFG_PATH
-      echo "CONFIG_KPROBE_EVENTS=y" >> $CFG_PATH
-      echo "CONFIG_OVERLAY_FS=y" >> $CFG_PATH
-
-      mkdir -p $out
-      make ${builtins.concatStringsSep " " (finalMakeFlags ++ defconfigs)}
-
-      runHook postBuild
-    '';
+        runHook postBuild
+      '';
 
     installPhase = ''
       runHook preInstall

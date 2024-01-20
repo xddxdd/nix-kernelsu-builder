@@ -20,7 +20,9 @@ fetch.github = "Kernel-SU/AnyKernel3"
 
 [kernelsu-stable]
 src.github = "tiann/KernelSU"
-fetch.github = "tiann/KernelSU"
+fetch.git = "https://github.com/tiann/KernelSU.git"
+git.deepClone = true
+git.leaveDotGit = true
 
 [linux-amazon-karnak]
 src.git = "https://github.com/mt8163/android_kernel_amazon_karnak_4.9.git"
