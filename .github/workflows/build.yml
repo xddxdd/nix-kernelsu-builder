@@ -77,7 +77,7 @@ jobs:
 
       - name: Upload files
         if: env.CHECK_FILE_IS_OK == 'true'
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.build_target }}
           path: ${{ matrix.build_target }}/
