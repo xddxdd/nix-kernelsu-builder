@@ -1,4 +1,6 @@
 builds:
   include:
     - packages.x86_64-linux.*
-  exclude: []
+  exclude:
+    - packages.x86_64-linux.override
+    - packages.x86_64-linux.overrideDerivation

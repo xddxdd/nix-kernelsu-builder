@@ -76,7 +76,6 @@ jobs:
           cp -r result/* ${{ matrix.build_target }}/
 
       - name: Upload files
-        if: env.CHECK_FILE_IS_OK == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.build_target }}
