@@ -4,10 +4,23 @@
   bc,
   bison,
   coreutils,
+  cpio,
+  elfutils,
   flex,
+  gmp,
+  kmod,
+  libmpc,
+  mpfr,
+  nettools,
   openssl,
+  pahole,
   perl,
+  python3,
+  rsync,
+  ubootTools,
   which,
+  zlib,
+  zstd,
   # User args
   clangVersion,
   src,
@@ -40,14 +53,28 @@ in
 
     nativeBuildInputs = [
       bc
+      bc
       bison
       coreutils
+      cpio
+      elfutils
       flex
-      usedLLVMPackages.bintools
+      gmp
+      kmod
+      libmpc
+      mpfr
+      nettools
       openssl
+      pahole
       perl
+      python3
+      rsync
+      ubootTools
       which
-      # clangCompiler
+      zlib
+      zstd
+
+      usedLLVMPackages.bintools
     ];
 
     buildPhase =
