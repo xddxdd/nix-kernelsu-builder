@@ -7,6 +7,7 @@
 in {
   amazon-fire-hd-karnak = pipeline {
     anyKernelVariant = "osm0sis";
+    enableKernelSU = false;
     kernelDefconfigs = ["lineageos_karnak_defconfig"];
     kernelImageName = "Image.gz-dtb";
     kernelMakeFlags = [
