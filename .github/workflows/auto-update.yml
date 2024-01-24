@@ -34,7 +34,7 @@ jobs:
           github = "${{ secrets.GITHUB_TOKEN }}"
           EOF
 
-          nix run .#update
+          nix run .#nvfetcher
 
           rm -f secrets.toml
 
