@@ -107,7 +107,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Nfk9zl4G187jIhvD6UP4aUXqiYIARvrXWlFehENBYIg=",
+            "sha256": "sha256-NM2xK+krBIpsuspVnsq31uq2bBC0SOWDsl1jfqG0c+c=",
             "type": "url",
             "url": "https://github.com/tiann/KernelSU"
         },
@@ -135,7 +135,7 @@
     },
     "linux-moto-rtwo-lineageos-21": {
         "cargoLocks": null,
-        "date": "2024-01-18",
+        "date": "2024-01-31",
         "extract": null,
         "name": "linux-moto-rtwo-lineageos-21",
         "passthru": null,
@@ -147,11 +147,11 @@
             "name": null,
             "owner": "moto-sm8550",
             "repo": "android_kernel_motorola_sm8550",
-            "rev": "67ec06efe78c51c3206cd0675d6a8802e53619b3",
-            "sha256": "sha256-TZXZqfpKLGbBb4rUnTXPIE6vHidIYxfxUv51VK4/5Vo=",
+            "rev": "7fea85ca1823e6fa36561ce9e00d371ea1c3d1ae",
+            "sha256": "sha256-Cb+RzDjO2pVqnwJVGqFkqswEpameSFh0kYwG7Aye8Ls=",
             "type": "github"
         },
-        "version": "67ec06efe78c51c3206cd0675d6a8802e53619b3"
+        "version": "7fea85ca1823e6fa36561ce9e00d371ea1c3d1ae"
     },
     "linux-oneplus-8t-blu-spark": {
         "cargoLocks": null,
