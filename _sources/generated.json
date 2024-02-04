@@ -21,7 +21,7 @@
     },
     "anykernel-osm0sis": {
         "cargoLocks": null,
-        "date": "2023-11-06",
+        "date": "2024-02-03",
         "extract": null,
         "name": "anykernel-osm0sis",
         "passthru": null,
@@ -33,11 +33,11 @@
             "name": null,
             "owner": "osm0sis",
             "repo": "AnyKernel3",
-            "rev": "458caeda335554c58930bf6dbfa23e829911e338",
-            "sha256": "sha256-qKAyUJH0/YBZOgkmNqy0XlkvwaayNUf+ks+U5y6w5Lw=",
+            "rev": "a6c478e370053467730bcc42fd51586e8fc13144",
+            "sha256": "sha256-dF/FO4LbeuYh1rRMah2fynKiy7eoRmAbR6XkTsbgCiY=",
             "type": "github"
         },
-        "version": "458caeda335554c58930bf6dbfa23e829911e338"
+        "version": "a6c478e370053467730bcc42fd51586e8fc13144"
     },
     "gcc-aarch64-linux-android": {
         "cargoLocks": null,
@@ -107,7 +107,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-CaC4unIIxJG0UUlXuRtPtUj5WBZ+d2RsAHLkbybRn7o=",
+            "sha256": "sha256-N7hXsSnULd8hCLUBR3lAfSm2LVzVsm7S88PsF9SQnyo=",
             "type": "url",
             "url": "https://github.com/tiann/KernelSU"
         },
