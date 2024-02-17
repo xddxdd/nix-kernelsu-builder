@@ -54,6 +54,9 @@ jobs:
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
             extra-platforms = i686-linux aarch64-linux arm-linux
 
+      - name: Setup GitHub Actions cache for Nix
+        uses: DeterminateSystems/magic-nix-cache-action@main
+
       - name: Set nix daemon tmpdir path
         run: |
           sudo mkdir -p /nix/tmpdir
