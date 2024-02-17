@@ -66,7 +66,7 @@
     version = "11458";
     src = fetchurl {
       url = "https://github.com/tiann/KernelSU";
-      sha256 = "sha256-moYRmFcXXEFFmRuR5HWZ9ROHfnxyaRlVoIEFp2srjXM=";
+      sha256 = "sha256-IqwgNsRy/SJbHHcHXD+6GIQX9CkqzqegHBNq1IGvlbo=";
     };
   };
   linux-amazon-karnak = {
@@ -83,15 +83,15 @@
   };
   linux-moto-rtwo-lineageos-21 = {
     pname = "linux-moto-rtwo-lineageos-21";
-    version = "7fea85ca1823e6fa36561ce9e00d371ea1c3d1ae";
+    version = "a85cf76de6b3594ed8cb1282c3829f100c03b345";
     src = fetchFromGitHub {
       owner = "moto-sm8550";
       repo = "android_kernel_motorola_sm8550";
-      rev = "7fea85ca1823e6fa36561ce9e00d371ea1c3d1ae";
+      rev = "a85cf76de6b3594ed8cb1282c3829f100c03b345";
       fetchSubmodules = false;
-      sha256 = "sha256-Cb+RzDjO2pVqnwJVGqFkqswEpameSFh0kYwG7Aye8Ls=";
+      sha256 = "sha256-DY9VCKplr1/TTQ2AJOoaDkgf2UJefP4lsyL/V88/WvM=";
     };
-    date = "2024-01-31";
+    date = "2024-02-16";
   };
   linux-oneplus-8t-blu-spark = {
     pname = "linux-oneplus-8t-blu-spark";
