@@ -91,12 +91,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "v0.8.0",
-            "sha256": "sha256-6J8OlGMzXSz6y6mJ4jDXI7g4z6S/CmXCyMJqb05zZ4c=",
+            "rev": "v0.8.1",
+            "sha256": "sha256-MaRBu+4vtqSo/j/Mf5DUkEl5224ulvHpUM+4JBNLuko=",
             "type": "git",
             "url": "https://github.com/tiann/KernelSU.git"
         },
-        "version": "v0.8.0"
+        "version": "v0.8.1"
     },
     "kernelsu-stable-revision-code": {
         "cargoLocks": null,
@@ -107,11 +107,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-pCmZ/t2TzIh+V++nOSMJ5RhI05nwpTCVb81d6SOJMfo=",
+            "sha256": "sha256-ZnQKjQ0+3uP2FMoaSH6trZkngQa2b9FrhIaLVh2p2P0=",
             "type": "url",
             "url": "https://github.com/tiann/KernelSU"
         },
-        "version": "11551"
+        "version": "11563"
     },
     "linux-amazon-karnak": {
         "cargoLocks": null,
