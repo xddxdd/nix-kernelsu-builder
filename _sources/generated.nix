@@ -63,10 +63,10 @@
   };
   kernelsu-stable-revision-code = {
     pname = "kernelsu-stable-revision-code";
-    version = "11563";
+    version = "0.8.1";
     src = fetchurl {
       url = "https://github.com/tiann/KernelSU";
-      sha256 = "sha256-q1ZeFP7fZGL+2uUFAWjotoXwLLwzLzQE+mqDBFt8Yk4=";
+      sha256 = "sha256-qZrY8hcQer1og0b5m0tCvv1LWRN6o44S9pfddKBaxIY=";
     };
   };
   linux-amazon-karnak = {
