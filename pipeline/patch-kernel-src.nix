@@ -38,7 +38,7 @@ in
         # Force set KernelSU version
         sed -i "/KernelSU version:/d" KernelSU/kernel/Makefile
         sed -i "/KSU_GIT_VERSION not defined/d" KernelSU/kernel/Makefile
-        sed -i "s|ccflags-y += -DKSU_VERSION=|ccflags-y += -DKSU_VERSION=${sources.kernelsu-stable-revision-code.version}\n#|g" KernelSU/kernel/Makefile
+        sed -i "s|ccflags-y += -DKSU_VERSION=|ccflags-y += -DKSU_VERSION=\"${sources.kernelsu-stable-revision-code.version}\"\n#|g" KernelSU/kernel/Makefile
       '')
       + ''
         patchShebangs .
