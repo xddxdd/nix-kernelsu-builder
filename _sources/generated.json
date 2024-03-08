@@ -107,11 +107,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-s7Kt4/uiEzAE6hrbcVgXGUSAn+KnKslFBaM/bEmuA2k=",
+            "sha256": "sha256-lBZvzUFVp56Z9sROyHmbs8ImB/cxkl1wM3VMBLxKGpQ=",
             "type": "url",
             "url": "https://github.com/tiann/KernelSU"
         },
-        "version": "0.8.1"
+        "version": "11583"
     },
     "linux-amazon-karnak": {
         "cargoLocks": null,
