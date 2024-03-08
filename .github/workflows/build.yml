@@ -74,7 +74,7 @@ jobs:
       - name: Build nix packages
         run: |
           nix flake update
-          env TMPDIR=/nix/tmpdir nix build .#${{ matrix.build_target }}
+          env TMPDIR=/nix/tmpdir nix build -L .#${{ matrix.build_target }}
           mkdir ${{ matrix.build_target }}
           cp -r result/* ${{ matrix.build_target }}/
 
