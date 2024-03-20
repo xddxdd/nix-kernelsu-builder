@@ -35,7 +35,7 @@
 
   finalMakeFlags =
     [
-      "-j$(nproc --all)"
+      "-j2"
       "ARCH=${arch}"
       "CROSS_COMPILE=aarch64-linux-android-"
       "CROSS_COMPILE_ARM32=arm-linux-androideabi-"

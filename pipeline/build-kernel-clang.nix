@@ -32,7 +32,7 @@
 }: let
   finalMakeFlags =
     [
-      "-j$(nproc --all)"
+      "-j2"
       "ARCH=${arch}"
       "CC=clang"
       "O=$out"
