@@ -32,7 +32,6 @@
 }: let
   finalMakeFlags =
     [
-      "-j2"
       "ARCH=${arch}"
       "CC=clang"
       "O=$out"
@@ -100,7 +99,7 @@ in
     installPhase = ''
       runHook preInstall
 
-      make ${builtins.concatStringsSep " " finalMakeFlags}
+      make -j$(nproc) ${builtins.concatStringsSep " " finalMakeFlags}
 
       runHook postInstall
     '';

@@ -35,7 +35,6 @@
 
   finalMakeFlags =
     [
-      "-j2"
       "ARCH=${arch}"
       "CROSS_COMPILE=aarch64-linux-android-"
       "CROSS_COMPILE_ARM32=arm-linux-androideabi-"
@@ -99,7 +98,7 @@ in
     installPhase = ''
       runHook preInstall
 
-      make ${builtins.concatStringsSep " " finalMakeFlags}
+      make -j$(nproc) ${builtins.concatStringsSep " " finalMakeFlags}
 
       runHook postInstall
     '';
