@@ -46,6 +46,10 @@ in
       "vendor/debugfs.config"
     ];
     kernelImageName = "Image";
+    kernelMakeFlags = [
+      "KCFLAGS=\"-w\""
+      "KCPPFLAGS=\"-w\""
+    ];
     kernelSrc = sources.linux-oneplus-8t-blu-spark.src;
   };
 }
