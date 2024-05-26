@@ -1,14 +1,12 @@
+{ callPackage, sources, ... }:
+let
+  pipeline = callPackage ./pipeline { };
+in
 {
-  callPackage,
-  sources,
-  ...
-}: let
-  pipeline = callPackage ./pipeline {};
-in {
   amazon-fire-hd-karnak = pipeline {
     anyKernelVariant = "osm0sis";
     enableKernelSU = false;
-    kernelDefconfigs = ["lineageos_karnak_defconfig"];
+    kernelDefconfigs = [ "lineageos_karnak_defconfig" ];
     kernelImageName = "Image.gz-dtb";
     kernelMakeFlags = [
       "KCFLAGS=\"-w\""
@@ -35,7 +33,18 @@ in {
   oneplus-8t-blu-spark = pipeline {
     anyKernelVariant = "osm0sis";
     clangVersion = "latest";
-    kernelDefconfigs = ["blu_spark_defconfig"];
+    kernelDefconfigs = [ "blu_spark_defconfig" ];
+    kernelImageName = "Image";
+    kernelSrc = sources.linux-oneplus-8t-blu-spark.src;
+  };
+
+  oneplus-8t-lineageos-21 = pipeline {
+    anyKernelVariant = "osm0sis";
+    clangVersion = "latest";
+    kernelDefconfigs = [
+      "vendor/kona-perf_defconfig"
+      "vendor/debugfs.config"
+    ];
     kernelImageName = "Image";
     kernelSrc = sources.linux-oneplus-8t-blu-spark.src;
   };
