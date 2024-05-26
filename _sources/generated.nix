@@ -65,8 +65,8 @@
     pname = "kernelsu-stable-revision-code";
     version = "11838";
     src = fetchurl {
-      url = "https://github.com/tiann/KernelSU";
-      sha256 = "sha256-iK0/tdz+8qGFZpWiZNmDiKGLGxa3JVV9ac5lYCGilas=";
+      url = "https://example.com";
+      sha256 = "sha256-6o+sfGX7WJsNU1YPUlH3T56bJDR43Laz6nm142RJyNk=";
     };
   };
   linux-amazon-karnak = {

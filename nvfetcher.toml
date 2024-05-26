@@ -21,7 +21,7 @@ fetch.git = "https://github.com/tiann/KernelSU.git"
 [kernelsu-stable-revision-code]
 src.webpage = "https://api.github.com/repos/tiann/KernelSU/releases?per_page=1"
 src.regex = "download\\/v[0-9\\._]+\\/KernelSU[^\"]*_([0-9]+)-release\\.apk"
-fetch.url = "https://github.com/tiann/KernelSU"
+fetch.url = "https://example.com"
 
 [linux-amazon-karnak]
 src.git = "https://github.com/mt8163/android_kernel_amazon_karnak_4.9.git"
