@@ -35,5 +35,5 @@ fetch.github = "moto-sm8550/android_kernel_motorola_sm8550"
 
 [linux-oneplus-8t-blu-spark]
 src.git = "https://github.com/engstk/op8.git"
-src.branch = "blu_spark-13-custom"
+src.branch = "blu_spark-14-custom"
 fetch.github = "engstk/op8"

@@ -66,7 +66,7 @@
     version = "11838";
     src = fetchurl {
       url = "https://github.com/tiann/KernelSU";
-      sha256 = "sha256-JYPtTOsOw5NmP17Kx3JJNUTJgE26bfXukVSymAkkhWI=";
+      sha256 = "sha256-iK0/tdz+8qGFZpWiZNmDiKGLGxa3JVV9ac5lYCGilas=";
     };
   };
   linux-amazon-karnak = {
@@ -95,14 +95,14 @@
   };
   linux-oneplus-8t-blu-spark = {
     pname = "linux-oneplus-8t-blu-spark";
-    version = "57574d8b1014abccb1c4f424796004f511ff7d22";
+    version = "6c8d1b9af942e90d6d1fd6ef88c61e7e721f4263";
     src = fetchFromGitHub {
       owner = "engstk";
       repo = "op8";
-      rev = "57574d8b1014abccb1c4f424796004f511ff7d22";
+      rev = "6c8d1b9af942e90d6d1fd6ef88c61e7e721f4263";
       fetchSubmodules = false;
-      sha256 = "sha256-6Skg3iIfcw2Hu5Z4uRQBBF9IYaKdK1ULvfz0wP7PG3g=";
+      sha256 = "sha256-A40L9ZbyjU1lSI1xaaNvceIHoq3/KB6U9wUFXsmxobo=";
     };
-    date = "2024-01-10";
+    date = "2024-05-15";
   };
 }
