@@ -172,25 +172,5 @@
             "type": "github"
         },
         "version": "6c8d1b9af942e90d6d1fd6ef88c61e7e721f4263"
-    },
-    "linux-oneplus-8t-lineageos-21": {
-        "cargoLocks": null,
-        "date": "2024-05-10",
-        "extract": null,
-        "name": "linux-oneplus-8t-lineageos-21",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "LineageOS",
-            "repo": "android_kernel_oneplus_sm8250",
-            "rev": "7b754702520b31be3acad0d3b85b528af261a34e",
-            "sha256": "sha256-xXABvNizNonJ6Bkp25iyoBbpY5nnhTto1e/HRZuIAb8=",
-            "type": "github"
-        },
-        "version": "7b754702520b31be3acad0d3b85b528af261a34e"
     }
 }

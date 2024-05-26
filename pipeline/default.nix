@@ -8,6 +8,7 @@
   anyKernelVariant ? "osm0sis",
   clangVersion ? null,
   enableKernelSU ? true,
+  kernelConfig ? "",
   kernelDefconfigs ? [],
   kernelImageName ? "Image",
   kernelMakeFlags ? [],
@@ -27,6 +28,7 @@
       src = patchedKernelSrc;
       defconfigs = kernelDefconfigs;
       makeFlags = kernelMakeFlags;
+      extraKernelConfigs = kernelConfig;
     };
 
     kernelBuildGcc = callPackage ./build-kernel-gcc.nix {
@@ -34,6 +36,7 @@
       src = patchedKernelSrc;
       defconfigs = kernelDefconfigs;
       makeFlags = kernelMakeFlags;
+      extraKernelConfigs = kernelConfig;
     };
 
     kernelBuild =

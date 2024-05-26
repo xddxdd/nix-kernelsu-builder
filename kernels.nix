@@ -36,20 +36,9 @@ in
     kernelDefconfigs = [ "blu_spark_defconfig" ];
     kernelImageName = "Image";
     kernelSrc = sources.linux-oneplus-8t-blu-spark.src;
-  };
-
-  oneplus-8t-lineageos-21 = pipeline {
-    anyKernelVariant = "osm0sis";
-    clangVersion = "latest";
-    kernelDefconfigs = [
-      "vendor/kona-perf_defconfig"
-      "vendor/debugfs.config"
-    ];
-    kernelImageName = "Image";
-    kernelMakeFlags = [
-      "KCFLAGS=\"-w\""
-      "KCPPFLAGS=\"-w\""
-    ];
-    kernelSrc = sources.linux-oneplus-8t-blu-spark.src;
+    kernelConfig = ''
+      CONFIG_STACKPROTECTOR=n
+      CONFIG_LTO_CLANG=y
+    '';
   };
 }

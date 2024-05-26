@@ -105,16 +105,4 @@
     };
     date = "2024-05-15";
   };
-  linux-oneplus-8t-lineageos-21 = {
-    pname = "linux-oneplus-8t-lineageos-21";
-    version = "7b754702520b31be3acad0d3b85b528af261a34e";
-    src = fetchFromGitHub {
-      owner = "LineageOS";
-      repo = "android_kernel_oneplus_sm8250";
-      rev = "7b754702520b31be3acad0d3b85b528af261a34e";
-      fetchSubmodules = false;
-      sha256 = "sha256-xXABvNizNonJ6Bkp25iyoBbpY5nnhTto1e/HRZuIAb8=";
-    };
-    date = "2024-05-10";
-  };
 }

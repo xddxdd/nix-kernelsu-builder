@@ -28,6 +28,7 @@
   defconfigs,
   enableKernelSU,
   makeFlags,
+  additionalKernelConfig ? "",
   ...
 }: let
   gcc-aarch64-linux-android = pkgs.callPackage ../pkgs/gcc-aarch64-linux-android.nix {};
@@ -78,10 +79,14 @@ in
     buildPhase =
       ''
         runHook preBuild
+
+        export CFG_PATH=arch/${arch}/configs/${defconfig}
+        cat >>$CFG_PATH <<EOF
+        ${additionalKernelConfig}
+        EOF
       ''
       + (lib.optionalString enableKernelSU ''
         # Inject KernelSU options
-        export CFG_PATH=arch/${arch}/configs/${defconfig}
         echo "CONFIG_MODULES=y" >> $CFG_PATH
         echo "CONFIG_KPROBES=y" >> $CFG_PATH
         echo "CONFIG_HAVE_KPROBES=y" >> $CFG_PATH
