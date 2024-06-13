@@ -15,6 +15,7 @@
             "repo": "AnyKernel3",
             "rev": "ee30bad85a483cad2b1e4ff34e69f983a04f875a",
             "sha256": "sha256-QJS4+1teNcgUOy2gD+KuoEG/9pUNd/6uSH84AkAlVoQ=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "ee30bad85a483cad2b1e4ff34e69f983a04f875a"
@@ -35,6 +36,7 @@
             "repo": "AnyKernel3",
             "rev": "c55d63f39335b68116fa820eee221b61bc233fe3",
             "sha256": "sha256-qJu+P3oAON6EWKk3Hye9AePhgz495zNkYBRPnHmi9MU=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "c55d63f39335b68116fa820eee221b61bc233fe3"
@@ -55,6 +57,7 @@
             "repo": "aarch64-linux-android-4.9-bakup",
             "rev": "5797d7f622321e734558bd3372a9ab5ad6e6a48e",
             "sha256": "sha256-ZrQmFyiDOKg+qcgdpZqtz+LgDDaao2W27kdZZ2As8XU=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "5797d7f622321e734558bd3372a9ab5ad6e6a48e"
@@ -75,6 +78,7 @@
             "repo": "arm-linux-androideabi-4.9",
             "rev": "3ecb542702c2ca0e502533c3f6d02f0f06f584f1",
             "sha256": "sha256-5aF2Pl+h6J8/5TfQf2ojp3FCnoKakWH6KBCkWdy5ho8=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "3ecb542702c2ca0e502533c3f6d02f0f06f584f1"
@@ -93,6 +97,7 @@
             "name": null,
             "rev": "v0.9.5",
             "sha256": "sha256-pvaL6KEB7X3s8zyLQSPhBhoXaNdVDthH7HnAZRE9JYk=",
+            "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/tiann/KernelSU.git"
         },
@@ -129,6 +134,7 @@
             "repo": "android_kernel_amazon_karnak_4.9",
             "rev": "e22c713c7c4f0c8d08267f6bba98b8c4cde8310f",
             "sha256": "sha256-viqlQBPd2SuiAphFKiwjtckC3gDTGkbLv2dgZKMP3Oc=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "e22c713c7c4f0c8d08267f6bba98b8c4cde8310f"
@@ -149,6 +155,7 @@
             "repo": "android_kernel_motorola_sm8550",
             "rev": "1c2aa53515b7c1d5629a84980470d9c1c2ece4e7",
             "sha256": "sha256-1czfscSPxDELAfyeNmrFG0x2GfCOl8CHe2C7GOsfR40=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "1c2aa53515b7c1d5629a84980470d9c1c2ece4e7"
@@ -169,6 +176,7 @@
             "repo": "op8",
             "rev": "6c8d1b9af942e90d6d1fd6ef88c61e7e721f4263",
             "sha256": "sha256-A40L9ZbyjU1lSI1xaaNvceIHoq3/KB6U9wUFXsmxobo=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "6c8d1b9af942e90d6d1fd6ef88c61e7e721f4263"
