@@ -20,8 +20,8 @@ in
 
     postPatch = lib.optionalString (variant == "osm0sis") ''
       sed -i 's/do.devicecheck=1/do.devicecheck=0/g' anykernel.sh
-      sed -i 's!block=/dev/block/platform/omap/omap_hsmmc.0/by-name/boot;!block=auto;!g' anykernel.sh
-      sed -i 's/is_slot_device=0;/is_slot_device=auto;/g' anykernel.sh
+      sed -i 's!BLOCK=/dev/block/platform/omap/omap_hsmmc.0/by-name/boot;!BLOCK=auto;!g' anykernel.sh
+      sed -i 's/IS_SLOT_DEVICE=0;/IS_SLOT_DEVICE=auto;/g' anykernel.sh
     '';
 
     buildPhase = ''
