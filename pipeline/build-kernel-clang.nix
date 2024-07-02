@@ -48,7 +48,7 @@ let
 in
 usedLLVMPackages.stdenv.mkDerivation {
   name = "clang-kernel-${builtins.toString clangVersion}";
-  src = src;
+  inherit src;
 
   nativeBuildInputs = [
     bc

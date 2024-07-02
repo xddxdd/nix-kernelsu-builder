@@ -63,7 +63,7 @@ jobs:
       - name: Set nix daemon tmpdir path
         run: |
           sudo mkdir -p /nix/tmpdir
-          sudo chown $(whoami) /nix/tmpdir
+          sudo chown "$(whoami)" /nix/tmpdir
 
           cat > override.conf <<EOF
           [Service]

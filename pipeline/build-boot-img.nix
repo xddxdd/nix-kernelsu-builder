@@ -12,7 +12,7 @@ stdenv.mkDerivation {
   name = "boot-img";
   dontUnpack = true;
 
-  nativeBuildInputs = [android-tools];
+  nativeBuildInputs = [ android-tools ];
 
   buildPhase = ''
     runHook preBuild

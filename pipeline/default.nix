@@ -3,19 +3,21 @@
   callPackage,
   runCommand,
   ...
-}: {
+}:
+{
   arch ? "arm64",
   anyKernelVariant ? "osm0sis",
   clangVersion ? null,
   enableKernelSU ? true,
   kernelConfig ? "",
-  kernelDefconfigs ? [],
+  kernelDefconfigs ? [ ],
   kernelImageName ? "Image",
-  kernelMakeFlags ? [],
-  kernelPatches ? [],
+  kernelMakeFlags ? [ ],
+  kernelPatches ? [ ],
   kernelSrc,
   oemBootImg ? null,
-}: let
+}:
+let
   pipeline = rec {
     patchedKernelSrc = callPackage ./patch-kernel-src.nix {
       inherit enableKernelSU;
@@ -39,10 +41,7 @@
       extraKernelConfigs = kernelConfig;
     };
 
-    kernelBuild =
-      if clangVersion == null
-      then kernelBuildGcc
-      else kernelBuildClang;
+    kernelBuild = if clangVersion == null then kernelBuildGcc else kernelBuildClang;
 
     anykernelZip = callPackage ./build-anykernel-zip.nix {
       inherit arch kernelImageName;
@@ -57,16 +56,16 @@
     };
   };
 in
-  runCommand "kernel-bundle" {
-    passthru = pipeline;
-  } (''
-      mkdir -p $out
-      cp ${pipeline.kernelBuild}/arch/${arch}/boot/${kernelImageName} $out/
-        if [ -f ${pipeline.kernelBuild}/arch/${arch}/boot/dtbo.img ]; then
-          cp ${pipeline.kernelBuild}/arch/${arch}/boot/dtbo.img $out/
-        fi
-      cp ${pipeline.anykernelZip}/anykernel.zip $out/
-    ''
-    + (lib.optionalString (oemBootImg != null) ''
-      cp ${pipeline.bootImg}/boot.img $out/
-    ''))
+runCommand "kernel-bundle" { passthru = pipeline; } (
+  ''
+    mkdir -p $out
+    cp ${pipeline.kernelBuild}/arch/${arch}/boot/${kernelImageName} $out/
+      if [ -f ${pipeline.kernelBuild}/arch/${arch}/boot/dtbo.img ]; then
+        cp ${pipeline.kernelBuild}/arch/${arch}/boot/dtbo.img $out/
+      fi
+    cp ${pipeline.anykernelZip}/anykernel.zip $out/
+  ''
+  + (lib.optionalString (oemBootImg != null) ''
+    cp ${pipeline.bootImg}/boot.img $out/
+  '')
+)
