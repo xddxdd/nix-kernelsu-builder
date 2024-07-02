@@ -4,16 +4,15 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     flake-parts.url = "github:hercules-ci/flake-parts";
 
+    nur-xddxdd = {
+      # url = "/home/lantian/Projects/nur-packages";
+      url = "github:xddxdd/nur-packages";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-parts.follows = "flake-parts";
+      inputs.nvfetcher.follows = "nvfetcher";
+    };
     nvfetcher = {
       url = "github:berberman/nvfetcher";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    treefmt-nix = {
-      url = "github:numtide/treefmt-nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    pre-commit-hooks-nix = {
-      url = "github:cachix/pre-commit-hooks.nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -25,9 +24,10 @@
     flake-parts.lib.mkFlake { inherit inputs; } {
       imports = [
         ./flake-modules/commands.nix
-        ./flake-modules/nixpkgs-options.nix
-        ./flake-modules/pre-commit-hooks.nix
-        ./flake-modules/treefmt.nix
+        inputs.nur-xddxdd.flakeModules.commands
+        inputs.nur-xddxdd.flakeModules.lantian-pre-commit-hooks
+        inputs.nur-xddxdd.flakeModules.lantian-treefmt
+        inputs.nur-xddxdd.flakeModules.nixpkgs-options
       ];
 
       systems = [ "x86_64-linux" ];

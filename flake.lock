@@ -71,6 +71,7 @@
     "gitignore": {
       "inputs": {
         "nixpkgs": [
+          "nur-xddxdd",
           "pre-commit-hooks-nix",
           "nixpkgs"
         ]
@@ -86,6 +87,27 @@
       "original": {
         "owner": "hercules-ci",
         "repo": "gitignore.nix",
+        "type": "github"
+      }
+    },
+    "nix-index-database": {
+      "inputs": {
+        "nixpkgs": [
+          "nur-xddxdd",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1719832725,
+        "narHash": "sha256-dr8DkeS74KVNTgi8BE0BiUKALb+EKlMIV86G2xPYO64=",
+        "owner": "nix-community",
+        "repo": "nix-index-database",
+        "rev": "2917972ed34ce292309b3a4976286f8b5c08db27",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "nix-index-database",
         "type": "github"
       }
     },
@@ -133,9 +155,38 @@
         "type": "github"
       }
     },
+    "nur-xddxdd": {
+      "inputs": {
+        "flake-parts": [
+          "flake-parts"
+        ],
+        "nix-index-database": "nix-index-database",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "nvfetcher": [
+          "nvfetcher"
+        ],
+        "pre-commit-hooks-nix": "pre-commit-hooks-nix",
+        "treefmt-nix": "treefmt-nix"
+      },
+      "locked": {
+        "lastModified": 1719905037,
+        "narHash": "sha256-Zpo9mofDdU4fnEBH6Vb0WcumnE7Su97CiWI4djk70OQ=",
+        "owner": "xddxdd",
+        "repo": "nur-packages",
+        "rev": "88e80f6992a10613d8745167ccc8159c2e8cb17e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "xddxdd",
+        "repo": "nur-packages",
+        "type": "github"
+      }
+    },
     "nvfetcher": {
       "inputs": {
-        "flake-compat": "flake-compat",
+        "flake-compat": "flake-compat_2",
         "flake-utils": "flake-utils",
         "nixpkgs": [
           "nixpkgs"
@@ -157,9 +208,10 @@
     },
     "pre-commit-hooks-nix": {
       "inputs": {
-        "flake-compat": "flake-compat_2",
+        "flake-compat": "flake-compat",
         "gitignore": "gitignore",
         "nixpkgs": [
+          "nur-xddxdd",
           "nixpkgs"
         ],
         "nixpkgs-stable": "nixpkgs-stable"
@@ -182,9 +234,8 @@
       "inputs": {
         "flake-parts": "flake-parts",
         "nixpkgs": "nixpkgs",
-        "nvfetcher": "nvfetcher",
-        "pre-commit-hooks-nix": "pre-commit-hooks-nix",
-        "treefmt-nix": "treefmt-nix"
+        "nur-xddxdd": "nur-xddxdd",
+        "nvfetcher": "nvfetcher"
       }
     },
     "systems": {
@@ -205,6 +256,7 @@
     "treefmt-nix": {
       "inputs": {
         "nixpkgs": [
+          "nur-xddxdd",
           "nixpkgs"
         ]
       },
