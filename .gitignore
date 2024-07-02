@@ -4,3 +4,5 @@ trace.txt*
 .gcroots
 .vscode
 .direnv
+*.log
+.pre-commit-config.yaml
