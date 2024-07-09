@@ -76,7 +76,7 @@ usedLLVMPackages.stdenv.mkDerivation {
     usedLLVMPackages.bintools
   ];
 
-  hardeningDisable = [ "stackprotector" ];
+  hardeningDisable = [ "all" ];
 
   buildPhase =
     ''
