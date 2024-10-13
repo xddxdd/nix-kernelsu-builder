@@ -129,11 +129,11 @@
     },
     "nixpkgs-24_05": {
       "locked": {
-        "lastModified": 1728328465,
-        "narHash": "sha256-a0a0M1TmXMK34y3M0cugsmpJ4FJPT/xsblhpiiX1CXo=",
+        "lastModified": 1728627514,
+        "narHash": "sha256-r+SF9AnHrTg+bk6YszoKfV9lgyw+yaFUQe0dOjI0Z2o=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "1bfbbbe5bbf888d675397c66bfdb275d0b99361c",
+        "rev": "c505ebf777526041d792a49d5f6dd4095ea391a7",
         "type": "github"
       },
       "original": {
@@ -188,11 +188,11 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1728624686,
-        "narHash": "sha256-VhZc6YsugUh9QkhakWTlfrSQj9XmtOaTidStphpV+po=",
+        "lastModified": 1728739807,
+        "narHash": "sha256-0WPfCb4ziu2GMSlXDDaSx8FYZ96YqG1myaykMbDQFQ4=",
         "owner": "xddxdd",
         "repo": "nur-packages",
-        "rev": "6374c7f42f87b19f63d72412c2514626fe50db51",
+        "rev": "a9fbebb8de043ded6683fc2b7a4f9c4cb39430e7",
         "type": "github"
       },
       "original": {
@@ -234,11 +234,11 @@
         "nixpkgs-stable": "nixpkgs-stable"
       },
       "locked": {
-        "lastModified": 1728092656,
-        "narHash": "sha256-eMeCTJZ5xBeQ0f9Os7K8DThNVSo9gy4umZLDfF5q6OM=",
+        "lastModified": 1728651332,
+        "narHash": "sha256-lm+asqDSTj0m6j1dtEte1/XG+uzZbwxS3tn7JLaBw84=",
         "owner": "cachix",
         "repo": "pre-commit-hooks.nix",
-        "rev": "1211305a5b237771e13fcca0c51e60ad47326a9a",
+        "rev": "06bb5971c139959d9a951f34e4264d32f5d998e7",
         "type": "github"
       },
       "original": {
