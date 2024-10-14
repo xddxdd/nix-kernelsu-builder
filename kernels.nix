@@ -27,6 +27,10 @@ in
       "vendor/ext_config/moto-kalama-rtwo.config"
     ];
     kernelImageName = "Image";
+    kernelMakeFlags = [
+      "KCFLAGS=\"-w\""
+      "KCPPFLAGS=\"-w\""
+    ];
     kernelSrc = sources.linux-moto-rtwo-lineageos-21.src;
   };
 
