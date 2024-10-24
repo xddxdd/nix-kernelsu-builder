@@ -162,7 +162,7 @@
     },
     "linux-oneplus-8t-blu-spark": {
         "cargoLocks": null,
-        "date": "2024-08-21",
+        "date": "2024-10-23",
         "extract": null,
         "name": "linux-oneplus-8t-blu-spark",
         "passthru": null,
@@ -174,11 +174,11 @@
             "name": null,
             "owner": "engstk",
             "repo": "op8",
-            "rev": "3cd6eae48b9d0362fd3e44e6aea9710aceda818e",
-            "sha256": "sha256-yn/xLEVCTgqsYBayg/OUpfZls8urCJ/HLOwBzlXprNA=",
+            "rev": "6607332cd0f3e063405a21b77112b3e7abf45266",
+            "sha256": "sha256-ulGfKfXZT2//WZ117Fdk4XuLo0Wr4URjwVszxAIXPRI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "3cd6eae48b9d0362fd3e44e6aea9710aceda818e"
+        "version": "6607332cd0f3e063405a21b77112b3e7abf45266"
     }
 }
