@@ -2,8 +2,6 @@
 
 A set of nix packages (derivations) to build Android `boot.img` and AnyKernel installation zip files for given kernel source code.
 
-> This code is for my personal use and is for reference only. I do not guarantee stability or backwards compatibility.
-
 # Packages
 
 Currently I build boot images for 3 devices:
