@@ -1,5 +1,6 @@
 {
   stdenv,
+  lib,
   callPackage,
   autoPatchelfHook,
   python3,
@@ -17,4 +18,11 @@ stdenv.mkDerivation {
     mkdir -p $out
     cp -r * $out/
   '';
+
+  meta = {
+    maintainers = with lib.maintainers; [ xddxdd ];
+    license = lib.licenses.gpl3Plus;
+    description = "ARM32 GCC for building Android kernels";
+    platforms = [ "x86_64-linux" ];
+  };
 }
