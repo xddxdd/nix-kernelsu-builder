@@ -96,14 +96,14 @@
   };
   linux-oneplus-8t-blu-spark = {
     pname = "linux-oneplus-8t-blu-spark";
-    version = "2248fcf83d2a19ac0adb12bc6ed319b31090f6f4";
+    version = "64c109e3f3ba97fa7aed730ab7b4238b91df028b";
     src = fetchFromGitHub {
       owner = "engstk";
       repo = "op8";
-      rev = "2248fcf83d2a19ac0adb12bc6ed319b31090f6f4";
+      rev = "64c109e3f3ba97fa7aed730ab7b4238b91df028b";
       fetchSubmodules = false;
-      sha256 = "sha256-ofzdtkWRcPiXWvzoonv654lyDM7NsWdBE8m1JxmnGMk=";
+      sha256 = "sha256-KWLtY7KWhHmk6LVYpvIz6XT93+yjteex/250crk9Lxw=";
     };
-    date = "2024-11-14";
+    date = "2024-12-26";
   };
 }
