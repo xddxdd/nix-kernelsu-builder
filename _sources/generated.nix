@@ -84,15 +84,15 @@
   };
   linux-moto-rtwo-lineageos-21 = {
     pname = "linux-moto-rtwo-lineageos-21";
-    version = "1c2aa53515b7c1d5629a84980470d9c1c2ece4e7";
+    version = "1bdeb4f5c8d2b98ef5f2bedaa5d704032dffd676";
     src = fetchFromGitHub {
-      owner = "moto-sm8550";
+      owner = "LineageOS";
       repo = "android_kernel_motorola_sm8550";
-      rev = "1c2aa53515b7c1d5629a84980470d9c1c2ece4e7";
+      rev = "1bdeb4f5c8d2b98ef5f2bedaa5d704032dffd676";
       fetchSubmodules = false;
-      sha256 = "sha256-1czfscSPxDELAfyeNmrFG0x2GfCOl8CHe2C7GOsfR40=";
+      sha256 = "sha256-ZK/DH5N5LdkLe48cANESjw1x74aXoZLFoMAwEDvzEk4=";
     };
-    date = "2024-02-23";
+    date = "2024-12-21";
   };
   linux-oneplus-8t-blu-spark = {
     pname = "linux-oneplus-8t-blu-spark";

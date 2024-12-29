@@ -31,9 +31,9 @@ src.branch = "lineage-20.0"
 fetch.github = "mt8163/android_kernel_amazon_karnak_4.9"
 
 [linux-moto-rtwo-lineageos-21]
-src.git = "https://github.com/moto-sm8550/android_kernel_motorola_sm8550.git"
+src.git = "https://github.com/LineageOS/android_kernel_motorola_sm8550.git"
 src.branch = "lineage-21"
-fetch.github = "moto-sm8550/android_kernel_motorola_sm8550"
+fetch.github = "LineageOS/android_kernel_motorola_sm8550"
 
 [linux-oneplus-8t-blu-spark]
 src.git = "https://github.com/engstk/op8.git"
