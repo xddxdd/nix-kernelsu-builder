@@ -37,6 +37,24 @@ _: {
           kernelSrc = sources.linux-moto-rtwo-lineageos-21.src;
         };
 
+        moto-rtwo-lineageos-22_1 = {
+          anyKernelVariant = "kernelsu";
+          clangVersion = "latest";
+          kernelDefconfigs = [
+            "gki_defconfig"
+            "vendor/kalama_GKI.config"
+            "vendor/ext_config/moto-kalama.config"
+            "vendor/ext_config/moto-kalama-gki.config"
+            "vendor/ext_config/moto-kalama-rtwo.config"
+          ];
+          kernelImageName = "Image";
+          kernelMakeFlags = [
+            "KCFLAGS=\"-w\""
+            "KCPPFLAGS=\"-w\""
+          ];
+          kernelSrc = sources.linux-moto-rtwo-lineageos-22_1.src;
+        };
+
         oneplus-8t-blu-spark = {
           anyKernelVariant = "osm0sis";
           clangVersion = "latest";

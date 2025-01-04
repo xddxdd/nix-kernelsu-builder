@@ -160,6 +160,27 @@
         },
         "version": "1bdeb4f5c8d2b98ef5f2bedaa5d704032dffd676"
     },
+    "linux-moto-rtwo-lineageos-22_1": {
+        "cargoLocks": null,
+        "date": "2024-12-27",
+        "extract": null,
+        "name": "linux-moto-rtwo-lineageos-22_1",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "LineageOS",
+            "repo": "android_kernel_motorola_sm8550",
+            "rev": "53290b2dbd5c6240f9b0028b1303222262b01fe7",
+            "sha256": "sha256-S84JgOLZzbr9QyR0Y7s5tsjlJ+Vy9Em1DU/zPiSwZh4=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "53290b2dbd5c6240f9b0028b1303222262b01fe7"
+    },
     "linux-oneplus-8t-blu-spark": {
         "cargoLocks": null,
         "date": "2024-12-26",

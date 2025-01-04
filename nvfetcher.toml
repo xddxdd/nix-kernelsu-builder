@@ -35,6 +35,11 @@ src.git = "https://github.com/LineageOS/android_kernel_motorola_sm8550.git"
 src.branch = "lineage-21"
 fetch.github = "LineageOS/android_kernel_motorola_sm8550"
 
+[linux-moto-rtwo-lineageos-22_1]
+src.git = "https://github.com/LineageOS/android_kernel_motorola_sm8550.git"
+src.branch = "lineage-22.1"
+fetch.github = "LineageOS/android_kernel_motorola_sm8550"
+
 [linux-oneplus-8t-blu-spark]
 src.git = "https://github.com/engstk/op8.git"
 src.branch = "blu_spark-14-custom"
