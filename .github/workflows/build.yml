@@ -18,6 +18,7 @@ jobs:
         build_target:
           - amazon-fire-hd-karnak
           - moto-rtwo-lineageos-21
+          - moto-rtwo-lineageos-22_1
           - oneplus-8t-blu-spark
     runs-on: ubuntu-latest
     env:
