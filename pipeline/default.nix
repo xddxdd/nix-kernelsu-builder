@@ -8,7 +8,6 @@
   arch,
   anyKernelVariant,
   clangVersion,
-  enableKernelSU,
   kernelSU,
   kernelConfig,
   kernelDefconfigs,
@@ -21,13 +20,13 @@
 let
   pipeline = rec {
     patchedKernelSrc = callPackage ./patch-kernel-src.nix {
-      inherit enableKernelSU kernelSU;
+      inherit kernelSU;
       src = kernelSrc;
       patches = kernelPatches;
     };
 
     kernelBuildClang = callPackage ./build-kernel-clang.nix {
-      inherit arch clangVersion enableKernelSU;
+      inherit arch clangVersion kernelSU;
       src = patchedKernelSrc;
       defconfigs = kernelDefconfigs;
       makeFlags = kernelMakeFlags;
@@ -35,7 +34,7 @@ let
     };
 
     kernelBuildGcc = callPackage ./build-kernel-gcc.nix {
-      inherit arch enableKernelSU;
+      inherit arch kernelSU;
       src = patchedKernelSrc;
       defconfigs = kernelDefconfigs;
       makeFlags = kernelMakeFlags;

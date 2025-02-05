@@ -37,12 +37,12 @@
               default = null;
             };
 
-            enableKernelSU = lib.mkOption {
-              type = lib.types.bool;
-              description = "Whether to apply KernelSU patch";
-              default = true;
-            };
             kernelSU = {
+              enable = lib.mkOption {
+                type = lib.types.bool;
+                description = "Whether to apply KernelSU patch";
+                default = true;
+              };
               variant = lib.mkOption {
                 type = lib.types.enum [
                   "official"

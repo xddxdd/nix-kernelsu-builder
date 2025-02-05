@@ -8,7 +8,6 @@
   # User args
   src,
   patches,
-  enableKernelSU,
   kernelSU,
   ...
 }:
@@ -29,7 +28,7 @@ stdenv.mkDerivation {
   ];
 
   postPatch =
-    (lib.optionalString enableKernelSU ''
+    (lib.optionalString kernelSU.enable ''
       export HOME=$(pwd)
 
       cp -r ${kernelSU.src} ${kernelSU.subdirectory}
@@ -42,7 +41,7 @@ stdenv.mkDerivation {
     + ''
       patchShebangs .
     ''
-    + (lib.optionalString enableKernelSU ''
+    + (lib.optionalString kernelSU.enable ''
       bash ${kernelSU.subdirectory}/kernel/setup.sh
     '')
     + ''

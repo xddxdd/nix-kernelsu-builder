@@ -26,7 +26,7 @@
   src,
   arch,
   defconfigs,
-  enableKernelSU,
+  kernelSU,
   makeFlags,
   additionalKernelConfig ? "",
   ...
@@ -84,7 +84,7 @@ stdenv.mkDerivation {
       ${additionalKernelConfig}
       EOF
     ''
-    + (lib.optionalString enableKernelSU ''
+    + (lib.optionalString kernelSU.enable ''
       # Inject KernelSU options
       echo "CONFIG_MODULES=y" >> $CFG_PATH
       echo "CONFIG_KPROBES=y" >> $CFG_PATH

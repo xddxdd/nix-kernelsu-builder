@@ -8,7 +8,7 @@ _: {
       kernelsu = {
         amazon-fire-hd-karnak = {
           anyKernelVariant = "osm0sis";
-          enableKernelSU = false;
+          kernelSU.enable = false;
           kernelDefconfigs = [ "lineageos_karnak_defconfig" ];
           kernelImageName = "Image.gz-dtb";
           kernelMakeFlags = [
