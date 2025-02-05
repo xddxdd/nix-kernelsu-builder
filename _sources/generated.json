@@ -83,6 +83,41 @@
         },
         "version": "3ecb542702c2ca0e502533c3f6d02f0f06f584f1"
     },
+    "kernelsu-next": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "kernelsu-next",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "v1.0.4",
+            "sha256": "sha256-AczEjmtgL32TmWP/4FdM3Wc5XD7+VP7iIuZ2lR1OdJI=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/rifsxd/KernelSU-Next.git"
+        },
+        "version": "v1.0.4"
+    },
+    "kernelsu-next-revision-code": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "kernelsu-next-revision-code",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-6o+sfGX7WJsNU1YPUlH3T56bJDR43Laz6nm142RJyNk=",
+            "type": "url",
+            "url": "https://example.com"
+        },
+        "version": "12335"
+    },
     "kernelsu-stable": {
         "cargoLocks": null,
         "date": null,

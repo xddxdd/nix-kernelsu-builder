@@ -22,6 +22,7 @@ _: {
         moto-rtwo-lineageos-21 = {
           anyKernelVariant = "kernelsu";
           clangVersion = "latest";
+          kernelSU.variant = "next";
           kernelDefconfigs = [
             "gki_defconfig"
             "vendor/kalama_GKI.config"
@@ -40,6 +41,7 @@ _: {
         moto-rtwo-lineageos-22_1 = {
           anyKernelVariant = "kernelsu";
           clangVersion = "latest";
+          kernelSU.variant = "next";
           kernelDefconfigs = [
             "gki_defconfig"
             "vendor/kalama_GKI.config"
@@ -58,6 +60,7 @@ _: {
         oneplus-8t-blu-spark = {
           anyKernelVariant = "osm0sis";
           clangVersion = "latest";
+          kernelSU.variant = "next";
           kernelDefconfigs = [ "blu_spark_defconfig" ];
           kernelImageName = "Image";
           kernelSrc = sources.linux-oneplus-8t-blu-spark.src;

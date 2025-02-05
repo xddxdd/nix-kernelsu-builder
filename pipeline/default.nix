@@ -5,22 +5,23 @@
   ...
 }:
 {
-  arch ? "arm64",
-  anyKernelVariant ? "osm0sis",
-  clangVersion ? null,
-  enableKernelSU ? true,
-  kernelConfig ? "",
+  arch,
+  anyKernelVariant,
+  clangVersion,
+  enableKernelSU,
+  kernelSU,
+  kernelConfig,
   kernelDefconfigs,
-  kernelImageName ? "Image",
-  kernelMakeFlags ? [ ],
-  kernelPatches ? [ ],
+  kernelImageName,
+  kernelMakeFlags,
+  kernelPatches,
   kernelSrc,
-  oemBootImg ? null,
+  oemBootImg,
 }:
 let
   pipeline = rec {
     patchedKernelSrc = callPackage ./patch-kernel-src.nix {
-      inherit enableKernelSU;
+      inherit enableKernelSU kernelSU;
       src = kernelSrc;
       patches = kernelPatches;
     };

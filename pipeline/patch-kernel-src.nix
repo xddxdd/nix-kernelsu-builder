@@ -1,7 +1,6 @@
 {
   stdenv,
   lib,
-  callPackage,
   writeShellScriptBin,
   coreutils,
   perl,
@@ -10,11 +9,10 @@
   src,
   patches,
   enableKernelSU,
+  kernelSU,
   ...
 }:
 let
-  sources = callPackage ../_sources/generated.nix { };
-
   fakeGit = writeShellScriptBin "git" ''
     exit 0
   '';
@@ -34,18 +32,18 @@ stdenv.mkDerivation {
     (lib.optionalString enableKernelSU ''
       export HOME=$(pwd)
 
-      cp -r ${sources.kernelsu-stable.src} KernelSU
-      chmod -R +w KernelSU
+      cp -r ${kernelSU.src} ${kernelSU.subdirectory}
+      chmod -R +w ${kernelSU.subdirectory}
       # Force set KernelSU version
-      sed -i "/KernelSU version:/d" KernelSU/kernel/Makefile
-      sed -i "/KSU_GIT_VERSION not defined/d" KernelSU/kernel/Makefile
-      sed -i "s|ccflags-y += -DKSU_VERSION=|ccflags-y += -DKSU_VERSION=\"${sources.kernelsu-stable-revision-code.version}\"\n#|g" KernelSU/kernel/Makefile
+      sed -i "/ version:/d" ${kernelSU.subdirectory}/kernel/Makefile
+      sed -i "/KSU_GIT_VERSION not defined/d" ${kernelSU.subdirectory}/kernel/Makefile
+      sed -i "s|ccflags-y += -DKSU_VERSION=|ccflags-y += -DKSU_VERSION=\"${kernelSU.revision}\"\n#|g" ${kernelSU.subdirectory}/kernel/Makefile
     '')
     + ''
       patchShebangs .
     ''
     + (lib.optionalString enableKernelSU ''
-      bash KernelSU/kernel/setup.sh
+      bash ${kernelSU.subdirectory}/kernel/setup.sh
     '')
     + ''
       sed -i "s|/bin/||g" Makefile
