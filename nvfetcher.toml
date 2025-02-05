@@ -58,3 +58,7 @@ fetch.github = "engstk/op8"
 src.git = "https://gitlab.com/simonpunk/susfs4ksu.git"
 src.branch = "gki-android13-5.15"
 fetch.git = "https://gitlab.com/simonpunk/susfs4ksu.git"
+
+[wildplus-kernel-patches]
+src.git = "https://github.com/WildPlusKernel/kernel_patches.git"
+fetch.github = "WildPlusKernel/kernel_patches"

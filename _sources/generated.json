@@ -256,5 +256,26 @@
             "url": "https://gitlab.com/simonpunk/susfs4ksu.git"
         },
         "version": "1edbb6f6d9452cb04d980d30b87ee7ebce76e3b0"
+    },
+    "wildplus-kernel-patches": {
+        "cargoLocks": null,
+        "date": "2025-02-03",
+        "extract": null,
+        "name": "wildplus-kernel-patches",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "WildPlusKernel",
+            "repo": "kernel_patches",
+            "rev": "706c2337f5cb1b2b594c5fb5946c2b625aa4d28b",
+            "sha256": "sha256-CgJtktSwLwK+Ma+XAzeaO1bariGe+hvrTP7RZIs9RCs=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "706c2337f5cb1b2b594c5fb5946c2b625aa4d28b"
     }
 }
