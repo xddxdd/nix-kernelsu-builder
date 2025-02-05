@@ -77,7 +77,7 @@
               };
               src = lib.mkOption {
                 type = lib.types.nullOr lib.types.package;
-                description = "Source of SusFS patches. Since SusFS has too many different branches, we do not provide default ones.";
+                description = "Source of SusFS patches. Since SusFS has too many different branches, we do not provide default variants.";
                 default = null;
               };
               kernelPatch = lib.mkOption {

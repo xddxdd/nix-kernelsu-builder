@@ -21,10 +21,22 @@ Each kernel definition takes these arguments:
   - `osm0sis`: [Official version](https://github.com/osm0sis/AnyKernel3). Works with devices before Android Generic Kernel Image (GKI).
   - `kernelsu`: [Modified by KernelSU team](https://github.com/Kernel-SU/AnyKernel3). Works with devices using GKI.
 - `clangVersion`: Version of clang used in kernel build.
+
   - Can be set to any version present in [nixpkgs](https://github.com/NixOS/nixpkgs). Currently the value can be 8 to 17.
   - If set to `latest`, will use the latest clang in nixpkgs. Recommended.
   - If set to `null`, uses Google's GCC 4.9 toolchain instead.
-- `enableKernelSU`: Whether to apply KernelSU patch.
+
+- `kernelSU.enable`: Whether to apply KernelSU patch.
+- `kernelSU.variant`: Variant of KernelSU to use. Can be [`official`](https://github.com/tiann/KernelSU), [`next`](https://github.com/rifsxd/KernelSU-Next) or `custom`.
+- `kernelSU.src`: If `kernelSU.variant` is `custom`, specify the source of KernelSU patches.
+- `kernelSU.revision`: If `kernelSU.variant` is `custom`, specify the revision number of KernelSU patches.
+- `kernelSU.subdirectory`: If `kernelSU.variant` is `custom`, specify the directory where KernelSU patches will be extracted to.
+
+- `susfs.enable`: Whether to apply [SusFS patch](https://gitlab.com/simonpunk/susfs4ksu).
+- `susfs.src`: Source of SusFS patches. Since SusFS has too many different branches, we do not provide default variants.
+- `susfs.kernelPatch`: Path to SusFS's kernel patch. If set, will override the patch used. Useful for overriding patch to adapt to different kernel versions.
+- `susfs.kernelsuPatch`: Path to SusFS's KernelSU patch. If set, will override the patch used. Used for overriding patch to adapt to different KernelSU versions.
+
 - `kernelConfig`: Additional kernel config to be applied during build.
 - `kernelDefconfigs`: List of kernel config files applied during build.
   - Older kernels usually have a single `_defconfig` file. Newer devices may have several.
@@ -59,16 +71,29 @@ If you want to build Android kernels in your own flake, you can import this repo
           kernelsu = {
             # Add your own kernel definition here
             example-kernel = {
-              anyKernelVariant = "osm0sis";
-              enableKernelSU = false;
-              kernelDefconfigs = [ "lineageos_karnak_defconfig" ];
-              kernelImageName = "Image.gz-dtb";
+              anyKernelVariant = "kernelsu";
+              clangVersion = "latest";
+
+              kernelSU.variant = "next";
+              susfs = {
+                enable = true;
+                src = path/to/sufs/source;
+                kernelsuPatch = ./patches/susfs-for-kernelsu-next.patch;
+              };
+
+              kernelDefconfigs = [
+                "gki_defconfig"
+                "vendor/kalama_GKI.config"
+                "vendor/ext_config/moto-kalama.config"
+                "vendor/ext_config/moto-kalama-gki.config"
+                "vendor/ext_config/moto-kalama-rtwo.config"
+              ];
+              kernelImageName = "Image";
               kernelMakeFlags = [
                 "KCFLAGS=\"-w\""
                 "KCPPFLAGS=\"-w\""
               ];
               kernelSrc = path/to/kernel/source;
-              oemBootImg = boot/amazon-fire-hd-karnak.img;
             };
           };
         };
