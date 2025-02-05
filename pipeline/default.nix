@@ -16,17 +16,23 @@
   kernelPatches,
   kernelSrc,
   oemBootImg,
+  susfs,
 }:
 let
   pipeline = rec {
     patchedKernelSrc = callPackage ./patch-kernel-src.nix {
-      inherit kernelSU;
+      inherit kernelSU susfs;
       src = kernelSrc;
       patches = kernelPatches;
     };
 
     kernelBuildClang = callPackage ./build-kernel-clang.nix {
-      inherit arch clangVersion kernelSU;
+      inherit
+        arch
+        clangVersion
+        kernelSU
+        susfs
+        ;
       src = patchedKernelSrc;
       defconfigs = kernelDefconfigs;
       makeFlags = kernelMakeFlags;
@@ -34,7 +40,7 @@ let
     };
 
     kernelBuildGcc = callPackage ./build-kernel-gcc.nix {
-      inherit arch kernelSU;
+      inherit arch kernelSU susfs;
       src = patchedKernelSrc;
       defconfigs = kernelDefconfigs;
       makeFlags = kernelMakeFlags;

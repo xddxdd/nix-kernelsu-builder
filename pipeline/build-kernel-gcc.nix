@@ -27,6 +27,7 @@
   arch,
   defconfigs,
   kernelSU,
+  susfs,
   makeFlags,
   additionalKernelConfig ? "",
   ...
@@ -50,6 +51,7 @@ let
       defconfigs
       additionalKernelConfig
       kernelSU
+      susfs
       finalMakeFlags
       ;
   };

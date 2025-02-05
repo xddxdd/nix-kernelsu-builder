@@ -69,6 +69,29 @@
               };
             };
 
+            susfs = {
+              enable = lib.mkOption {
+                type = lib.types.bool;
+                description = "Whether to apply SusFS patch";
+                default = false;
+              };
+              src = lib.mkOption {
+                type = lib.types.nullOr lib.types.package;
+                description = "Source of SusFS patches. Since SusFS has too many different branches, we do not provide default ones.";
+                default = null;
+              };
+              kernelPatch = lib.mkOption {
+                type = lib.types.either lib.types.str lib.types.path;
+                description = "Path to SusFS's kernel patch. Used for overriding patch to adapt to different kernel versions.";
+                default = "${config.susfs.src}/kernel_patches/50_add_susfs*.patch";
+              };
+              kernelsuPatch = lib.mkOption {
+                type = lib.types.either lib.types.str lib.types.path;
+                description = "Path to SusFS's KernelSU patch. Used for overriding patch to adapt to different KernelSU versions.";
+                default = "${config.susfs.src}/kernel_patches/KernelSU/10_enable_susfs_for_ksu.patch";
+              };
+            };
+
             kernelConfig = lib.mkOption {
               type = lib.types.lines;
               description = "Additional kernel config to be applied during build";

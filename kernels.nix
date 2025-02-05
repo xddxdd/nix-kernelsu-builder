@@ -22,7 +22,14 @@ _: {
         moto-rtwo-lineageos-21 = {
           anyKernelVariant = "kernelsu";
           clangVersion = "latest";
+
           kernelSU.variant = "next";
+          susfs = {
+            enable = true;
+            inherit (sources.susfs-android13-5_15) src;
+            kernelsuPatch = ./patches/susfs-for-kernelsu-next.patch;
+          };
+
           kernelDefconfigs = [
             "gki_defconfig"
             "vendor/kalama_GKI.config"
@@ -41,7 +48,14 @@ _: {
         moto-rtwo-lineageos-22_1 = {
           anyKernelVariant = "kernelsu";
           clangVersion = "latest";
+
           kernelSU.variant = "next";
+          susfs = {
+            enable = true;
+            inherit (sources.susfs-android13-5_15) src;
+            kernelsuPatch = ./patches/susfs-for-kernelsu-next.patch;
+          };
+
           kernelDefconfigs = [
             "gki_defconfig"
             "vendor/kalama_GKI.config"
