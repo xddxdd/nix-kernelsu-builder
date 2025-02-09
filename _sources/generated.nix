@@ -25,6 +25,30 @@
     };
     date = "2024-12-17";
   };
+  gcc-aarch64-linux-android = {
+    pname = "gcc-aarch64-linux-android";
+    version = "5797d7f622321e734558bd3372a9ab5ad6e6a48e";
+    src = fetchFromGitHub {
+      owner = "kindle4jerry";
+      repo = "aarch64-linux-android-4.9-bakup";
+      rev = "5797d7f622321e734558bd3372a9ab5ad6e6a48e";
+      fetchSubmodules = false;
+      sha256 = "sha256-ZrQmFyiDOKg+qcgdpZqtz+LgDDaao2W27kdZZ2As8XU=";
+    };
+    date = "2020-02-22";
+  };
+  gcc-arm-linux-androideabi = {
+    pname = "gcc-arm-linux-androideabi";
+    version = "3ecb542702c2ca0e502533c3f6d02f0f06f584f1";
+    src = fetchFromGitHub {
+      owner = "KudProject";
+      repo = "arm-linux-androideabi-4.9";
+      rev = "3ecb542702c2ca0e502533c3f6d02f0f06f584f1";
+      fetchSubmodules = false;
+      sha256 = "sha256-5aF2Pl+h6J8/5TfQf2ojp3FCnoKakWH6KBCkWdy5ho8=";
+    };
+    date = "2019-11-25";
+  };
   kernelsu-next = {
     pname = "kernelsu-next";
     version = "v1.0.4";

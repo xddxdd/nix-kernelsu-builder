@@ -41,6 +41,48 @@
         },
         "version": "db90e19aae369c9c10b956a08003cee3958d50a0"
     },
+    "gcc-aarch64-linux-android": {
+        "cargoLocks": null,
+        "date": "2020-02-22",
+        "extract": null,
+        "name": "gcc-aarch64-linux-android",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "kindle4jerry",
+            "repo": "aarch64-linux-android-4.9-bakup",
+            "rev": "5797d7f622321e734558bd3372a9ab5ad6e6a48e",
+            "sha256": "sha256-ZrQmFyiDOKg+qcgdpZqtz+LgDDaao2W27kdZZ2As8XU=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "5797d7f622321e734558bd3372a9ab5ad6e6a48e"
+    },
+    "gcc-arm-linux-androideabi": {
+        "cargoLocks": null,
+        "date": "2019-11-25",
+        "extract": null,
+        "name": "gcc-arm-linux-androideabi",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "KudProject",
+            "repo": "arm-linux-androideabi-4.9",
+            "rev": "3ecb542702c2ca0e502533c3f6d02f0f06f584f1",
+            "sha256": "sha256-5aF2Pl+h6J8/5TfQf2ojp3FCnoKakWH6KBCkWdy5ho8=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "3ecb542702c2ca0e502533c3f6d02f0f06f584f1"
+    },
     "kernelsu-next": {
         "cargoLocks": null,
         "date": null,
