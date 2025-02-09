@@ -1,18 +1,18 @@
 {
   stdenv,
   lib,
-  fetchurl,
+  fetchzip,
   autoPatchelfHook,
   python3,
 }:
 stdenv.mkDerivation rec {
   pname = "gcc-arm-linux-androideabi";
   version = "12.1.0_r27";
-  src = fetchurl {
+  src = fetchzip {
     url = "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+archive/refs/tags/android-${version}.tar.gz";
-    sha256 = "sha256-jOjJ10kLpdB1i3zJ5JWoQnjq4oWsR1rpayusmzfQTc0=";
+    sha256 = "sha256-UFwNVvke6qcwPyOAx+z0XAEgzVQRwv3+XF5v4qisp6o=";
+    stripRoot = false;
   };
-  sourceRoot = ".";
 
   nativeBuildInputs = [ autoPatchelfHook ];
   buildInputs = [ python3 ];
