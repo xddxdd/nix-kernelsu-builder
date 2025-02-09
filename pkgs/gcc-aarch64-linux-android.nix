@@ -1,18 +1,18 @@
 {
   stdenv,
   lib,
-  fetchzip,
+  fetchurl,
   autoPatchelfHook,
   python3,
 }:
 stdenv.mkDerivation rec {
   pname = "gcc-aarch64-linux-andriod";
   version = "12.1.0_r27";
-  src = fetchzip {
+  src = fetchurl {
     url = "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/refs/tags/android-${version}.tar.gz";
-    sha256 = "sha256-4SRSCwbRIFEff+Aj9XRnjCNruuUxgV3SB1mnyLeH4yk=";
-    stripRoot = false;
+    sha256 = "sha256-UN2Z1RCQNNUZALr0KN3uKlfbdp3vWPtpxeJPUxhkO44=";
   };
+  sourceRoot = ".";
 
   nativeBuildInputs = [ autoPatchelfHook ];
   buildInputs = [ python3 ];
