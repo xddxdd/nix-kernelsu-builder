@@ -36,7 +36,7 @@ let
       src = patchedKernelSrc;
       defconfigs = kernelDefconfigs;
       makeFlags = kernelMakeFlags;
-      extraKernelConfigs = kernelConfig;
+      additionalKernelConfig = kernelConfig;
     };
 
     kernelBuildGcc = callPackage ./build-kernel-gcc.nix {
@@ -44,7 +44,7 @@ let
       src = patchedKernelSrc;
       defconfigs = kernelDefconfigs;
       makeFlags = kernelMakeFlags;
-      extraKernelConfigs = kernelConfig;
+      additionalKernelConfig = kernelConfig;
     };
 
     kernelBuild = if clangVersion == null then kernelBuildGcc else kernelBuildClang;
