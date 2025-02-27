@@ -27,7 +27,7 @@ _: {
           susfs = {
             enable = true;
             inherit (sources.susfs-android13-5_15) src;
-            kernelsuPatch = "${sources.wildplus-kernel-patches.src}/KernelSU-Next-Implement-SUSFS-v1.5.5-Universal.patch";
+            kernelsuPatch = "${sources.wildplus-kernel-patches.src}/0001-kernel-patch-susfs-v1.5.5-to-KernelSU-Next-v1.0.5.patch";
           };
 
           kernelDefconfigs = [
@@ -56,7 +56,7 @@ _: {
           susfs = {
             enable = true;
             inherit (sources.susfs-android13-5_15) src;
-            kernelsuPatch = "${sources.wildplus-kernel-patches.src}/KernelSU-Next-Implement-SUSFS-v1.5.5-Universal.patch";
+            kernelsuPatch = "${sources.wildplus-kernel-patches.src}/0001-kernel-patch-susfs-v1.5.5-to-KernelSU-Next-v1.0.5.patch";
           };
 
           kernelDefconfigs = [
