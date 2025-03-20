@@ -84,10 +84,6 @@ _: {
           kernelDefconfigs = [ "blu_spark_defconfig" ];
           kernelImageName = "Image";
           kernelSrc = sources.linux-oneplus-8t-blu-spark.src;
-          kernelConfig = ''
-            CONFIG_STACKPROTECTOR=n
-            CONFIG_LTO_CLANG=y
-          '';
         };
       };
     };
