@@ -117,15 +117,15 @@
   };
   linux-moto-rtwo-lineageos-22_1 = {
     pname = "linux-moto-rtwo-lineageos-22_1";
-    version = "f31482b33068951d3a29bade94c0eecebeb558b3";
+    version = "e12cc3a36c10596aced0e84a0e08072161c45f63";
     src = fetchFromGitHub {
       owner = "LineageOS";
       repo = "android_kernel_motorola_sm8550";
-      rev = "f31482b33068951d3a29bade94c0eecebeb558b3";
+      rev = "e12cc3a36c10596aced0e84a0e08072161c45f63";
       fetchSubmodules = false;
-      sha256 = "sha256-HayzpNIWja4rnpE7xhDKF6cgZAqK6osZvbUTVarPMDk=";
+      sha256 = "sha256-KZSIus0Ws7FM4O9zyxmdPvGcYsXv/rubwnOuwgo7yHw=";
     };
-    date = "2025-03-02";
+    date = "2025-03-28";
   };
   linux-oneplus-8t-blu-spark = {
     pname = "linux-oneplus-8t-blu-spark";
