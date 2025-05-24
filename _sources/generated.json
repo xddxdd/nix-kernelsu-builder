@@ -95,13 +95,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "v1.0.6",
-            "sha256": "sha256-sZ4Cwy2/kyQasoX8gGRqO5BUJMCvt9gYEaV8qMD1h1k=",
+            "rev": "v1.0.7",
+            "sha256": "sha256-ijzyKvn5R9wROAR0x3S4uW1/xU+GSdjNDIOgVZ9Euvo=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/rifsxd/KernelSU-Next.git"
         },
-        "version": "v1.0.6"
+        "version": "v1.0.7"
     },
     "kernelsu-next-revision-code": {
         "cargoLocks": null,
@@ -116,7 +116,7 @@
             "type": "url",
             "url": "https://example.com"
         },
-        "version": "12490"
+        "version": "12602"
     },
     "kernelsu-stable": {
         "cargoLocks": null,
@@ -259,7 +259,7 @@
     },
     "wildplus-kernel-patches": {
         "cargoLocks": null,
-        "date": "2025-05-21",
+        "date": "2025-05-22",
         "extract": null,
         "name": "wildplus-kernel-patches",
         "passthru": null,
@@ -271,11 +271,11 @@
             "name": null,
             "owner": "WildPlusKernel",
             "repo": "kernel_patches",
-            "rev": "399e3c83bb253317834978326914a95bf0903a39",
-            "sha256": "sha256-kem868R11b6TWLL4TR7qW6xb4iDunLvrZBSk82eFn4k=",
+            "rev": "fa9eba1c3cd7285cc182935269cb794c3577c5b0",
+            "sha256": "sha256-iO0sqo8oS7B6XQQGSwIz9qssfKCG9ZRxbOd5Qf4MYEY=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "399e3c83bb253317834978326914a95bf0903a39"
+        "version": "fa9eba1c3cd7285cc182935269cb794c3577c5b0"
     }
 }
