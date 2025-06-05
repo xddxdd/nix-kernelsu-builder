@@ -27,15 +27,21 @@ Each kernel definition takes these arguments:
   - If set to `null`, uses Google's GCC 4.9 toolchain instead.
 
 - `kernelSU.enable`: Whether to apply KernelSU patch.
-- `kernelSU.variant`: Variant of KernelSU to use. Can be [`official`](https://github.com/tiann/KernelSU), [`next`](https://github.com/rifsxd/KernelSU-Next) or `custom`.
+- `kernelSU.variant`: Variant of KernelSU to use. Can be:
+  - [`official`](https://github.com/tiann/KernelSU)
+  - [`next`](https://github.com/rifsxd/KernelSU-Next)
+  - [`sukisu`](https://github.com/SukiSU-Ultra/SukiSU-Ultra)
+  - [`sukisu-nongki`](https://github.com/SukiSU-Ultra/SukiSU-Ultra)
+  - [`sukisu-susfs`](https://github.com/SukiSU-Ultra/SukiSU-Ultra)
+  - `custom`
 - `kernelSU.src`: If `kernelSU.variant` is `custom`, specify the source of KernelSU patches.
 - `kernelSU.revision`: If `kernelSU.variant` is `custom`, specify the revision number of KernelSU patches.
 - `kernelSU.subdirectory`: If `kernelSU.variant` is `custom`, specify the directory where KernelSU patches will be extracted to.
 
 - `susfs.enable`: Whether to apply [SusFS patch](https://gitlab.com/simonpunk/susfs4ksu).
 - `susfs.src`: Source of SusFS patches. Since SusFS has too many different branches, we do not provide default variants.
-- `susfs.kernelPatch`: Path to SusFS's kernel patch. If set, will override the patch used. Useful for overriding patch to adapt to different kernel versions.
-- `susfs.kernelsuPatch`: Path to SusFS's KernelSU patch. If set, will override the patch used. Used for overriding patch to adapt to different KernelSU versions.
+- `susfs.kernelPatch`: Path to SusFS's kernel patch. If set, will override the patch used. Useful for overriding patch to adapt to different kernel versions. If set to null, will disable patching kernel.
+- `susfs.kernelsuPatch`: Path to SusFS's KernelSU patch. If set, will override the patch used. Used for overriding patch to adapt to different KernelSU versions. If set to null, will disable patching KernelSU.
 
 - `kernelConfig`: Additional kernel config to be applied during build.
 - `kernelDefconfigs`: List of kernel config files applied during build.

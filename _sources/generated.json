@@ -237,6 +237,84 @@
         },
         "version": "64c109e3f3ba97fa7aed730ab7b4238b91df028b"
     },
+    "sukisu": {
+        "cargoLocks": null,
+        "date": "2025-06-03",
+        "extract": null,
+        "name": "sukisu",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "SukiSU-Ultra",
+            "repo": "SukiSU-Ultra",
+            "rev": "707c769c3eb538ca5693eb53e55f4fbd69e1c025",
+            "sha256": "sha256-2BRjVQjKeY6tDj5PaWtHnjloNGZVx/rnkq5Dm+4FLOA=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "707c769c3eb538ca5693eb53e55f4fbd69e1c025"
+    },
+    "sukisu-nongki": {
+        "cargoLocks": null,
+        "date": "2025-06-04",
+        "extract": null,
+        "name": "sukisu-nongki",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "SukiSU-Ultra",
+            "repo": "SukiSU-Ultra",
+            "rev": "d52fc57fc45537bec6f090633de91104a6d8997d",
+            "sha256": "sha256-1J5uHd7TegSDfzYTiB3A1/q/PXb9p7cUQtHXsAsMNOo=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "d52fc57fc45537bec6f090633de91104a6d8997d"
+    },
+    "sukisu-revision-code": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "sukisu-revision-code",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-6o+sfGX7WJsNU1YPUlH3T56bJDR43Laz6nm142RJyNk=",
+            "type": "url",
+            "url": "https://example.com"
+        },
+        "version": "13000"
+    },
+    "sukisu-susfs": {
+        "cargoLocks": null,
+        "date": "2025-06-01",
+        "extract": null,
+        "name": "sukisu-susfs",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "SukiSU-Ultra",
+            "repo": "SukiSU-Ultra",
+            "rev": "56bfe55c3d765039eb2d03d129797e732dca8831",
+            "sha256": "sha256-yY2HZm/G3BGXttzmDfLUaXTVfaLddoKgYeNocwZgGKY=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "56bfe55c3d765039eb2d03d129797e732dca8831"
+    },
     "susfs-android13-5_15": {
         "cargoLocks": null,
         "date": "2025-04-24",

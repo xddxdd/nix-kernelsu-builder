@@ -23,11 +23,10 @@ _: {
           anyKernelVariant = "kernelsu";
           clangVersion = "latest";
 
-          kernelSU.variant = "next";
+          kernelSU.variant = "sukisu-susfs";
           susfs = {
             enable = true;
             inherit (sources.susfs-android13-5_15) src;
-            kernelsuPatch = "${sources.wildplus-kernel-patches.src}/next/*susfs*KernelSU-Next*.patch";
           };
 
           kernelDefconfigs = [
@@ -52,11 +51,10 @@ _: {
           anyKernelVariant = "kernelsu";
           clangVersion = "latest";
 
-          kernelSU.variant = "next";
+          kernelSU.variant = "sukisu-susfs";
           susfs = {
             enable = true;
             inherit (sources.susfs-android13-5_15) src;
-            kernelsuPatch = "${sources.wildplus-kernel-patches.src}/next/*susfs*KernelSU-Next*.patch";
           };
 
           kernelDefconfigs = [
@@ -80,7 +78,7 @@ _: {
         oneplus-8t-blu-spark = {
           anyKernelVariant = "osm0sis";
           clangVersion = "latest";
-          kernelSU.variant = "next";
+          kernelSU.variant = "sukisu";
           kernelDefconfigs = [ "blu_spark_defconfig" ];
           kernelImageName = "Image";
           kernelSrc = sources.linux-oneplus-8t-blu-spark.src;

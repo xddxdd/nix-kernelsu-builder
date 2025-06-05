@@ -54,6 +54,26 @@ src.git = "https://github.com/engstk/op8.git"
 src.branch = "blu_spark-14-custom"
 fetch.github = "engstk/op8"
 
+[sukisu]
+src.git = "https://github.com/SukiSU-Ultra/SukiSU-Ultra.git"
+src.branch = "main"
+fetch.github = "SukiSU-Ultra/SukiSU-Ultra"
+
+[sukisu-nongki]
+src.git = "https://github.com/SukiSU-Ultra/SukiSU-Ultra.git"
+src.branch = "nongki"
+fetch.github = "SukiSU-Ultra/SukiSU-Ultra"
+
+[sukisu-revision-code]
+src.webpage = "https://api.github.com/repos/SukiSU-Ultra/SukiSU-Ultra/releases?per_page=1"
+src.regex = "download\\/v[0-9\\._]+\\/SukiSU[^\"]*_([0-9]+)-release\\.apk"
+fetch.url = "https://example.com"
+
+[sukisu-susfs]
+src.git = "https://github.com/SukiSU-Ultra/SukiSU-Ultra.git"
+src.branch = "susfs-stable"
+fetch.github = "SukiSU-Ultra/SukiSU-Ultra"
+
 [susfs-android13-5_15]
 src.git = "https://gitlab.com/simonpunk/susfs4ksu.git"
 src.branch = "gki-android13-5.15"

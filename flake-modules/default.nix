@@ -47,6 +47,9 @@
                 type = lib.types.enum [
                   "official"
                   "next"
+                  "sukisu"
+                  "sukisu-nongki"
+                  "sukisu-susfs"
                   "custom"
                 ];
                 description = "Architecture of the kernel";
@@ -81,13 +84,13 @@
                 default = null;
               };
               kernelPatch = lib.mkOption {
-                type = lib.types.either lib.types.str lib.types.path;
-                description = "Path to SusFS's kernel patch. Used for overriding patch to adapt to different kernel versions.";
+                type = lib.types.nullOr (lib.types.either lib.types.str lib.types.path);
+                description = "Path to SusFS's kernel patch. Used for overriding patch to adapt to different kernel versions. If set to null, will disable patching kernel.";
                 default = "${config.susfs.src}/kernel_patches/50_add_susfs*.patch";
               };
               kernelsuPatch = lib.mkOption {
-                type = lib.types.either lib.types.str lib.types.path;
-                description = "Path to SusFS's KernelSU patch. Used for overriding patch to adapt to different KernelSU versions.";
+                type = lib.types.nullOr (lib.types.either lib.types.str lib.types.path);
+                description = "Path to SusFS's KernelSU patch. Used for overriding patch to adapt to different KernelSU versions. If set to null, will disable patching KernelSU.";
                 default = "${config.susfs.src}/kernel_patches/KernelSU/10_enable_susfs_for_ksu.patch";
               };
             };
@@ -136,6 +139,24 @@
               kernelSU.src = sources.kernelsu-next.src;
               kernelSU.revision = sources.kernelsu-next-revision-code.version;
               kernelSU.subdirectory = "KernelSU-Next";
+            })
+            (lib.mkIf (config.kernelSU.variant == "sukisu") {
+              kernelSU.src = sources.sukisu.src;
+              kernelSU.revision = sources.sukisu-revision-code.version;
+              kernelSU.subdirectory = "KernelSU";
+            })
+            (lib.mkIf (config.kernelSU.variant == "sukisu-nongki") {
+              kernelSU.src = sources.sukisu-nongki.src;
+              kernelSU.revision = sources.sukisu-revision-code.version;
+              kernelSU.subdirectory = "KernelSU";
+            })
+            (lib.mkIf (config.kernelSU.variant == "sukisu-susfs") {
+              kernelSU.src = sources.sukisu-susfs.src;
+              kernelSU.revision = sources.sukisu-revision-code.version;
+              kernelSU.subdirectory = "KernelSU";
+              # SukiSU already has SusFS patch
+              susfs.enable = true;
+              susfs.kernelsuPatch = null;
             })
           ];
         };
