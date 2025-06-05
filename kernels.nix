@@ -109,7 +109,6 @@ _: {
             CONFIG_CRYPTO_LZ4HC=y
             CONFIG_CRYPTO_LZ4K=y
             CONFIG_CRYPTO_LZ4KD=y
-            CONFIG_KPM=y
             CONFIG_KSU_MANUAL_HOOK=y
             CONFIG_KSU_SUSFS_SUS_SU=n
           '';
