@@ -128,6 +128,17 @@
               description = "Optional, a working boot image for your device, either from official OS or a third party OS (like LineageOS). If this is provided, a `boot.img` will be generated, which can be directly flashed onto your device.";
               default = null;
             };
+
+            prePatch = lib.mkOption {
+              type = lib.types.lines;
+              default = "";
+              description = "Command to run before patching kernel source code";
+            };
+            postPatch = lib.mkOption {
+              type = lib.types.lines;
+              default = "";
+              description = "Command to run after patching kernel source code";
+            };
           };
           config = lib.mkMerge [
             (lib.mkIf (config.kernelSU.variant == "official") {
