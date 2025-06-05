@@ -127,6 +127,18 @@
     };
     date = "2025-03-28";
   };
+  linux-oneplus-13 = {
+    pname = "linux-oneplus-13";
+    version = "f9c1a38fe1bf6bf39f25e4167e8322813c7707b9";
+    src = fetchFromGitHub {
+      owner = "OnePlusOSS";
+      repo = "android_kernel_common_oneplus_sm8750";
+      rev = "f9c1a38fe1bf6bf39f25e4167e8322813c7707b9";
+      fetchSubmodules = false;
+      sha256 = "sha256-AuuEp9d8LCIjfeIPMFd0sIjet+koH1ffjZr45X4gyVY=";
+    };
+    date = "2025-04-21";
+  };
   linux-oneplus-8t-blu-spark = {
     pname = "linux-oneplus-8t-blu-spark";
     version = "64c109e3f3ba97fa7aed730ab7b4238b91df028b";
@@ -138,6 +150,18 @@
       sha256 = "sha256-KWLtY7KWhHmk6LVYpvIz6XT93+yjteex/250crk9Lxw=";
     };
     date = "2024-12-26";
+  };
+  oneplus-13-sched-ext = {
+    pname = "oneplus-13-sched-ext";
+    version = "bf61075660999088302b951049a89f4811807cb5";
+    src = fetchFromGitHub {
+      owner = "HanKuCha";
+      repo = "sched_ext";
+      rev = "bf61075660999088302b951049a89f4811807cb5";
+      fetchSubmodules = false;
+      sha256 = "sha256-6WgYB2a9xgDehT7BEuKPzFQdAaZxlndCEHGvZcIdtA8=";
+    };
+    date = "2025-05-11";
   };
   sukisu = {
     pname = "sukisu";
@@ -162,6 +186,18 @@
       sha256 = "sha256-1J5uHd7TegSDfzYTiB3A1/q/PXb9p7cUQtHXsAsMNOo=";
     };
     date = "2025-06-04";
+  };
+  sukisu-patch = {
+    pname = "sukisu-patch";
+    version = "bbbe8b07cf672f683009124f74c86cb224cc6b36";
+    src = fetchFromGitHub {
+      owner = "SukiSU-Ultra";
+      repo = "SukiSU_patch";
+      rev = "bbbe8b07cf672f683009124f74c86cb224cc6b36";
+      fetchSubmodules = false;
+      sha256 = "sha256-qwHUHtGjZ894CjyPAWpWB72PGvlEqyjdYXGmFc9vxI0=";
+    };
+    date = "2025-05-17";
   };
   sukisu-revision-code = {
     pname = "sukisu-revision-code";
@@ -194,6 +230,20 @@
       leaveDotGit = false;
       sparseCheckout = [ ];
       sha256 = "sha256-wTsyiHsLax4rNk9zJCndJbEXLhYGUpgjxbOHeSVfuwE=";
+    };
+    date = "2025-04-24";
+  };
+  susfs-android15-6_6 = {
+    pname = "susfs-android15-6_6";
+    version = "09fec8aa1f39807788c526dd84429f6d92b805ae";
+    src = fetchgit {
+      url = "https://gitlab.com/simonpunk/susfs4ksu.git";
+      rev = "09fec8aa1f39807788c526dd84429f6d92b805ae";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sparseCheckout = [ ];
+      sha256 = "sha256-syFNVFCILwrXjLx12k78AncDaTPcn2BB7gCw6ccQp7s=";
     };
     date = "2025-04-24";
   };
