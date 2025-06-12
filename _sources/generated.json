@@ -281,7 +281,7 @@
     },
     "sukisu": {
         "cargoLocks": null,
-        "date": "2025-06-11",
+        "date": "2025-06-12",
         "extract": null,
         "name": "sukisu",
         "passthru": null,
@@ -293,16 +293,16 @@
             "name": null,
             "owner": "SukiSU-Ultra",
             "repo": "SukiSU-Ultra",
-            "rev": "d9a664cdddc2913ff9dd9346c0dd34a8c9931a4e",
-            "sha256": "sha256-42022bqZt2oP6R772rstFANerjRSWdjvtqpMrVT8bLQ=",
+            "rev": "ac435950d45a1ed9be80f7e828dec8a8be694c15",
+            "sha256": "sha256-6KaqXxBhemO7HMOLTzB4qPxu8f7T+68xIYDMyPEc7l0=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "d9a664cdddc2913ff9dd9346c0dd34a8c9931a4e"
+        "version": "ac435950d45a1ed9be80f7e828dec8a8be694c15"
     },
     "sukisu-nongki": {
         "cargoLocks": null,
-        "date": "2025-06-11",
+        "date": "2025-06-12",
         "extract": null,
         "name": "sukisu-nongki",
         "passthru": null,
@@ -314,12 +314,12 @@
             "name": null,
             "owner": "SukiSU-Ultra",
             "repo": "SukiSU-Ultra",
-            "rev": "dd8fed48c427eae7a8e3ae89169985b2bed09e53",
-            "sha256": "sha256-fcDA/zi2dYu8gJyWEPt6OgFDBDdKFa1k2rC+OOtiiCs=",
+            "rev": "8331ed2d745487329c829d5be0e75fd31a69e119",
+            "sha256": "sha256-poteZKbGP1wUClpSWrb7/DVlKPsRkJ4Jiz4UIStNKbU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "dd8fed48c427eae7a8e3ae89169985b2bed09e53"
+        "version": "8331ed2d745487329c829d5be0e75fd31a69e119"
     },
     "sukisu-patch": {
         "cargoLocks": null,
@@ -420,7 +420,7 @@
     },
     "wildplus-kernel-patches": {
         "cargoLocks": null,
-        "date": "2025-06-10",
+        "date": "2025-06-12",
         "extract": null,
         "name": "wildplus-kernel-patches",
         "passthru": null,
@@ -432,11 +432,11 @@
             "name": null,
             "owner": "WildPlusKernel",
             "repo": "kernel_patches",
-            "rev": "b345659e9a21a60265c520864207bfb95e88fa56",
-            "sha256": "sha256-PT93ijpcXP3MskhJ0hApJiSbvuChB3FBMZ+jFIv6oao=",
+            "rev": "adea365529643ace65a743751545ce2ce3bfbec9",
+            "sha256": "sha256-3ZOuKm1FCUkB78FStzECO+ZNZTTF6VhvSEfbnG7R1xM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "b345659e9a21a60265c520864207bfb95e88fa56"
+        "version": "adea365529643ace65a743751545ce2ce3bfbec9"
     }
 }
