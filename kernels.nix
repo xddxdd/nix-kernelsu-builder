@@ -81,6 +81,10 @@ _: {
           kernelSU.variant = "sukisu";
           kernelDefconfigs = [ "blu_spark_defconfig" ];
           kernelImageName = "Image";
+          kernelMakeFlags = [
+            "KCFLAGS=\"-w\""
+            "KCPPFLAGS=\"-w\""
+          ];
           kernelSrc = sources.linux-oneplus-8t-blu-spark.src;
         };
 
