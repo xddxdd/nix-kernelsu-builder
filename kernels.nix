@@ -75,6 +75,7 @@ _: {
           kernelSrc = sources.linux-moto-rtwo-lineageos-22_1.src;
         };
 
+        # BROKEN FOR NOW
         oneplus-8t-blu-spark = {
           anyKernelVariant = "osm0sis";
           clangVersion = "latest";
