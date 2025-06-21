@@ -84,7 +84,7 @@ fetch.url = "https://example.com"
 
 [sukisu-susfs]
 src.git = "https://github.com/SukiSU-Ultra/SukiSU-Ultra.git"
-src.branch = "susfs-stable"
+src.branch = "susfs-main"
 fetch.github = "SukiSU-Ultra/SukiSU-Ultra"
 
 [susfs-android13-5_15]
