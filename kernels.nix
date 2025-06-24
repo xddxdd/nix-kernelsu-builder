@@ -109,13 +109,21 @@ _: {
               '';
             };
           };
+          # https://github.com/HanKuCha/oneplus13_a5p_sukisu/blob/main/.github/workflows/oneplus_13.yml
           kernelConfig = ''
             CONFIG_CRYPTO_842=y
             CONFIG_CRYPTO_LZ4HC=y
             CONFIG_CRYPTO_LZ4K=y
             CONFIG_CRYPTO_LZ4KD=y
-            CONFIG_KSU_MANUAL_HOOK=y
-            CONFIG_KSU_SUSFS_SUS_SU=n
+
+            CONFIG_TCP_CONG_ADVANCED=y
+            CONFIG_TCP_CONG_BBR=y
+            CONFIG_NET_SCH_FQ=y
+            CONFIG_TCP_CONG_BIC=n
+            CONFIG_TCP_CONG_CUBIC=n
+            CONFIG_TCP_CONG_WESTWOOD=n
+            CONFIG_TCP_CONG_HTCP=n
+            CONFIG_DEFAULT_TCP_CONG=bbr
           '';
           kernelDefconfigs = [ "gki_defconfig" ];
           kernelImageName = "Image";
@@ -125,7 +133,6 @@ _: {
           ];
           kernelPatches = [
             "${sources.sukisu-patch.src}/69_hide_stuff.patch"
-            "${sources.sukisu-patch.src}/hooks/syscall_hooks.patch"
           ];
           kernelSrc = sources.linux-oneplus-13.src;
 
