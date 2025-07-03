@@ -281,7 +281,7 @@
     },
     "sukisu": {
         "cargoLocks": null,
-        "date": "2025-07-02",
+        "date": "2025-07-03",
         "extract": null,
         "name": "sukisu",
         "passthru": null,
@@ -293,16 +293,16 @@
             "name": null,
             "owner": "SukiSU-Ultra",
             "repo": "SukiSU-Ultra",
-            "rev": "acb7cfff1b2124a1c989ce810e750b7b3fcfc47f",
-            "sha256": "sha256-rfn0kMhfYoYZFEBlI271yp0Q73Fsywikg008GChslG4=",
+            "rev": "79c8f7a709f129a05fad66603c17f76c3e750a7f",
+            "sha256": "sha256-npv/Iv8wG84Mf0UYu6nnYBXMsWGUiAjJm0N8bsaQ4Vc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "acb7cfff1b2124a1c989ce810e750b7b3fcfc47f"
+        "version": "79c8f7a709f129a05fad66603c17f76c3e750a7f"
     },
     "sukisu-nongki": {
         "cargoLocks": null,
-        "date": "2025-06-30",
+        "date": "2025-07-03",
         "extract": null,
         "name": "sukisu-nongki",
         "passthru": null,
@@ -314,12 +314,12 @@
             "name": null,
             "owner": "SukiSU-Ultra",
             "repo": "SukiSU-Ultra",
-            "rev": "6bbb47bad41349043d5ede0a6d26a292ae7c06d7",
-            "sha256": "sha256-3Z/TBmSPTlHiHIFMOxP5WhgclHO/7yNBXUzI2AZES/U=",
+            "rev": "6af65779d13674ac0c440bf2c2ee3a1003b33cf0",
+            "sha256": "sha256-kNRiEiUvjN3mPLchXMMdRaK+Me9jv184fHpCXJizJso=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "6bbb47bad41349043d5ede0a6d26a292ae7c06d7"
+        "version": "6af65779d13674ac0c440bf2c2ee3a1003b33cf0"
     },
     "sukisu-patch": {
         "cargoLocks": null,
@@ -359,7 +359,7 @@
     },
     "sukisu-susfs": {
         "cargoLocks": null,
-        "date": "2025-07-01",
+        "date": "2025-07-03",
         "extract": null,
         "name": "sukisu-susfs",
         "passthru": null,
@@ -371,12 +371,12 @@
             "name": null,
             "owner": "SukiSU-Ultra",
             "repo": "SukiSU-Ultra",
-            "rev": "5a4a8da820276867d4fd603b3d9e30fe8a547e73",
-            "sha256": "sha256-AZF5Y5Pyo70WX9hCbXm8dnTPc9Pnj4hplk+gMQqvTJ0=",
+            "rev": "cc2f28f1c102c525258c3226c764f32bac1b0989",
+            "sha256": "sha256-xS1RyZzJwIcLWORmc9fgstSeL3yHeMI/pzk6yia3KYg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "5a4a8da820276867d4fd603b3d9e30fe8a547e73"
+        "version": "cc2f28f1c102c525258c3226c764f32bac1b0989"
     },
     "susfs-android13-5_15": {
         "cargoLocks": null,
@@ -390,13 +390,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "f7a8e3503d1d3bb731c220500e89234b69e819f4",
-            "sha256": "sha256-8E1HyBaa3EZiQ2KZDK9seMFAnUNG3Lzz5zYLWg4e6/0=",
+            "rev": "3a666db9ab3977f426517367e8e6a51486661359",
+            "sha256": "sha256-/5BBWHA/cYHcpL+f8dB9la7u0qDHy8EphSj7SjHNz/M=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://gitlab.com/simonpunk/susfs4ksu.git"
         },
-        "version": "f7a8e3503d1d3bb731c220500e89234b69e819f4"
+        "version": "3a666db9ab3977f426517367e8e6a51486661359"
     },
     "susfs-android15-6_6": {
         "cargoLocks": null,
@@ -410,13 +410,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "fd00802aa253db5b72aff375b655d2c614b5e4fd",
-            "sha256": "sha256-qIrD/lk7nQPQHaCW6p4ahwuGbcmJbEPt2NJ2ptTq+eo=",
+            "rev": "ad5692617afb590dbac0c4b871b2e12bc4908f25",
+            "sha256": "sha256-c2fbHR2mt8pqeJU1P7QJ6j0k8xcGIgH55hRek+5/Hvs=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://gitlab.com/simonpunk/susfs4ksu.git"
         },
-        "version": "fd00802aa253db5b72aff375b655d2c614b5e4fd"
+        "version": "ad5692617afb590dbac0c4b871b2e12bc4908f25"
     },
     "wildplus-kernel-patches": {
         "cargoLocks": null,
