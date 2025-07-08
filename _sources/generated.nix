@@ -165,15 +165,15 @@
   };
   sukisu = {
     pname = "sukisu";
-    version = "6cbe13dafc3136e7d749f9925c587af73e1042d6";
+    version = "a255ea9d560d160c3c74859a714b80675947a955";
     src = fetchFromGitHub {
       owner = "SukiSU-Ultra";
       repo = "SukiSU-Ultra";
-      rev = "6cbe13dafc3136e7d749f9925c587af73e1042d6";
+      rev = "a255ea9d560d160c3c74859a714b80675947a955";
       fetchSubmodules = false;
-      sha256 = "sha256-/9G5rY4wZN1rPyTpy7PH+wuGtr5LbT3nUkxyQMX/tGM=";
+      sha256 = "sha256-e+IGro0ABSrfEqD8QhEbPFhJGtEiOdKKUs5SRi5bt0A=";
     };
-    date = "2025-07-06";
+    date = "2025-07-07";
   };
   sukisu-nongki = {
     pname = "sukisu-nongki";
@@ -221,29 +221,29 @@
   };
   susfs-android13-5_15 = {
     pname = "susfs-android13-5_15";
-    version = "8e4fdb698bea202b1837e04344eca24da1521c11";
+    version = "bba7a78bd8d675c21f9cd71bc765ff957cedb8c5";
     src = fetchgit {
       url = "https://gitlab.com/simonpunk/susfs4ksu.git";
-      rev = "8e4fdb698bea202b1837e04344eca24da1521c11";
+      rev = "bba7a78bd8d675c21f9cd71bc765ff957cedb8c5";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-6kmsbWjJZTjNz5+yDZ4dR17x8S7WgJTnWXIgyRm+O4s=";
+      sha256 = "sha256-2eaUjIoKSmzEIJmHGnyVt29UfJbxowZ2sNpGM2Lachk=";
     };
     date = "2025-07-07";
   };
   susfs-android15-6_6 = {
     pname = "susfs-android15-6_6";
-    version = "3e71f451aba5984699b814a0a876df62c6bec938";
+    version = "cabdb25d7b0a180f737afba45f78b950e7641470";
     src = fetchgit {
       url = "https://gitlab.com/simonpunk/susfs4ksu.git";
-      rev = "3e71f451aba5984699b814a0a876df62c6bec938";
+      rev = "cabdb25d7b0a180f737afba45f78b950e7641470";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-Xo7xupHJj9YiLLWqEif2yAnZ6c5P4VwVkx3cMlefjp0=";
+      sha256 = "sha256-8EmJNZocLnmhij3U+r3tqLD5sH9prDL4Q2NcXU1wkIY=";
     };
     date = "2025-07-07";
   };
