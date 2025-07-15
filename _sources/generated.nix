@@ -51,20 +51,20 @@
   };
   kernelsu-next = {
     pname = "kernelsu-next";
-    version = "v1.0.8";
+    version = "v1.0.9";
     src = fetchgit {
       url = "https://github.com/rifsxd/KernelSU-Next.git";
-      rev = "v1.0.8";
+      rev = "v1.0.9";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-+wWu7IhmlpYR9amclpvKjrEXIMNL0j8dpz7FYyvN528=";
+      sha256 = "sha256-tNSNZQcpogTm/veYKCoA9Y5FrdsQSZCNgw+DzkuqN80=";
     };
   };
   kernelsu-next-revision-code = {
     pname = "kernelsu-next-revision-code";
-    version = "12701";
+    version = "12797";
     src = fetchurl {
       url = "https://example.com";
       sha256 = "sha256-6o+sfGX7WJsNU1YPUlH3T56bJDR43Laz6nm142RJyNk=";
@@ -165,15 +165,15 @@
   };
   sukisu = {
     pname = "sukisu";
-    version = "94df64f234f3a7737c344760887cd8a51b1b009a";
+    version = "2a00ef96c2a7f3676fec59362b948eb0bf704cf7";
     src = fetchFromGitHub {
       owner = "SukiSU-Ultra";
       repo = "SukiSU-Ultra";
-      rev = "94df64f234f3a7737c344760887cd8a51b1b009a";
+      rev = "2a00ef96c2a7f3676fec59362b948eb0bf704cf7";
       fetchSubmodules = false;
-      sha256 = "sha256-8K7dxiQyNcCJoqczACb+XXIZ5XUMKK0E8ptwUixvfIw=";
+      sha256 = "sha256-UkfzU0vh7KgK6b+9QI6845QW4GUyC5KGLqwvZHwkcTU=";
     };
-    date = "2025-07-14";
+    date = "2025-07-15";
   };
   sukisu-nongki = {
     pname = "sukisu-nongki";
@@ -209,54 +209,54 @@
   };
   sukisu-susfs = {
     pname = "sukisu-susfs";
-    version = "0b03cd9faf7e963168cffae6de0f8d3a3beefcf8";
+    version = "329b7f59dc84d79ac27a3487cf21d90c01cdf656";
     src = fetchFromGitHub {
       owner = "SukiSU-Ultra";
       repo = "SukiSU-Ultra";
-      rev = "0b03cd9faf7e963168cffae6de0f8d3a3beefcf8";
+      rev = "329b7f59dc84d79ac27a3487cf21d90c01cdf656";
       fetchSubmodules = false;
-      sha256 = "sha256-d1Ov45rSk3VGxovP11/jSXzqJRenmRoCJ5EvbDx6YMM=";
+      sha256 = "sha256-kcci4c0tmjgMH5Rc+bb7Y3kdXYQgHpGagYFYurx2ir4=";
     };
-    date = "2025-07-09";
+    date = "2025-07-15";
   };
   susfs-android13-5_15 = {
     pname = "susfs-android13-5_15";
-    version = "df61f6d0084434fb575353a6ee4a643a0f005b89";
+    version = "0be7d71866ab7e16c5f9e002c00a4e0cfe50d6b9";
     src = fetchgit {
       url = "https://gitlab.com/simonpunk/susfs4ksu.git";
-      rev = "df61f6d0084434fb575353a6ee4a643a0f005b89";
+      rev = "0be7d71866ab7e16c5f9e002c00a4e0cfe50d6b9";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-xhHgoGBvrmPvhJH573yOZaBsCItvqibQpEI6c/Y6XoE=";
+      sha256 = "sha256-YRn53VhobF3lKAgeiMqYQXY11whEJp3jutwfs77qP00=";
     };
-    date = "2025-07-14";
+    date = "2025-07-15";
   };
   susfs-android15-6_6 = {
     pname = "susfs-android15-6_6";
-    version = "cabdb25d7b0a180f737afba45f78b950e7641470";
+    version = "35bc86a86e431f1852f2cda7cb51ccc857730712";
     src = fetchgit {
       url = "https://gitlab.com/simonpunk/susfs4ksu.git";
-      rev = "cabdb25d7b0a180f737afba45f78b950e7641470";
+      rev = "35bc86a86e431f1852f2cda7cb51ccc857730712";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-8EmJNZocLnmhij3U+r3tqLD5sH9prDL4Q2NcXU1wkIY=";
+      sha256 = "sha256-gHXfdnDgYdvTkXhCq2NwTlaXHdiai0R0/O+G5JPaYOE=";
     };
-    date = "2025-07-07";
+    date = "2025-07-15";
   };
   wildplus-kernel-patches = {
     pname = "wildplus-kernel-patches";
-    version = "3132ad9bd710a77fbf5f124f8de2f38d4a5ee408";
+    version = "7d41f3d27b3ea0c13b6b138dca88278628239bde";
     src = fetchFromGitHub {
       owner = "WildPlusKernel";
       repo = "kernel_patches";
-      rev = "3132ad9bd710a77fbf5f124f8de2f38d4a5ee408";
+      rev = "7d41f3d27b3ea0c13b6b138dca88278628239bde";
       fetchSubmodules = false;
-      sha256 = "sha256-YWyU33ZpmhCa2jTymZRFbBEPNQm3kxRDD8ZsbA2C7cU=";
+      sha256 = "sha256-1lw4T6MFw1eCUrjMHn/1WvCph2vUpmkU/pIY++7s+NE=";
     };
-    date = "2025-07-11";
+    date = "2025-07-14";
   };
 }
