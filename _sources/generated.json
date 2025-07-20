@@ -281,7 +281,7 @@
     },
     "sukisu": {
         "cargoLocks": null,
-        "date": "2025-07-17",
+        "date": "2025-07-19",
         "extract": null,
         "name": "sukisu",
         "passthru": null,
@@ -293,12 +293,12 @@
             "name": null,
             "owner": "SukiSU-Ultra",
             "repo": "SukiSU-Ultra",
-            "rev": "60f0a721ceace1b82a59ef3be15cd0cb9e20e13f",
-            "sha256": "sha256-/v6BJ12w+UNxgpox0IrSUjhr99EoxA5G5G+dsctmQVM=",
+            "rev": "72ed1bc4a2070068f5586ecc15f02f3072537e56",
+            "sha256": "sha256-58th9PZ6Tb8qXPAiGvz7eCVpuwsQLRcg4sHQQ/DxdLE=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "60f0a721ceace1b82a59ef3be15cd0cb9e20e13f"
+        "version": "72ed1bc4a2070068f5586ecc15f02f3072537e56"
     },
     "sukisu-nongki": {
         "cargoLocks": null,
@@ -420,7 +420,7 @@
     },
     "wildplus-kernel-patches": {
         "cargoLocks": null,
-        "date": "2025-07-18",
+        "date": "2025-07-19",
         "extract": null,
         "name": "wildplus-kernel-patches",
         "passthru": null,
@@ -432,11 +432,11 @@
             "name": null,
             "owner": "WildPlusKernel",
             "repo": "kernel_patches",
-            "rev": "e86401f50d555fc7f08ce3e910ce327272c22072",
-            "sha256": "sha256-Gqyf+BMlh3fhjPk8wl3eqI0JO0+Dtag+zMzk67erIgE=",
+            "rev": "2fbee458fa09a5bdbbd75e92759122a7abb49181",
+            "sha256": "sha256-xbOSM/rJEoB4MLnhHwVZ3aLYWtBTDqWKmtV9GSIne88=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "e86401f50d555fc7f08ce3e910ce327272c22072"
+        "version": "2fbee458fa09a5bdbbd75e92759122a7abb49181"
     }
 }
