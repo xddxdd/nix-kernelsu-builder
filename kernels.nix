@@ -92,7 +92,7 @@ _: {
         # DOESN'T BOOT FOR NOW
         oneplus-13 = {
           anyKernelVariant = "kernelsu";
-          clangVersion = "18";
+          clangVersion = "latest";
           kernelSU.variant = "sukisu-susfs";
           susfs = {
             enable = true;

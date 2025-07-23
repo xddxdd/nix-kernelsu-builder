@@ -41,7 +41,8 @@ let
     "LLVM=1"
     "LLVM_IAS=1"
     "CLANG_TRIPLE=aarch64-linux-gnu-"
-  ] ++ makeFlags;
+  ]
+  ++ makeFlags;
 
   defconfig = lib.last defconfigs;
   kernelConfigCmd = pkgs.callPackage ./kernel-config-cmd.nix {
@@ -87,6 +88,8 @@ usedLLVMPackages.stdenv.mkDerivation {
 
     usedLLVMPackages.bintools
   ];
+
+  env.NIX_CC_WRAPPER_SUPPRESS_TARGET_WARNING = "1";
 
   hardeningDisable = [ "all" ];
 
