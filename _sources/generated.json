@@ -281,7 +281,7 @@
     },
     "sukisu": {
         "cargoLocks": null,
-        "date": "2025-08-19",
+        "date": "2025-08-20",
         "extract": null,
         "name": "sukisu",
         "passthru": null,
@@ -293,16 +293,16 @@
             "name": null,
             "owner": "SukiSU-Ultra",
             "repo": "SukiSU-Ultra",
-            "rev": "106c10d6f8efe7faf463a4bfe759220f22ac2355",
-            "sha256": "sha256-94QU3++Lu402u3CJOWOI4ftHhkOT54AbU6IK6GDsxJU=",
+            "rev": "770ed1fdf2f3264d5482eb74d4a9ddfdaeaf34f1",
+            "sha256": "sha256-+G0g0/eYVcZCRYpOaiu/w3d/FLD0P/i4GRl4tiM9uGc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "106c10d6f8efe7faf463a4bfe759220f22ac2355"
+        "version": "770ed1fdf2f3264d5482eb74d4a9ddfdaeaf34f1"
     },
     "sukisu-nongki": {
         "cargoLocks": null,
-        "date": "2025-08-19",
+        "date": "2025-08-21",
         "extract": null,
         "name": "sukisu-nongki",
         "passthru": null,
@@ -314,12 +314,12 @@
             "name": null,
             "owner": "SukiSU-Ultra",
             "repo": "SukiSU-Ultra",
-            "rev": "2fb7bde2d9d5d4cc737b548f36ff5fe49003e9ae",
-            "sha256": "sha256-ONLQ4A5V1+vTeOnXroc6MZ5+k4Vwv9Pa1P24a0rU3Hc=",
+            "rev": "a17cd29e7aea073b62eef08d2659f049b8230a8d",
+            "sha256": "sha256-vwxqXB+1OlieVjX9m49muPTRsz4cLFDTQkLD3YEXUr8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "2fb7bde2d9d5d4cc737b548f36ff5fe49003e9ae"
+        "version": "a17cd29e7aea073b62eef08d2659f049b8230a8d"
     },
     "sukisu-patch": {
         "cargoLocks": null,
@@ -359,7 +359,7 @@
     },
     "sukisu-susfs": {
         "cargoLocks": null,
-        "date": "2025-08-19",
+        "date": "2025-08-21",
         "extract": null,
         "name": "sukisu-susfs",
         "passthru": null,
@@ -371,12 +371,12 @@
             "name": null,
             "owner": "SukiSU-Ultra",
             "repo": "SukiSU-Ultra",
-            "rev": "b6d654aaf7d5c7c67e1d7c43cabb47c39e6a763e",
-            "sha256": "sha256-JU8QRLJ/CZTeVPLWApcCLRbYdQAUsuB/qjBPIupztDI=",
+            "rev": "34dd78dd0ccaa989f5a708c1bd9721f5644faec5",
+            "sha256": "sha256-e22wl1EEvPbM+MPvzTCCMgGHv+p9AsqxjB6+MPOsDfY=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "b6d654aaf7d5c7c67e1d7c43cabb47c39e6a763e"
+        "version": "34dd78dd0ccaa989f5a708c1bd9721f5644faec5"
     },
     "susfs-android13-5_15": {
         "cargoLocks": null,
