@@ -129,15 +129,15 @@
   };
   linux-oneplus-13 = {
     pname = "linux-oneplus-13";
-    version = "f9c1a38fe1bf6bf39f25e4167e8322813c7707b9";
+    version = "9920459dfb0080dd8a81c41d95701483857f804a";
     src = fetchFromGitHub {
       owner = "OnePlusOSS";
       repo = "android_kernel_common_oneplus_sm8750";
-      rev = "f9c1a38fe1bf6bf39f25e4167e8322813c7707b9";
+      rev = "9920459dfb0080dd8a81c41d95701483857f804a";
       fetchSubmodules = false;
-      sha256 = "sha256-AuuEp9d8LCIjfeIPMFd0sIjet+koH1ffjZr45X4gyVY=";
+      sha256 = "sha256-EDX16/0QWSdC70sAyuNFTdQ9sNreXdvJRAmZvBLsXq8=";
     };
-    date = "2025-04-21";
+    date = "2025-08-30";
   };
   linux-oneplus-8t-blu-spark = {
     pname = "linux-oneplus-8t-blu-spark";
@@ -249,14 +249,14 @@
   };
   wildplus-kernel-patches = {
     pname = "wildplus-kernel-patches";
-    version = "0dcfef231cdbe9fab2732489a84b2f7e49959a1c";
+    version = "3cd876ecbb87732bb0ee1ff70c8ce145b30b9ca4";
     src = fetchFromGitHub {
       owner = "WildPlusKernel";
       repo = "kernel_patches";
-      rev = "0dcfef231cdbe9fab2732489a84b2f7e49959a1c";
+      rev = "3cd876ecbb87732bb0ee1ff70c8ce145b30b9ca4";
       fetchSubmodules = false;
-      sha256 = "sha256-PGrEyT5dZh8MN8AbmpOZtcXWCSoR5l/kByFmCNCmZjk=";
+      sha256 = "sha256-kPeUD7kG49bfP7/m9ezUyLZzhKdyQ1IRlnrBJJdluVU=";
     };
-    date = "2025-08-26";
+    date = "2025-08-30";
   };
 }
