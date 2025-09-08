@@ -281,7 +281,7 @@
     },
     "sukisu": {
         "cargoLocks": null,
-        "date": "2025-09-06",
+        "date": "2025-09-07",
         "extract": null,
         "name": "sukisu",
         "passthru": null,
@@ -293,12 +293,12 @@
             "name": null,
             "owner": "SukiSU-Ultra",
             "repo": "SukiSU-Ultra",
-            "rev": "067ced4a8c67ead07d4990d26a1312fb21975ecf",
-            "sha256": "sha256-HomrohZpXES96SiSe6wIb/GKViK66iGsgruenKdi4+c=",
+            "rev": "098583f058b7a80847c321979381404def5c8fea",
+            "sha256": "sha256-dLeruEH3VqXundVeElH3/pUdockHkFvM/sTRNcUblTg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "067ced4a8c67ead07d4990d26a1312fb21975ecf"
+        "version": "098583f058b7a80847c321979381404def5c8fea"
     },
     "sukisu-nongki": {
         "cargoLocks": null,
