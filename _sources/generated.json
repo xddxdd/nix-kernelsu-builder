@@ -293,12 +293,12 @@
             "name": null,
             "owner": "SukiSU-Ultra",
             "repo": "SukiSU-Ultra",
-            "rev": "fad642040575ef905d65ffd90197252588a32d6e",
-            "sha256": "sha256-VHvfPABcCUzc1a7Of/hz/Y3aVXI7392rmPozNKj1HUo=",
+            "rev": "023a867246adfe9896c88dc6be0ce8aad3dc1a70",
+            "sha256": "sha256-iGTBJ06aEHKkU+vh3r4pl3NCbpqmPOjK1fgjwalMsyI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "fad642040575ef905d65ffd90197252588a32d6e"
+        "version": "023a867246adfe9896c88dc6be0ce8aad3dc1a70"
     },
     "sukisu-nongki": {
         "cargoLocks": null,
@@ -314,12 +314,12 @@
             "name": null,
             "owner": "SukiSU-Ultra",
             "repo": "SukiSU-Ultra",
-            "rev": "d0c3c2ada29f1a42c31501ea7978d4acc0215b5f",
-            "sha256": "sha256-ObsUElNxwAhtn4+qFCgi8FgViyWwJ8vD4Ohs7z+hn2A=",
+            "rev": "a2a8890bf03ba28ba44b5f5abbaad10926615d80",
+            "sha256": "sha256-r5Qpf0h6NHq2jkppQWWSSlIPN4yUeAcB1Q3JSzslHsw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "d0c3c2ada29f1a42c31501ea7978d4acc0215b5f"
+        "version": "a2a8890bf03ba28ba44b5f5abbaad10926615d80"
     },
     "sukisu-patch": {
         "cargoLocks": null,
@@ -371,16 +371,16 @@
             "name": null,
             "owner": "SukiSU-Ultra",
             "repo": "SukiSU-Ultra",
-            "rev": "840f7a0ff2f3eb452bbd4920bb4841e686354d82",
-            "sha256": "sha256-mY0DYc1ax87fxyy181K6MjBmGIxC/PLtANrOzj9Oe50=",
+            "rev": "316cb79f32e40af6d66b556ab50cf4e4a1211302",
+            "sha256": "sha256-6ptUApT5sEvLmTgIOW74lo+snKZ1y7fCfb3pz5vQLOI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "840f7a0ff2f3eb452bbd4920bb4841e686354d82"
+        "version": "316cb79f32e40af6d66b556ab50cf4e4a1211302"
     },
     "susfs-android13-5_15": {
         "cargoLocks": null,
-        "date": "2025-08-25",
+        "date": "2025-09-13",
         "extract": null,
         "name": "susfs-android13-5_15",
         "passthru": null,
@@ -390,17 +390,17 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "a21f265695f2869a6f3fc71a70328aa6d0f4a3ae",
-            "sha256": "sha256-NGyj88v7eZW+qXRj/Wiyr3AOmi08zz3kSv4YwQTlHNA=",
+            "rev": "36a4ad6d7fd73dbd9d423c14a4b26ce563ad47bd",
+            "sha256": "sha256-Olfxo9/KfJ1wvbBNjJBO39Xyr7kvUYlyU9YgJwtgsMg=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://gitlab.com/simonpunk/susfs4ksu.git"
         },
-        "version": "a21f265695f2869a6f3fc71a70328aa6d0f4a3ae"
+        "version": "36a4ad6d7fd73dbd9d423c14a4b26ce563ad47bd"
     },
     "susfs-android15-6_6": {
         "cargoLocks": null,
-        "date": "2025-08-25",
+        "date": "2025-09-13",
         "extract": null,
         "name": "susfs-android15-6_6",
         "passthru": null,
@@ -410,17 +410,17 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "a52b8edfe32d40fae7f884d75848b7257c9f91b6",
-            "sha256": "sha256-DBQRlFjajJR6ily5bAEX2odm0pv3Hm0+C3qQMQU+5IU=",
+            "rev": "2598fee8963adab11c255bf28521df32912e027f",
+            "sha256": "sha256-e8xX8SFcCmdLK4S2EPq8X9BRFVA12hPYhCiaPHQWwtM=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://gitlab.com/simonpunk/susfs4ksu.git"
         },
-        "version": "a52b8edfe32d40fae7f884d75848b7257c9f91b6"
+        "version": "2598fee8963adab11c255bf28521df32912e027f"
     },
     "wildplus-kernel-patches": {
         "cargoLocks": null,
-        "date": "2025-09-11",
+        "date": "2025-09-13",
         "extract": null,
         "name": "wildplus-kernel-patches",
         "passthru": null,
@@ -432,11 +432,11 @@
             "name": null,
             "owner": "WildPlusKernel",
             "repo": "kernel_patches",
-            "rev": "8387e7170a106d682191be1361e8addc898be699",
-            "sha256": "sha256-CoM2cwnUpCbdH2TExTjTMUmublPy51dzVEsJG4VXWbU=",
+            "rev": "fd7cecac6431b4bf15514652e214818c95433a26",
+            "sha256": "sha256-ApxzLwMo3Tmw9sFoSGPb7gtWTiImHac8SWOQMQ3C4jA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "8387e7170a106d682191be1361e8addc898be699"
+        "version": "fd7cecac6431b4bf15514652e214818c95433a26"
     }
 }
