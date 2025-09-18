@@ -293,16 +293,16 @@
             "name": null,
             "owner": "SukiSU-Ultra",
             "repo": "SukiSU-Ultra",
-            "rev": "d7815138cc89b9b0a4a22617ab3d914983a8904e",
-            "sha256": "sha256-mX1lfzaKc5yw0uzT/3lvEIiTKc6jeqq9aSeC33zkTrs=",
+            "rev": "695e749e3e99500fb0ec96f21aab5ce5f516ad79",
+            "sha256": "sha256-BCsuwLAPMVkXuyYEzfRsXe+5zZLsdyoceCAQ4+dqbCA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "d7815138cc89b9b0a4a22617ab3d914983a8904e"
+        "version": "695e749e3e99500fb0ec96f21aab5ce5f516ad79"
     },
     "sukisu-nongki": {
         "cargoLocks": null,
-        "date": "2025-09-16",
+        "date": "2025-09-12",
         "extract": null,
         "name": "sukisu-nongki",
         "passthru": null,
@@ -314,12 +314,12 @@
             "name": null,
             "owner": "SukiSU-Ultra",
             "repo": "SukiSU-Ultra",
-            "rev": "dc9eb46a69d0b3554e4ee3687f739d6db466142c",
-            "sha256": "sha256-3fGTLgoQ02EcfbwfPbtd8VT68705ZCH0N3xUtYtjBg4=",
+            "rev": "cc8cf28cbcdcc207ea6bd334e8d5622a174e72b8",
+            "sha256": "sha256-caq1/Xhk1I85qQuwbuPXt3oa3S1DFk/LcR8jN9EhvqI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "dc9eb46a69d0b3554e4ee3687f739d6db466142c"
+        "version": "cc8cf28cbcdcc207ea6bd334e8d5622a174e72b8"
     },
     "sukisu-patch": {
         "cargoLocks": null,
@@ -371,12 +371,12 @@
             "name": null,
             "owner": "SukiSU-Ultra",
             "repo": "SukiSU-Ultra",
-            "rev": "6973f2c767f7319d4bda9c10fdbbf0ecd4e050c2",
-            "sha256": "sha256-bDBKURz1Ut6P2CZjdmgmQDMQOXBbogsCl9gFa/Uhbuk=",
+            "rev": "dd29fa162a5bbb9154ab0680bb73d11a570dbb73",
+            "sha256": "sha256-3E5AuhPJkrcQKvkJZ0krdbpqtaKzJD8iLVH3jd2gp9w=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "6973f2c767f7319d4bda9c10fdbbf0ecd4e050c2"
+        "version": "dd29fa162a5bbb9154ab0680bb73d11a570dbb73"
     },
     "susfs-android13-5_15": {
         "cargoLocks": null,
@@ -420,7 +420,7 @@
     },
     "wildplus-kernel-patches": {
         "cargoLocks": null,
-        "date": "2025-09-13",
+        "date": "2025-09-18",
         "extract": null,
         "name": "wildplus-kernel-patches",
         "passthru": null,
@@ -432,11 +432,11 @@
             "name": null,
             "owner": "WildPlusKernel",
             "repo": "kernel_patches",
-            "rev": "20c0e8e94ec9cda1c67ef7ca5658ef33db2ba14e",
-            "sha256": "sha256-A1RvzOldSaZkXxgoWbzoEvFBnikO6Oo5aWpV64+khho=",
+            "rev": "d3a62a8366ffd8e82dca58250e6b24c211d7f140",
+            "sha256": "sha256-aNHOm5Wj9oodmFPyMs6APvCb8k/wktVxYiJ8q3zHWps=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "20c0e8e94ec9cda1c67ef7ca5658ef33db2ba14e"
+        "version": "d3a62a8366ffd8e82dca58250e6b24c211d7f140"
     }
 }
