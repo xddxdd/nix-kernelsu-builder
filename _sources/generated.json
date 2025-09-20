@@ -1,6 +1,6 @@
 {
     "anykernel-kernelsu": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": "2025-05-17",
         "extract": null,
         "name": "anykernel-kernelsu",
@@ -21,7 +21,7 @@
         "version": "ac6360f6fc1895cbd218246f12a771f63d0e5e4f"
     },
     "anykernel-osm0sis": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": "2025-05-18",
         "extract": null,
         "name": "anykernel-osm0sis",
@@ -42,7 +42,7 @@
         "version": "6f88dff82b786e879b255a8e1523547c4f62d031"
     },
     "gcc-aarch64-linux-android": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": "2020-02-22",
         "extract": null,
         "name": "gcc-aarch64-linux-android",
@@ -63,7 +63,7 @@
         "version": "5797d7f622321e734558bd3372a9ab5ad6e6a48e"
     },
     "gcc-arm-linux-androideabi": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": "2019-11-25",
         "extract": null,
         "name": "gcc-arm-linux-androideabi",
@@ -84,7 +84,7 @@
         "version": "3ecb542702c2ca0e502533c3f6d02f0f06f584f1"
     },
     "kernelsu-next": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "kernelsu-next",
@@ -104,7 +104,7 @@
         "version": "v1.0.9"
     },
     "kernelsu-next-revision-code": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "kernelsu-next-revision-code",
@@ -119,7 +119,7 @@
         "version": "12797"
     },
     "kernelsu-stable": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "kernelsu-stable",
@@ -139,7 +139,7 @@
         "version": "v0.9.5"
     },
     "kernelsu-stable-revision-code": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "kernelsu-stable-revision-code",
@@ -154,7 +154,7 @@
         "version": "11872"
     },
     "linux-amazon-karnak": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": "2023-10-09",
         "extract": null,
         "name": "linux-amazon-karnak",
@@ -175,7 +175,7 @@
         "version": "e22c713c7c4f0c8d08267f6bba98b8c4cde8310f"
     },
     "linux-moto-rtwo-lineageos-21": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": "2024-12-21",
         "extract": null,
         "name": "linux-moto-rtwo-lineageos-21",
@@ -196,7 +196,7 @@
         "version": "1bdeb4f5c8d2b98ef5f2bedaa5d704032dffd676"
     },
     "linux-moto-rtwo-lineageos-22_1": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": "2025-03-28",
         "extract": null,
         "name": "linux-moto-rtwo-lineageos-22_1",
@@ -217,7 +217,7 @@
         "version": "e12cc3a36c10596aced0e84a0e08072161c45f63"
     },
     "linux-oneplus-13": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": "2025-08-30",
         "extract": null,
         "name": "linux-oneplus-13",
@@ -238,7 +238,7 @@
         "version": "9920459dfb0080dd8a81c41d95701483857f804a"
     },
     "linux-oneplus-8t-blu-spark": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": "2024-12-26",
         "extract": null,
         "name": "linux-oneplus-8t-blu-spark",
@@ -259,7 +259,7 @@
         "version": "64c109e3f3ba97fa7aed730ab7b4238b91df028b"
     },
     "oneplus-13-sched-ext": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": "2025-06-14",
         "extract": null,
         "name": "oneplus-13-sched-ext",
@@ -280,8 +280,8 @@
         "version": "7ab1d04d5cb622d6c32c932add617803074ec5a7"
     },
     "sukisu": {
-        "cargoLocks": null,
-        "date": "2025-09-19",
+        "cargoLock": null,
+        "date": "2025-09-20",
         "extract": null,
         "name": "sukisu",
         "passthru": null,
@@ -293,16 +293,16 @@
             "name": null,
             "owner": "SukiSU-Ultra",
             "repo": "SukiSU-Ultra",
-            "rev": "f3ce31faaae7127058d1efe4b937f53402f22bed",
-            "sha256": "sha256-klZmokNn9ihAfsi58O7dFZbrmYlJk1jQNGWdOWXO+a8=",
+            "rev": "452fe3d50899739b2e9362935939cf54392a4420",
+            "sha256": "sha256-IPJs72oyx82BTxE06dC8Fklen9ulmFHoBoG7lhslAWU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "f3ce31faaae7127058d1efe4b937f53402f22bed"
+        "version": "452fe3d50899739b2e9362935939cf54392a4420"
     },
     "sukisu-nongki": {
-        "cargoLocks": null,
-        "date": "2025-09-18",
+        "cargoLock": null,
+        "date": "2025-09-20",
         "extract": null,
         "name": "sukisu-nongki",
         "passthru": null,
@@ -314,15 +314,15 @@
             "name": null,
             "owner": "SukiSU-Ultra",
             "repo": "SukiSU-Ultra",
-            "rev": "9b96f853e9adfee7691c2da3c4b5d4aaf61090d2",
-            "sha256": "sha256-IfdtsgRjHxzTbLZHNB0eel4pWAtIJMj5B+rx4aXbebs=",
+            "rev": "36742cc17ea071e95f8b653084ab5fc737e1cb3a",
+            "sha256": "sha256-8kuC+YdGsUhihq1oP/hRcH87f57NKdQUAI/aPwM4JL4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "9b96f853e9adfee7691c2da3c4b5d4aaf61090d2"
+        "version": "36742cc17ea071e95f8b653084ab5fc737e1cb3a"
     },
     "sukisu-patch": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": "2025-09-10",
         "extract": null,
         "name": "sukisu-patch",
@@ -343,7 +343,7 @@
         "version": "c997baf921348a6fd8c117d169427b5ba9ba9395"
     },
     "sukisu-revision-code": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "sukisu-revision-code",
@@ -358,8 +358,8 @@
         "version": "13307"
     },
     "sukisu-susfs": {
-        "cargoLocks": null,
-        "date": "2025-09-19",
+        "cargoLock": null,
+        "date": "2025-09-20",
         "extract": null,
         "name": "sukisu-susfs",
         "passthru": null,
@@ -371,15 +371,15 @@
             "name": null,
             "owner": "SukiSU-Ultra",
             "repo": "SukiSU-Ultra",
-            "rev": "67b1182bbab0576f7c9b2c7be0417e2a3db5f485",
-            "sha256": "sha256-OigZn23Y/jlp2aYcsxzhbIWZEt9C7unwX6nn2iCwIFQ=",
+            "rev": "8e43b2d64d7f13d211212dd44fda573bf4cad596",
+            "sha256": "sha256-Se+q4hoNbHmvKPfjp5M6EYKfFovt63p0OBfdR9wcTKA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "67b1182bbab0576f7c9b2c7be0417e2a3db5f485"
+        "version": "8e43b2d64d7f13d211212dd44fda573bf4cad596"
     },
     "susfs-android13-5_15": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": "2025-09-13",
         "extract": null,
         "name": "susfs-android13-5_15",
@@ -399,7 +399,7 @@
         "version": "36a4ad6d7fd73dbd9d423c14a4b26ce563ad47bd"
     },
     "susfs-android15-6_6": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": "2025-09-13",
         "extract": null,
         "name": "susfs-android15-6_6",
@@ -419,7 +419,7 @@
         "version": "2598fee8963adab11c255bf28521df32912e027f"
     },
     "wildplus-kernel-patches": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": "2025-09-18",
         "extract": null,
         "name": "wildplus-kernel-patches",
