@@ -182,15 +182,15 @@
   };
   sukisu-nongki = {
     pname = "sukisu-nongki";
-    version = "8943bab810b5c32a5ffef3c524ba48d8693fea33";
+    version = "3f4293e69a24ef51f4c1e99e73f536483b4f8f38";
     src = fetchFromGitHub {
       owner = "SukiSU-Ultra";
       repo = "SukiSU-Ultra";
-      rev = "8943bab810b5c32a5ffef3c524ba48d8693fea33";
+      rev = "3f4293e69a24ef51f4c1e99e73f536483b4f8f38";
       fetchSubmodules = false;
-      sha256 = "sha256-tG148BbSb6rhcFtIDBIBSFXbsfj9uQAHei485t5IvBs=";
+      sha256 = "sha256-FIJSf2KQ7Ggt2gZqawG6ct0X7DB+oW0AKw8co7EdiLc=";
     };
-    date = "2025-09-27";
+    date = "2025-10-02";
   };
   sukisu-patch = {
     pname = "sukisu-patch";
@@ -226,17 +226,17 @@
   };
   susfs-android13-5_15 = {
     pname = "susfs-android13-5_15";
-    version = "4a984c1bd8aa3e27cbac1eb5347c26f047309e11";
+    version = "c425d7a2fce1e4d9cc54b3abe238f2162278046b";
     src = fetchgit {
       url = "https://gitlab.com/simonpunk/susfs4ksu.git";
-      rev = "4a984c1bd8aa3e27cbac1eb5347c26f047309e11";
+      rev = "c425d7a2fce1e4d9cc54b3abe238f2162278046b";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-F8cg42aqplqKTzn12kkTTxcyns1+8/oecS21jtASbcE=";
+      sha256 = "sha256-4iVAvFKwbcmsjl2tPcvlXRBEvSNAJu03MAwrwmiOuoQ=";
     };
-    date = "2025-09-30";
+    date = "2025-10-02";
   };
   susfs-android15-6_6 = {
     pname = "susfs-android15-6_6";

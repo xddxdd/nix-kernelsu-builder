@@ -302,7 +302,7 @@
     },
     "sukisu-nongki": {
         "cargoLock": null,
-        "date": "2025-09-27",
+        "date": "2025-10-02",
         "extract": null,
         "name": "sukisu-nongki",
         "passthru": null,
@@ -314,12 +314,12 @@
             "name": null,
             "owner": "SukiSU-Ultra",
             "repo": "SukiSU-Ultra",
-            "rev": "8943bab810b5c32a5ffef3c524ba48d8693fea33",
-            "sha256": "sha256-tG148BbSb6rhcFtIDBIBSFXbsfj9uQAHei485t5IvBs=",
+            "rev": "3f4293e69a24ef51f4c1e99e73f536483b4f8f38",
+            "sha256": "sha256-FIJSf2KQ7Ggt2gZqawG6ct0X7DB+oW0AKw8co7EdiLc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "8943bab810b5c32a5ffef3c524ba48d8693fea33"
+        "version": "3f4293e69a24ef51f4c1e99e73f536483b4f8f38"
     },
     "sukisu-patch": {
         "cargoLock": null,
@@ -380,7 +380,7 @@
     },
     "susfs-android13-5_15": {
         "cargoLock": null,
-        "date": "2025-09-30",
+        "date": "2025-10-02",
         "extract": null,
         "name": "susfs-android13-5_15",
         "passthru": null,
@@ -390,13 +390,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "4a984c1bd8aa3e27cbac1eb5347c26f047309e11",
-            "sha256": "sha256-F8cg42aqplqKTzn12kkTTxcyns1+8/oecS21jtASbcE=",
+            "rev": "c425d7a2fce1e4d9cc54b3abe238f2162278046b",
+            "sha256": "sha256-4iVAvFKwbcmsjl2tPcvlXRBEvSNAJu03MAwrwmiOuoQ=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://gitlab.com/simonpunk/susfs4ksu.git"
         },
-        "version": "4a984c1bd8aa3e27cbac1eb5347c26f047309e11"
+        "version": "c425d7a2fce1e4d9cc54b3abe238f2162278046b"
     },
     "susfs-android15-6_6": {
         "cargoLock": null,
