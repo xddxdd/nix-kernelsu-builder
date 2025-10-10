@@ -72,7 +72,7 @@
     version = "12851";
     src = fetchurl {
       url = "https://example.com";
-      sha256 = "sha256-6o+sfGX7WJsNU1YPUlH3T56bJDR43Laz6nm142RJyNk=";
+      sha256 = "sha256-b1Y1A182rVALT8S7eBa7cu9VlOG8rkT6B0xemI/EwP4=";
     };
   };
   kernelsu-stable = {
@@ -93,7 +93,7 @@
     version = "11872";
     src = fetchurl {
       url = "https://example.com";
-      sha256 = "sha256-6o+sfGX7WJsNU1YPUlH3T56bJDR43Laz6nm142RJyNk=";
+      sha256 = "sha256-b1Y1A182rVALT8S7eBa7cu9VlOG8rkT6B0xemI/EwP4=";
     };
   };
   linux-amazon-karnak = {
@@ -170,15 +170,15 @@
   };
   sukisu = {
     pname = "sukisu";
-    version = "ca7b53370e65a4129b25b3d449e319c598419e84";
+    version = "9bbaa74e37e64bc81226c2d3e4f8ba7ed23d8e76";
     src = fetchFromGitHub {
       owner = "SukiSU-Ultra";
       repo = "SukiSU-Ultra";
-      rev = "ca7b53370e65a4129b25b3d449e319c598419e84";
+      rev = "9bbaa74e37e64bc81226c2d3e4f8ba7ed23d8e76";
       fetchSubmodules = false;
-      sha256 = "sha256-keXrrJ8jroGdLadLOX+/dZp6HZc3v3j6N98nC1Sn1ow=";
+      sha256 = "sha256-vndlQcPSbWPjVMTnsOad/mLHT9dkbRRx+esKR9cf0Vo=";
     };
-    date = "2025-10-08";
+    date = "2025-10-10";
   };
   sukisu-nongki = {
     pname = "sukisu-nongki";
@@ -209,20 +209,20 @@
     version = "13375";
     src = fetchurl {
       url = "https://example.com";
-      sha256 = "sha256-6o+sfGX7WJsNU1YPUlH3T56bJDR43Laz6nm142RJyNk=";
+      sha256 = "sha256-b1Y1A182rVALT8S7eBa7cu9VlOG8rkT6B0xemI/EwP4=";
     };
   };
   sukisu-susfs = {
     pname = "sukisu-susfs";
-    version = "96d0b96fe89a4006749b99d7fe32e075b7474b90";
+    version = "cbd493c092aa9ff472f5c0fb9ee43ed9d25a7463";
     src = fetchFromGitHub {
       owner = "SukiSU-Ultra";
       repo = "SukiSU-Ultra";
-      rev = "96d0b96fe89a4006749b99d7fe32e075b7474b90";
+      rev = "cbd493c092aa9ff472f5c0fb9ee43ed9d25a7463";
       fetchSubmodules = false;
-      sha256 = "sha256-iefJA7Ravt8h0XYjWs1Cv64o490WESJwsapreyzEiqM=";
+      sha256 = "sha256-aSlXqniwVam3M+qphJ4yDQmOH375C4RltpjcIdk2zgk=";
     };
-    date = "2025-10-08";
+    date = "2025-10-10";
   };
   susfs-android13-5_15 = {
     pname = "susfs-android13-5_15";
