@@ -281,7 +281,7 @@
     },
     "sukisu": {
         "cargoLock": null,
-        "date": "2025-10-13",
+        "date": "2025-10-15",
         "extract": null,
         "name": "sukisu",
         "passthru": null,
@@ -293,12 +293,12 @@
             "name": null,
             "owner": "SukiSU-Ultra",
             "repo": "SukiSU-Ultra",
-            "rev": "b8eebcda5a7b2eeb48095c88617dc8d147ad1ad5",
-            "sha256": "sha256-5Bl2EbF2+JWKS7hCUw/vydVERtKJcRhDpH6hmAX02Xg=",
+            "rev": "8ff9fab4141ffa63f1e9caf12aa758f27eff7356",
+            "sha256": "sha256-v6PC8LJknVMz1EswUxAUU0lYTwVkcs4I9WUM43bNRto=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "b8eebcda5a7b2eeb48095c88617dc8d147ad1ad5"
+        "version": "8ff9fab4141ffa63f1e9caf12aa758f27eff7356"
     },
     "sukisu-nongki": {
         "cargoLock": null,
@@ -359,7 +359,7 @@
     },
     "sukisu-susfs": {
         "cargoLock": null,
-        "date": "2025-10-13",
+        "date": "2025-10-15",
         "extract": null,
         "name": "sukisu-susfs",
         "passthru": null,
@@ -371,12 +371,12 @@
             "name": null,
             "owner": "SukiSU-Ultra",
             "repo": "SukiSU-Ultra",
-            "rev": "37300fefd4f95b598449b69648346fa4c04960b2",
-            "sha256": "sha256-5LOQ/BcvPVyFOo4LcTGNMzuhbfe5zpMD31K/Nz4YfPI=",
+            "rev": "761b5ee687667049785c8267a03380e24bd3dd85",
+            "sha256": "sha256-oGw/tbvbHVqu/Am3MwSOQuYiFHbLNbx+oiUpyv04VLM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "37300fefd4f95b598449b69648346fa4c04960b2"
+        "version": "761b5ee687667049785c8267a03380e24bd3dd85"
     },
     "susfs-android13-5_15": {
         "cargoLock": null,
@@ -432,11 +432,11 @@
             "name": null,
             "owner": "WildPlusKernel",
             "repo": "kernel_patches",
-            "rev": "f4844c1b4cb7b4854a14f0a9f3c282a3665465a6",
-            "sha256": "sha256-KMJ9hVYROanWHkhD6uWAbtKNrtlvIbbzHKxO6HL4pA4=",
+            "rev": "e68873ca84eb5216c2519cda41de4eec4b70c93a",
+            "sha256": "sha256-4ERm2CnFabdrnorObCzX6EE4f287byR3j29isdxrc8Q=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "f4844c1b4cb7b4854a14f0a9f3c282a3665465a6"
+        "version": "e68873ca84eb5216c2519cda41de4eec4b70c93a"
     }
 }
