@@ -170,13 +170,13 @@
   };
   sukisu = {
     pname = "sukisu";
-    version = "64ee09fd12b0ad8afad80cab79c843897c5a32dc";
+    version = "bf1a45963bb17eb58158064ace688294d18490e8";
     src = fetchFromGitHub {
       owner = "SukiSU-Ultra";
       repo = "SukiSU-Ultra";
-      rev = "64ee09fd12b0ad8afad80cab79c843897c5a32dc";
+      rev = "bf1a45963bb17eb58158064ace688294d18490e8";
       fetchSubmodules = false;
-      sha256 = "sha256-bgZzGEfMWRjU9tNp+HOsZzUZvz9pxSIGyi6LRoA1k00=";
+      sha256 = "sha256-9ZbpVwZ30grkYn44ssrvGXDh2Vn5JcynimckDuEHvFs=";
     };
     date = "2025-10-25";
   };
