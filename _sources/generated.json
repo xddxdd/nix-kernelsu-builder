@@ -293,12 +293,12 @@
             "name": null,
             "owner": "SukiSU-Ultra",
             "repo": "SukiSU-Ultra",
-            "rev": "1644f22c983236b13964fb110b6f4f96a5ed06e0",
-            "sha256": "sha256-I7nyy259AL1hjb3QrJFJQZw9mg+6w6sU6sWfR0kv1jI=",
+            "rev": "ee781cf959727634e5f946cb9326ff304b9e2cc4",
+            "sha256": "sha256-37mgO96O5/iLTDBMfIvnZ7UCvqJUGzDiHei8OaLjCGk=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "1644f22c983236b13964fb110b6f4f96a5ed06e0"
+        "version": "ee781cf959727634e5f946cb9326ff304b9e2cc4"
     },
     "sukisu-nongki": {
         "cargoLock": null,
@@ -371,12 +371,12 @@
             "name": null,
             "owner": "SukiSU-Ultra",
             "repo": "SukiSU-Ultra",
-            "rev": "7a769775d8d44a3eb6d0830e6a238e87d55db007",
-            "sha256": "sha256-snaARZmbqMNZgFO38X6kbaE/DWUVd8FSlBq3MDOaHcs=",
+            "rev": "343c6452cf84daaa1cfe44643505a09b61a7b762",
+            "sha256": "sha256-VIyEO6TbA0reGXixkXigAGptBjwdid+X3563IiyvubI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "7a769775d8d44a3eb6d0830e6a238e87d55db007"
+        "version": "343c6452cf84daaa1cfe44643505a09b61a7b762"
     },
     "susfs-android13-5_15": {
         "cargoLock": null,
@@ -420,7 +420,7 @@
     },
     "wildplus-kernel-patches": {
         "cargoLock": null,
-        "date": "2025-10-24",
+        "date": "2025-10-27",
         "extract": null,
         "name": "wildplus-kernel-patches",
         "passthru": null,
@@ -432,11 +432,11 @@
             "name": null,
             "owner": "WildPlusKernel",
             "repo": "kernel_patches",
-            "rev": "652ce2637d9711c3bc24936807820fe9e9b3e9b8",
-            "sha256": "sha256-DmzpOnANyRJjkmMqBfx0+afBdWMFvT0UKZ/9iG/GKmM=",
+            "rev": "cfc46fa32a499c2fc9171d53a3b8cd288a40aff6",
+            "sha256": "sha256-99WoG9krsGM4IxFy4vl3OfWIC40ICXJuTrB0FbmhqoY=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "652ce2637d9711c3bc24936807820fe9e9b3e9b8"
+        "version": "cfc46fa32a499c2fc9171d53a3b8cd288a40aff6"
     }
 }
