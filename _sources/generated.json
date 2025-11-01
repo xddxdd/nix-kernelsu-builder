@@ -359,7 +359,7 @@
     },
     "sukisu-susfs": {
         "cargoLock": null,
-        "date": "2025-10-27",
+        "date": "2025-10-31",
         "extract": null,
         "name": "sukisu-susfs",
         "passthru": null,
@@ -371,12 +371,12 @@
             "name": null,
             "owner": "SukiSU-Ultra",
             "repo": "SukiSU-Ultra",
-            "rev": "343c6452cf84daaa1cfe44643505a09b61a7b762",
-            "sha256": "sha256-VIyEO6TbA0reGXixkXigAGptBjwdid+X3563IiyvubI=",
+            "rev": "4b1bbda3b1ea31f22b86d3cb1ede19b1ea154d9d",
+            "sha256": "sha256-UJFouGAqrGJK+k0Tn3rVqB63Th0LtbVkDpIwA21efZQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "343c6452cf84daaa1cfe44643505a09b61a7b762"
+        "version": "4b1bbda3b1ea31f22b86d3cb1ede19b1ea154d9d"
     },
     "susfs-android13-5_15": {
         "cargoLock": null,
