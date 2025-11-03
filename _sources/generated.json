@@ -281,7 +281,7 @@
     },
     "sukisu": {
         "cargoLock": null,
-        "date": "2025-11-02",
+        "date": "2025-11-03",
         "extract": null,
         "name": "sukisu",
         "passthru": null,
@@ -293,12 +293,12 @@
             "name": null,
             "owner": "SukiSU-Ultra",
             "repo": "SukiSU-Ultra",
-            "rev": "97ec718fea27984581c30d37366bc9a01b6fd8f0",
-            "sha256": "sha256-OQkcCNsLT+tGqqTODauQvumCGug8FXdNHhfc6jZy7YQ=",
+            "rev": "e0bce04e7973268c4c52bf881f6f1532ea25f869",
+            "sha256": "sha256-HyLJAAbeY1JiAQmnJrxTRFbAjWQKKmPK0/zsn+w962o=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "97ec718fea27984581c30d37366bc9a01b6fd8f0"
+        "version": "e0bce04e7973268c4c52bf881f6f1532ea25f869"
     },
     "sukisu-nongki": {
         "cargoLock": null,
@@ -359,7 +359,7 @@
     },
     "sukisu-susfs": {
         "cargoLock": null,
-        "date": "2025-11-02",
+        "date": "2025-11-03",
         "extract": null,
         "name": "sukisu-susfs",
         "passthru": null,
@@ -371,12 +371,12 @@
             "name": null,
             "owner": "SukiSU-Ultra",
             "repo": "SukiSU-Ultra",
-            "rev": "7f2c838145ed257348dbce2a56444d8c159839b9",
-            "sha256": "sha256-+e4tmBv0xB+s24fEVJpy4B55/++KfRr3o3+UDYAiBzg=",
+            "rev": "1e122b2469a3d2bc38fd006e02aec7b65bad7fd6",
+            "sha256": "sha256-3QKyIhE2zI12UaZauqw/+Xgj8STTUhQotBS/unvfmxg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "7f2c838145ed257348dbce2a56444d8c159839b9"
+        "version": "1e122b2469a3d2bc38fd006e02aec7b65bad7fd6"
     },
     "susfs-android13-5_15": {
         "cargoLock": null,
