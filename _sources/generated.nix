@@ -170,15 +170,15 @@
   };
   sukisu = {
     pname = "sukisu";
-    version = "e0bce04e7973268c4c52bf881f6f1532ea25f869";
+    version = "e99a14290f5e8e9a2eb2ab19026f798c7015088d";
     src = fetchFromGitHub {
       owner = "SukiSU-Ultra";
       repo = "SukiSU-Ultra";
-      rev = "e0bce04e7973268c4c52bf881f6f1532ea25f869";
+      rev = "e99a14290f5e8e9a2eb2ab19026f798c7015088d";
       fetchSubmodules = false;
-      sha256 = "sha256-HyLJAAbeY1JiAQmnJrxTRFbAjWQKKmPK0/zsn+w962o=";
+      sha256 = "sha256-q/KV9v9HTEeBM72AmYnB//olc+CLj5DKWnUWrn7Rggo=";
     };
-    date = "2025-11-03";
+    date = "2025-11-04";
   };
   sukisu-nongki = {
     pname = "sukisu-nongki";
@@ -194,15 +194,15 @@
   };
   sukisu-patch = {
     pname = "sukisu-patch";
-    version = "f9a759905ab257e9bc287cd72e46f233c132ea7a";
+    version = "ee7c0af052da59f0fc6e774ceb9be82f1ce6522b";
     src = fetchFromGitHub {
       owner = "SukiSU-Ultra";
       repo = "SukiSU_patch";
-      rev = "f9a759905ab257e9bc287cd72e46f233c132ea7a";
+      rev = "ee7c0af052da59f0fc6e774ceb9be82f1ce6522b";
       fetchSubmodules = false;
-      sha256 = "sha256-Vw9EP8H7czIFDB1P3eOMIb1+kAWhAIaEMzRDLBldTmo=";
+      sha256 = "sha256-nhPcMKSouGgrVsr0XHN+mOXJnhqpQj8aSOm+iVWf5dk=";
     };
-    date = "2025-09-28";
+    date = "2025-11-04";
   };
   sukisu-revision-code = {
     pname = "sukisu-revision-code";
@@ -214,15 +214,15 @@
   };
   sukisu-susfs = {
     pname = "sukisu-susfs";
-    version = "1e122b2469a3d2bc38fd006e02aec7b65bad7fd6";
+    version = "d6c6899d289d41f5ab31830047c35fea31c6609b";
     src = fetchFromGitHub {
       owner = "SukiSU-Ultra";
       repo = "SukiSU-Ultra";
-      rev = "1e122b2469a3d2bc38fd006e02aec7b65bad7fd6";
+      rev = "d6c6899d289d41f5ab31830047c35fea31c6609b";
       fetchSubmodules = false;
-      sha256 = "sha256-3QKyIhE2zI12UaZauqw/+Xgj8STTUhQotBS/unvfmxg=";
+      sha256 = "sha256-1NYU1iw/m2gVeChaUVS+QwZailhp3qoAJ5A05rAuFkU=";
     };
-    date = "2025-11-03";
+    date = "2025-11-04";
   };
   susfs-android13-5_15 = {
     pname = "susfs-android13-5_15";
