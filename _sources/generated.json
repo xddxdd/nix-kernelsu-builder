@@ -281,7 +281,7 @@
     },
     "sukisu": {
         "cargoLock": null,
-        "date": "2025-11-04",
+        "date": "2025-11-05",
         "extract": null,
         "name": "sukisu",
         "passthru": null,
@@ -293,12 +293,12 @@
             "name": null,
             "owner": "SukiSU-Ultra",
             "repo": "SukiSU-Ultra",
-            "rev": "e99a14290f5e8e9a2eb2ab19026f798c7015088d",
-            "sha256": "sha256-q/KV9v9HTEeBM72AmYnB//olc+CLj5DKWnUWrn7Rggo=",
+            "rev": "13cdb4e9db3061d56c87c40db78b26212976cb34",
+            "sha256": "sha256-nOoFjI81gcFeHrdapfo9TiGxPogv1bxlJul9KjduN7g=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "e99a14290f5e8e9a2eb2ab19026f798c7015088d"
+        "version": "13cdb4e9db3061d56c87c40db78b26212976cb34"
     },
     "sukisu-nongki": {
         "cargoLock": null,
@@ -335,12 +335,12 @@
             "name": null,
             "owner": "SukiSU-Ultra",
             "repo": "SukiSU_patch",
-            "rev": "ee7c0af052da59f0fc6e774ceb9be82f1ce6522b",
-            "sha256": "sha256-nhPcMKSouGgrVsr0XHN+mOXJnhqpQj8aSOm+iVWf5dk=",
+            "rev": "d54378e7cc97da8be170c29a9dd5dda5d7650855",
+            "sha256": "sha256-xbl68VoW/TEpRvRiH3AveiDDyQUWDSQQeS/Kj7/axXU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "ee7c0af052da59f0fc6e774ceb9be82f1ce6522b"
+        "version": "d54378e7cc97da8be170c29a9dd5dda5d7650855"
     },
     "sukisu-revision-code": {
         "cargoLock": null,
@@ -359,7 +359,7 @@
     },
     "sukisu-susfs": {
         "cargoLock": null,
-        "date": "2025-11-04",
+        "date": "2025-11-05",
         "extract": null,
         "name": "sukisu-susfs",
         "passthru": null,
@@ -371,12 +371,12 @@
             "name": null,
             "owner": "SukiSU-Ultra",
             "repo": "SukiSU-Ultra",
-            "rev": "d6c6899d289d41f5ab31830047c35fea31c6609b",
-            "sha256": "sha256-1NYU1iw/m2gVeChaUVS+QwZailhp3qoAJ5A05rAuFkU=",
+            "rev": "ab3ff2699cf54f0c2adb87b5774e648b38de541c",
+            "sha256": "sha256-qiy38QCV5xO2X7SqHLSJvxm8hfXdmAMCGoBC2xZLiGs=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "d6c6899d289d41f5ab31830047c35fea31c6609b"
+        "version": "ab3ff2699cf54f0c2adb87b5774e648b38de541c"
     },
     "susfs-android13-5_15": {
         "cargoLock": null,
