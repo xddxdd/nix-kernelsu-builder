@@ -281,7 +281,7 @@
     },
     "sukisu": {
         "cargoLock": null,
-        "date": "2025-11-11",
+        "date": "2025-11-12",
         "extract": null,
         "name": "sukisu",
         "passthru": null,
@@ -293,16 +293,16 @@
             "name": null,
             "owner": "SukiSU-Ultra",
             "repo": "SukiSU-Ultra",
-            "rev": "8f49898155efaaa33c79a8c19db77ba6bb57c186",
-            "sha256": "sha256-0xHZ2lG8pMkb6EePJ28BM0QMuq5Jan/muHUI4BexbMA=",
+            "rev": "095385f81463e1a9261e3ef95ed2bae5701ae6a8",
+            "sha256": "sha256-idN4Y0aBzOxprSBNhBjD47m12466HmSO4ubpMeSAuQ4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "8f49898155efaaa33c79a8c19db77ba6bb57c186"
+        "version": "095385f81463e1a9261e3ef95ed2bae5701ae6a8"
     },
     "sukisu-nongki": {
         "cargoLock": null,
-        "date": "2025-11-08",
+        "date": "2025-11-11",
         "extract": null,
         "name": "sukisu-nongki",
         "passthru": null,
@@ -314,12 +314,12 @@
             "name": null,
             "owner": "SukiSU-Ultra",
             "repo": "SukiSU-Ultra",
-            "rev": "25e5c0aacb47c40962f76bd489ff0af6049b64d5",
-            "sha256": "sha256-eeZQ0tD8hw517n+2bsUp9ZEib+4w+7HIDzGe2PtnRdA=",
+            "rev": "edeff936ce7ba696dbc0be5bc091ca6b28cffad2",
+            "sha256": "sha256-b67Q0mBLvxu8nCFSGy2CKHeobWSeophvZwzCjla04hM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "25e5c0aacb47c40962f76bd489ff0af6049b64d5"
+        "version": "edeff936ce7ba696dbc0be5bc091ca6b28cffad2"
     },
     "sukisu-patch": {
         "cargoLock": null,
@@ -355,7 +355,7 @@
             "type": "url",
             "url": "https://example.com"
         },
-        "version": "40005"
+        "version": "40085"
     },
     "sukisu-susfs": {
         "cargoLock": null,
