@@ -170,15 +170,15 @@
   };
   sukisu = {
     pname = "sukisu";
-    version = "095385f81463e1a9261e3ef95ed2bae5701ae6a8";
+    version = "14bb6afd0b9a85a61dd9e9b21cc1863bd8c5865f";
     src = fetchFromGitHub {
       owner = "SukiSU-Ultra";
       repo = "SukiSU-Ultra";
-      rev = "095385f81463e1a9261e3ef95ed2bae5701ae6a8";
+      rev = "14bb6afd0b9a85a61dd9e9b21cc1863bd8c5865f";
       fetchSubmodules = false;
-      sha256 = "sha256-idN4Y0aBzOxprSBNhBjD47m12466HmSO4ubpMeSAuQ4=";
+      sha256 = "sha256-qPvd2ojcsKLuWSyJxrVWXGa1TbBSgZ0wqWvrhL0UJuE=";
     };
-    date = "2025-11-12";
+    date = "2025-11-13";
   };
   sukisu-nongki = {
     pname = "sukisu-nongki";
@@ -194,15 +194,15 @@
   };
   sukisu-patch = {
     pname = "sukisu-patch";
-    version = "1ee91c8ec88fe3e88ea64fd5d805e0e2e072846d";
+    version = "83aa64b7548890bb1f2eff6c990c03a1802df27b";
     src = fetchFromGitHub {
       owner = "SukiSU-Ultra";
       repo = "SukiSU_patch";
-      rev = "1ee91c8ec88fe3e88ea64fd5d805e0e2e072846d";
+      rev = "83aa64b7548890bb1f2eff6c990c03a1802df27b";
       fetchSubmodules = false;
-      sha256 = "sha256-OXVhsmEQxzJP4SvkFxU6aafac5JppcxOVUiBFn9SlVg=";
+      sha256 = "sha256-/mE7xcYzmeUu6FIcnLeJ6rPzxVlTd+9DZZkL5gQC1q4=";
     };
-    date = "2025-11-08";
+    date = "2025-11-12";
   };
   sukisu-revision-code = {
     pname = "sukisu-revision-code";
@@ -254,14 +254,14 @@
   };
   wildplus-kernel-patches = {
     pname = "wildplus-kernel-patches";
-    version = "b2f305b327fc2154da62e09207c26330b099e489";
+    version = "e84b69c492e7f22838e2a83689348a011704dd08";
     src = fetchFromGitHub {
       owner = "WildPlusKernel";
       repo = "kernel_patches";
-      rev = "b2f305b327fc2154da62e09207c26330b099e489";
+      rev = "e84b69c492e7f22838e2a83689348a011704dd08";
       fetchSubmodules = false;
-      sha256 = "sha256-h1FvEFOb31bNgLysmZiVyqzoRnKX5IlDArZWDtFCimQ=";
+      sha256 = "sha256-TpfkiAz3J4SecDtvSaDnecGEFSM65zn2XDkPQoNbqGE=";
     };
-    date = "2025-11-09";
+    date = "2025-11-12";
   };
 }
