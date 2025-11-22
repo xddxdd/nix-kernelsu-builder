@@ -170,27 +170,27 @@
   };
   sukisu = {
     pname = "sukisu";
-    version = "83209a5259ce308a6186bfef773bf0b565c2b955";
+    version = "56a028d60d56e792d6d6e3b8a06740f93393b558";
     src = fetchFromGitHub {
       owner = "SukiSU-Ultra";
       repo = "SukiSU-Ultra";
-      rev = "83209a5259ce308a6186bfef773bf0b565c2b955";
+      rev = "56a028d60d56e792d6d6e3b8a06740f93393b558";
       fetchSubmodules = false;
-      sha256 = "sha256-e2HS0yXU/fUtNWWJdO8dqm78exkRzlJ7FpOrMCAKYcg=";
+      sha256 = "sha256-73yPDe2jLrT07d8CPqvQzESMNskw814TM8QIMEuUkdo=";
     };
-    date = "2025-11-15";
+    date = "2025-11-22";
   };
   sukisu-nongki = {
     pname = "sukisu-nongki";
-    version = "edeff936ce7ba696dbc0be5bc091ca6b28cffad2";
+    version = "3510203fa6d25678efcdd307f468e115c8e3ad1b";
     src = fetchFromGitHub {
       owner = "SukiSU-Ultra";
       repo = "SukiSU-Ultra";
-      rev = "edeff936ce7ba696dbc0be5bc091ca6b28cffad2";
+      rev = "3510203fa6d25678efcdd307f468e115c8e3ad1b";
       fetchSubmodules = false;
-      sha256 = "sha256-b67Q0mBLvxu8nCFSGy2CKHeobWSeophvZwzCjla04hM=";
+      sha256 = "sha256-zwjmiu00Xl70/0ECg7FTc5RQuNf73M243K7/toiLIa0=";
     };
-    date = "2025-11-11";
+    date = "2025-11-18";
   };
   sukisu-patch = {
     pname = "sukisu-patch";
@@ -206,7 +206,7 @@
   };
   sukisu-revision-code = {
     pname = "sukisu-revision-code";
-    version = "40100";
+    version = "40119";
     src = fetchurl {
       url = "https://example.com";
       sha256 = "sha256-b1Y1A182rVALT8S7eBa7cu9VlOG8rkT6B0xemI/EwP4=";
@@ -214,54 +214,54 @@
   };
   sukisu-susfs = {
     pname = "sukisu-susfs";
-    version = "678c00cad91b8c9e8a2d8d3ffe71d919812d2d10";
+    version = "05758a975bee86bb523ab19bb4046293cd7db111";
     src = fetchFromGitHub {
       owner = "SukiSU-Ultra";
       repo = "SukiSU-Ultra";
-      rev = "678c00cad91b8c9e8a2d8d3ffe71d919812d2d10";
+      rev = "05758a975bee86bb523ab19bb4046293cd7db111";
       fetchSubmodules = false;
-      sha256 = "sha256-l1URhd6562mJleclTRqzXbQ7tjG6C5a1dDuBOdpiYSY=";
+      sha256 = "sha256-DGxMX9V8rF0WaS9aibfiAwGHheOUWCRndQY8FMlxMhw=";
     };
-    date = "2025-11-08";
+    date = "2025-11-20";
   };
   susfs-android13-5_15 = {
     pname = "susfs-android13-5_15";
-    version = "babf6be195576f09aae79650d47abf6a76e8a21b";
+    version = "20d4ce65059bd99c2cf41cbde1ac90608ebdf16e";
     src = fetchgit {
       url = "https://gitlab.com/simonpunk/susfs4ksu.git";
-      rev = "babf6be195576f09aae79650d47abf6a76e8a21b";
+      rev = "20d4ce65059bd99c2cf41cbde1ac90608ebdf16e";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-xxmi+Bjw4iN4boY3awRZM7zyqeqyw+4vfWRn99mDdpc=";
+      sha256 = "sha256-VSbNNlfWkEmcR825oM0lpSSCG1dC3UafxwtxjiY7Dbs=";
     };
-    date = "2025-10-23";
+    date = "2025-11-20";
   };
   susfs-android15-6_6 = {
     pname = "susfs-android15-6_6";
-    version = "f450ec00bf592d080f59b01ff6f9242456c9a427";
+    version = "d75bc2e58b36432f3d1e70084dac60f5877553fc";
     src = fetchgit {
       url = "https://gitlab.com/simonpunk/susfs4ksu.git";
-      rev = "f450ec00bf592d080f59b01ff6f9242456c9a427";
+      rev = "d75bc2e58b36432f3d1e70084dac60f5877553fc";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-Ms9aLAu7qaZESvVcT1RY/KscI62++mmh7YxWTzpN/hI=";
+      sha256 = "sha256-+iX7SkfIh/l/8/XECS0DCgcPtpid8pcMmy1+IsUSmrg=";
     };
-    date = "2025-10-23";
+    date = "2025-11-20";
   };
   wildplus-kernel-patches = {
     pname = "wildplus-kernel-patches";
-    version = "59ce6239c3faed5213fb212a8cd58ac7a5de6876";
+    version = "22a2d296b09c936ee11c7b9c2580b7275bf5b02a";
     src = fetchFromGitHub {
       owner = "WildPlusKernel";
       repo = "kernel_patches";
-      rev = "59ce6239c3faed5213fb212a8cd58ac7a5de6876";
+      rev = "22a2d296b09c936ee11c7b9c2580b7275bf5b02a";
       fetchSubmodules = false;
-      sha256 = "sha256-Ek80sOeNOuVcfxjcBbySy06cg9DdW9spYtIiUOb1Ea8=";
+      sha256 = "sha256-TP/Yj4ueaBbeJKhII8bpJU6JB4pCDvVMSxCXeILyX1k=";
     };
-    date = "2025-11-15";
+    date = "2025-11-21";
   };
 }
