@@ -41,6 +41,27 @@
         },
         "version": "6f88dff82b786e879b255a8e1523547c4f62d031"
     },
+    "baseband-guard": {
+        "cargoLock": null,
+        "date": "2026-01-01",
+        "extract": null,
+        "name": "baseband-guard",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "vc-teahouse",
+            "repo": "Baseband-guard",
+            "rev": "2f60136960effdf82cf71640ba019999fa14e655",
+            "sha256": "sha256-2hWoYghRcaJFbfYTWas09XcIQVYtklrRgpq6Yd9CB8U=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "2f60136960effdf82cf71640ba019999fa14e655"
+    },
     "gcc-aarch64-linux-android": {
         "cargoLock": null,
         "date": "2020-02-22",

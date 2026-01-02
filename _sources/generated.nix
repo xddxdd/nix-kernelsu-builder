@@ -30,6 +30,18 @@
     };
     date = "2025-05-18";
   };
+  baseband-guard = {
+    pname = "baseband-guard";
+    version = "2f60136960effdf82cf71640ba019999fa14e655";
+    src = fetchFromGitHub {
+      owner = "vc-teahouse";
+      repo = "Baseband-guard";
+      rev = "2f60136960effdf82cf71640ba019999fa14e655";
+      fetchSubmodules = false;
+      sha256 = "sha256-2hWoYghRcaJFbfYTWas09XcIQVYtklrRgpq6Yd9CB8U=";
+    };
+    date = "2026-01-01";
+  };
   gcc-aarch64-linux-android = {
     pname = "gcc-aarch64-linux-android";
     version = "5797d7f622321e734558bd3372a9ab5ad6e6a48e";
