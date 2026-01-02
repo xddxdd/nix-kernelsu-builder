@@ -94,7 +94,18 @@
                 default = "${config.susfs.src}/kernel_patches/KernelSU/10_enable_susfs_for_ksu.patch";
               };
             };
-
+            bbg = {
+              enable = lib.mkOption {
+                type = lib.types.bool;
+                description = "Whether to enable baseband-guard";
+                default = false;
+              };
+              src = lib.mkOption {
+                type = lib.types.nullOr lib.types.package;
+                description = "Source of bbg.";
+                default = sources.baseband-guard.src;
+              };
+            };
             kernelConfig = lib.mkOption {
               type = lib.types.lines;
               description = "Additional kernel config to be applied during build";

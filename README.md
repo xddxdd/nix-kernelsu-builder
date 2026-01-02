@@ -43,6 +43,9 @@ Each kernel definition takes these arguments:
 - `susfs.kernelPatch`: Path to SusFS's kernel patch. If set, will override the patch used. Useful for overriding patch to adapt to different kernel versions. If set to null, will disable patching kernel.
 - `susfs.kernelsuPatch`: Path to SusFS's KernelSU patch. If set, will override the patch used. Used for overriding patch to adapt to different KernelSU versions. If set to null, will disable patching KernelSU.
 
+- `bbg.enable`: Whether to enable [Baseband-guard] integration.
+- `bbg.src`: Source of BBG. Note that for modern kernels (e.g., GKI), you must explicitly append baseband_guard to `CONFIG_LSM` in `kernelConfig`.
+
 - `kernelConfig`: Additional kernel config to be applied during build.
 - `kernelDefconfigs`: List of kernel config files applied during build.
   - Older kernels usually have a single `_defconfig` file. Newer devices may have several.

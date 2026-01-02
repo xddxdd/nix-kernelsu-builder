@@ -7,6 +7,7 @@
   additionalKernelConfig,
   kernelSU,
   susfs,
+  bbg,
   finalMakeFlags,
 }:
 ''
@@ -40,6 +41,9 @@
   CONFIG_KSU_SUSFS_SUS_SU=y
   CONFIG_TMPFS_XATTR=y
   CONFIG_TMPFS_POSIX_ACL=y
+'')
++ (lib.optionalString bbg.enable ''
+  CONFIG_BBG=y
 '')
 + ''
   ${additionalKernelConfig}

@@ -17,6 +17,7 @@
   kernelSrc,
   oemBootImg,
   susfs,
+  bbg,
   prePatch,
   postPatch,
 }:
@@ -26,6 +27,7 @@ let
       inherit
         kernelSU
         susfs
+        bbg
         prePatch
         postPatch
         ;
@@ -39,6 +41,7 @@ let
         clangVersion
         kernelSU
         susfs
+        bbg
         ;
       src = patchedKernelSrc;
       defconfigs = kernelDefconfigs;
@@ -47,7 +50,12 @@ let
     };
 
     kernelBuildGcc = callPackage ./build-kernel-gcc.nix {
-      inherit arch kernelSU susfs;
+      inherit
+        arch
+        kernelSU
+        susfs
+        bbg
+        ;
       src = patchedKernelSrc;
       defconfigs = kernelDefconfigs;
       makeFlags = kernelMakeFlags;

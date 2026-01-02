@@ -28,6 +28,7 @@
   defconfigs,
   kernelSU,
   susfs,
+  bbg,
   makeFlags,
   additionalKernelConfig ? "",
   ...
@@ -41,7 +42,8 @@ let
     "CROSS_COMPILE=aarch64-linux-android-"
     "CROSS_COMPILE_ARM32=arm-linux-androideabi-"
     "O=$out"
-  ] ++ makeFlags;
+  ]
+  ++ makeFlags;
 
   defconfig = lib.last defconfigs;
   kernelConfigCmd = pkgs.callPackage ./kernel-config-cmd.nix {
@@ -52,6 +54,7 @@ let
       additionalKernelConfig
       kernelSU
       susfs
+      bbg
       finalMakeFlags
       ;
   };
