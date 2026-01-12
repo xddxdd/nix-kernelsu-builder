@@ -59,7 +59,7 @@ jobs:
             trusted-substituters = https://nix-community.cachix.org https://cache.garnix.io https://cache.nixos.org/
 
       - name: Setup GitHub Actions cache for Nix
-        uses: nix-community/cache-nix-action@v6
+        uses: nix-community/cache-nix-action@v7
         with:
           primary-key: nix-${{ runner.os }}-${{ hashFiles('**/*.nix', '**/flake.lock') }}
           restore-prefixes-first-match: nix-${{ runner.os }}-
