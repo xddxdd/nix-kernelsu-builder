@@ -12,7 +12,7 @@
     };
   };
   outputs =
-    { flake-parts, ... }@inputs:
+    { self, flake-parts, ... }@inputs:
     flake-parts.lib.mkFlake { inherit inputs; } {
       imports = [
         ./kernels.nix
@@ -29,6 +29,8 @@
       flake = {
         flakeModule = ./flake-modules;
         flakeModules.default = ./flake-modules;
+
+        hydraJobs.packages.x86_64-linux = self.packages.x86_64-linux;
       };
 
       perSystem =
