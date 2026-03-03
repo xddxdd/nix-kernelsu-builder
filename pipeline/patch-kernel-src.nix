@@ -96,7 +96,9 @@ stdenv.mkDerivation {
     # Force set KernelSU version
     sed -i "/ version:/d" ${kernelSU.subdirectory}/kernel/Makefile
     sed -i "/KSU_GIT_VERSION not defined/d" ${kernelSU.subdirectory}/kernel/Makefile
-    sed -i "s|ccflags-y += -DKSU_VERSION=|ccflags-y += -DKSU_VERSION=\"${kernelSU.revision}\"\n#|g" ${kernelSU.subdirectory}/kernel/Makefile
+    ${lib.optionalString (kernelSU.revision != null) ''
+      sed -i "s|ccflags-y += -DKSU_VERSION=|ccflags-y += -DKSU_VERSION=\"${kernelSU.revision}\"\n#|g" ${kernelSU.subdirectory}/kernel/Makefile
+    ''}
 
     bash ${kernelSU.subdirectory}/kernel/setup.sh
   '')

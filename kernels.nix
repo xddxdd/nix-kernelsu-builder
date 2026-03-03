@@ -23,9 +23,10 @@ _: {
           anyKernelVariant = "kernelsu";
           clangVersion = "latest";
 
-          kernelSU.variant = "sukisu-susfs";
+          kernelSU.variant = "resukisu-susfs";
           susfs = {
-            enable = true;
+            # SusFS patch fails on SukiSU
+            enable = false;
             inherit (sources.susfs-android13-5_15) src;
           };
 
@@ -51,9 +52,10 @@ _: {
           anyKernelVariant = "kernelsu";
           clangVersion = "latest";
 
-          kernelSU.variant = "sukisu-susfs";
+          kernelSU.variant = "resukisu-susfs";
           susfs = {
-            enable = true;
+            # SusFS patch fails on SukiSU
+            enable = false;
             inherit (sources.susfs-android13-5_15) src;
           };
 

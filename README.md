@@ -31,8 +31,10 @@ Each kernel definition takes these arguments:
   - [`official`](https://github.com/tiann/KernelSU)
   - [`next`](https://github.com/rifsxd/KernelSU-Next)
   - [`sukisu`](https://github.com/SukiSU-Ultra/SukiSU-Ultra)
-  - [`sukisu-nongki`](https://github.com/SukiSU-Ultra/SukiSU-Ultra)
-  - [`sukisu-susfs`](https://github.com/SukiSU-Ultra/SukiSU-Ultra)
+  - [`sukisu-nongki`](https://github.com/SukiSU-Ultra/SukiSU-Ultra) (**Deprecated:** upstream no longer offers separate non GKI version)
+  - [`sukisu-susfs`](https://github.com/SukiSU-Ultra/SukiSU-Ultra) (**Warning:** SusFS patch is highly likely to fail on SukiSU, you need to fix it yourself and specify it as `susfs.kernelsuPatch`)
+  - [`resukisu`](https://github.com/ReSukiSU/ReSukiSU)
+  - [`resukisu-susfs`](https://github.com/ReSukiSU/ReSukiSU) (**Warning:** SusFS patch is highly likely to fail on ReSukiSU, you need to fix it yourself and specify it as `susfs.kernelsuPatch`)
   - `custom`
 - `kernelSU.src`: If `kernelSU.variant` is `custom`, specify the source of KernelSU patches.
 - `kernelSU.revision`: If `kernelSU.variant` is `custom`, specify the revision number of KernelSU patches.

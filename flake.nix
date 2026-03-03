@@ -9,11 +9,6 @@
       url = "github:xddxdd/nur-packages";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-parts.follows = "flake-parts";
-      inputs.nvfetcher.follows = "nvfetcher";
-    };
-    nvfetcher = {
-      url = "github:berberman/nvfetcher";
-      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
   outputs =

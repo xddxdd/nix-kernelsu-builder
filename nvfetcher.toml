@@ -23,7 +23,7 @@ fetch.git = "https://github.com/rifsxd/KernelSU-Next.git"
 src.github = "rifsxd/KernelSU-Next"
 
 [kernelsu-next-revision-code]
-fetch.url = "https://example.com"
+fetch.url = "http://example.com"
 src.webpage = "https://api.github.com/repos/rifsxd/KernelSU-Next/releases?per_page=1"
 src.regex = "download\\/v[0-9\\._]+\\/KernelSU[^\"]*_([0-9]+)-release\\.apk"
 
@@ -33,7 +33,7 @@ fetch.git = "https://github.com/tiann/KernelSU.git"
 src.manual = "v0.9.5"
 
 [kernelsu-stable-revision-code]
-fetch.url = "https://example.com"
+fetch.url = "http://example.com"
 # src.webpage = "https://api.github.com/repos/tiann/KernelSU/releases?per_page=1"
 # src.regex = "download\\/v[0-9\\._]+\\/KernelSU[^\"]*_([0-9]+)-release\\.apk"
 src.manual = "11872"
@@ -67,29 +67,24 @@ src.branch = "blu_spark-14-custom"
 fetch.github = "HanKuCha/sched_ext"
 src.git = "https://github.com/HanKuCha/sched_ext.git"
 
+[resukisu]
+fetch.github = "ReSukiSU/ReSukiSU"
+src.git = "https://github.com/ReSukiSU/ReSukiSU.git"
+src.branch = "main"
+
 [sukisu]
 fetch.github = "SukiSU-Ultra/SukiSU-Ultra"
 src.git = "https://github.com/SukiSU-Ultra/SukiSU-Ultra.git"
-src.branch = "main"
-
-[sukisu-nongki]
-fetch.github = "SukiSU-Ultra/SukiSU-Ultra"
-src.git = "https://github.com/SukiSU-Ultra/SukiSU-Ultra.git"
-src.branch = "nongki"
+src.branch = "builtin"
 
 [sukisu-patch]
 fetch.github = "SukiSU-Ultra/SukiSU_patch"
 src.git = "https://github.com/SukiSU-Ultra/SukiSU_patch.git"
 
 [sukisu-revision-code]
-fetch.url = "https://example.com"
+fetch.url = "http://example.com"
 src.webpage = "https://api.github.com/repos/SukiSU-Ultra/SukiSU-Ultra/releases?per_page=1"
 src.regex = "download\\/v[0-9\\._]+\\/SukiSU[^\"]*_([0-9]+)-release\\.apk"
-
-[sukisu-susfs]
-fetch.github = "SukiSU-Ultra/SukiSU-Ultra"
-src.git = "https://github.com/SukiSU-Ultra/SukiSU-Ultra.git"
-src.branch = "susfs-main"
 
 [susfs-android13-5_15]
 fetch.git = "https://gitlab.com/simonpunk/susfs4ksu.git"
