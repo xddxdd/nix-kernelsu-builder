@@ -93,12 +93,11 @@ stdenv.mkDerivation {
     rm -f msm-kernel/android/abi_gki_protected_exports_*
   ''
   + (lib.optionalString kernelSU.enable ''
-    # Force set KernelSU version
-    substituteInPlace ${kernelSU.subdirectory}/kernel/Makefile \
-      --replace-fail "/ version:/" "" \
-      --replace-fail "/KSU_GIT_VERSION not defined/" ""
     ${lib.optionalString (kernelSU.revision != null) ''
+      # Force set KernelSU version
       substituteInPlace ${kernelSU.subdirectory}/kernel/Makefile \
+        --replace-fail "/ version:/" "" \
+        --replace-fail "/KSU_GIT_VERSION not defined/" ""\
         --replace-fail "ccflags-y += -DKSU_VERSION=" "ccflags-y += -DKSU_VERSION=\"${kernelSU.revision}\"\n#"
     ''}
 

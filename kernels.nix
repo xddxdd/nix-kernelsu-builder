@@ -100,12 +100,6 @@ _: {
             enable = true;
             src = pkgs.stdenv.mkDerivation {
               inherit (sources.susfs-android15-6_6) pname version src;
-              # https://github.com/HanKuCha/oneplus13_a5p_sukisu/blob/1604ce2607a04c4d9b8f1ba426a601bedac6d989/.github/workflows/oneplus_ace5_pro.yml#L114-L115
-              patchPhase = ''
-                substituteInPlace kernel_patches/50_add_susfs_in_gki-android15-6.6.patch \
-                  --replace-fail "-32,12 +32,38" "-32,11 +32,37" \
-                  --replace-fail "#include <trace\\/hooks\\/fs.h>" ""
-              '';
               installPhase = ''
                 mkdir -p $out
                 cp -r * $out/
