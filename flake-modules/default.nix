@@ -156,7 +156,7 @@
           config = lib.mkMerge [
             (lib.mkIf (config.kernelSU.variant == "official") {
               kernelSU.src = sources.kernelsu-stable.src;
-              kernelSU.revision = sources.kernelsu-stable-revision-code.version;
+              kernelSU.revision = "11872";
               kernelSU.subdirectory = "KernelSU";
             })
             (lib.mkIf (config.kernelSU.variant == "next") {

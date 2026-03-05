@@ -24,6 +24,7 @@ src.github = "rifsxd/KernelSU-Next"
 
 [kernelsu-next-revision-code]
 fetch.url = "http://example.com"
+fetch.name = "unused"
 src.webpage = "https://api.github.com/repos/rifsxd/KernelSU-Next/releases?per_page=1"
 src.regex = "download\\/v[0-9\\._]+\\/KernelSU[^\"]*_([0-9]+)-release\\.apk"
 
@@ -31,12 +32,6 @@ src.regex = "download\\/v[0-9\\._]+\\/KernelSU[^\"]*_([0-9]+)-release\\.apk"
 fetch.git = "https://github.com/tiann/KernelSU.git"
 # src.github = "tiann/KernelSU"
 src.manual = "v0.9.5"
-
-[kernelsu-stable-revision-code]
-fetch.url = "http://example.com"
-# src.webpage = "https://api.github.com/repos/tiann/KernelSU/releases?per_page=1"
-# src.regex = "download\\/v[0-9\\._]+\\/KernelSU[^\"]*_([0-9]+)-release\\.apk"
-src.manual = "11872"
 
 [linux-amazon-karnak]
 fetch.github = "mt8163/android_kernel_amazon_karnak_4.9"
@@ -80,11 +75,6 @@ src.branch = "builtin"
 [sukisu-patch]
 fetch.github = "SukiSU-Ultra/SukiSU_patch"
 src.git = "https://github.com/SukiSU-Ultra/SukiSU_patch.git"
-
-[sukisu-revision-code]
-fetch.url = "http://example.com"
-src.webpage = "https://api.github.com/repos/SukiSU-Ultra/SukiSU-Ultra/releases?per_page=1"
-src.regex = "download\\/v[0-9\\._]+\\/SukiSU[^\"]*_([0-9]+)-release\\.apk"
 
 [susfs-android13-5_15]
 fetch.git = "https://gitlab.com/simonpunk/susfs4ksu.git"
