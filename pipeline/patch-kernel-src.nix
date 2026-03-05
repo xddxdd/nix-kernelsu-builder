@@ -95,8 +95,8 @@ stdenv.mkDerivation {
   + (lib.optionalString kernelSU.enable ''
     # Force set KernelSU version
     substituteInPlace ${kernelSU.subdirectory}/kernel/Makefile \
-      --remove "/ version:/" \
-      --remove "/KSU_GIT_VERSION not defined/"
+      --replace-fail "/ version:/" "" \
+      --replace-fail "/KSU_GIT_VERSION not defined/" ""
     ${lib.optionalString (kernelSU.revision != null) ''
       substituteInPlace ${kernelSU.subdirectory}/kernel/Makefile \
         --replace-fail "ccflags-y += -DKSU_VERSION=" "ccflags-y += -DKSU_VERSION=\"${kernelSU.revision}\"\n#"
