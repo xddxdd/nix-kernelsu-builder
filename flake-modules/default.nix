@@ -67,6 +67,11 @@
                 description = "Revision number of KernelSU patches";
                 default = null;
               };
+              version = lib.mkOption {
+                type = lib.types.nullOr lib.types.str;
+                description = "Version of KernelSU-Next, should only apply to KernelSU-Next";
+                default = null;
+              };
               subdirectory = lib.mkOption {
                 type = lib.types.nullOr lib.types.str;
                 description = "Subdirectory in kernel source directory where KernelSU will be extracted to";
@@ -161,6 +166,7 @@
             })
             (lib.mkIf (config.kernelSU.variant == "next") {
               kernelSU.src = sources.kernelsu-next.src;
+              kernelSU.version = sources.kernelsu-next.version;
               kernelSU.revision = sources.kernelsu-next-revision-code.version;
               kernelSU.subdirectory = "KernelSU-Next";
             })

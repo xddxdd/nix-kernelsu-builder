@@ -99,12 +99,18 @@ stdenv.mkDerivation {
         sed -i "/ version:/d" ${kernelSU.subdirectory}/kernel/Makefile
         sed -i "/KSU_GIT_VERSION not defined/d" ${kernelSU.subdirectory}/kernel/Makefile
         sed -i "s|ccflags-y += -DKSU_VERSION=|ccflags-y += -DKSU_VERSION=\"${kernelSU.revision}\"\n#|g" ${kernelSU.subdirectory}/kernel/Makefile
+        ${lib.optionalString (kernelSU.version != null) ''
+          sed -i "s|ccflags-y += -DKSU_VERSION_TAG=|ccflags-y += -DKSU_VERSION_TAG=\"${kernelSU.version}\"\n#|g" ${kernelSU.subdirectory}/kernel/Makefile
+        ''}
       fi
 
       if [ -f ${kernelSU.subdirectory}/kernel/Kbuild ]; then
         sed -i "/ version:/d" ${kernelSU.subdirectory}/kernel/Kbuild
         sed -i "/KSU_GIT_VERSION not defined/d" ${kernelSU.subdirectory}/kernel/Kbuild
         sed -i "s|ccflags-y += -DKSU_VERSION=|ccflags-y += -DKSU_VERSION=\"${kernelSU.revision}\"\n#|g" ${kernelSU.subdirectory}/kernel/Kbuild
+        ${lib.optionalString (kernelSU.version != null) ''
+          sed -i "s|ccflags-y += -DKSU_VERSION_TAG=|ccflags-y += -DKSU_VERSION_TAG=\"${kernelSU.version}\"\n#|g" ${kernelSU.subdirectory}/kernel/Kbuild
+        ''}
       fi
     ''}
 

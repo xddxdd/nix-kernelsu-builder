@@ -23,7 +23,7 @@ _: {
           anyKernelVariant = "kernelsu";
           clangVersion = "latest";
 
-          kernelSU.variant = "resukisu-susfs";
+          kernelSU.variant = "next";
           susfs = {
             # SusFS patch fails on SukiSU
             enable = false;
