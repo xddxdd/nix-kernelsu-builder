@@ -95,10 +95,17 @@ stdenv.mkDerivation {
   + (lib.optionalString kernelSU.enable ''
     ${lib.optionalString (kernelSU.revision != null) ''
       # Force set KernelSU version
-      substituteInPlace ${kernelSU.subdirectory}/kernel/Makefile \
-        --replace-fail " version:" "" \
-        --replace-fail "KSU_GIT_VERSION not defined" ""\
-        --replace-fail "ccflags-y += -DKSU_VERSION=" "ccflags-y += -DKSU_VERSION=\"${kernelSU.revision}\"\n#"
+      if [ -f ${kernelSU.subdirectory}/kernel/Makefile ]; then
+        sed -i "/ version:/d" ${kernelSU.subdirectory}/kernel/Makefile
+        sed -i "/KSU_GIT_VERSION not defined/d" ${kernelSU.subdirectory}/kernel/Makefile
+        sed -i "s|ccflags-y += -DKSU_VERSION=|ccflags-y += -DKSU_VERSION=\"${kernelSU.revision}\"\n#|g" ${kernelSU.subdirectory}/kernel/Makefile
+      fi
+
+      if [ -f ${kernelSU.subdirectory}/kernel/Kbuild ]; then
+        sed -i "/ version:/d" ${kernelSU.subdirectory}/kernel/Kbuild
+        sed -i "/KSU_GIT_VERSION not defined/d" ${kernelSU.subdirectory}/kernel/Kbuild
+        sed -i "s|ccflags-y += -DKSU_VERSION=|ccflags-y += -DKSU_VERSION=\"${kernelSU.revision}\"\n#|g" ${kernelSU.subdirectory}/kernel/Kbuild
+      fi
     ''}
 
     bash ${kernelSU.subdirectory}/kernel/setup.sh
