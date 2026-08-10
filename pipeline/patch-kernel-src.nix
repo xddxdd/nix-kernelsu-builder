@@ -17,6 +17,9 @@
 }:
 let
   fakeGit = writeShellScriptBin "git" ''
+    # ReSukiSU computes KSU_VERSION with `expr 30000 + $(git rev-list --count HEAD) + 700`;
+    # return a number so the arithmetic doesn't fail when there's no real git history.
+    if [ "$1" = "rev-list" ] && [ "$2" = "--count" ]; then echo 1; fi
     exit 0
   '';
 in
@@ -38,6 +41,9 @@ stdenv.mkDerivation {
   + (lib.optionalString kernelSU.enable ''
     cp -r ${kernelSU.src} ${kernelSU.subdirectory}
     chmod -R +w ${kernelSU.subdirectory}
+    # ReSukiSU's Kbuild hard-errors with `$(error ...)` unless a `.git` exists next to
+    # the kernel/ directory (`$(KSU_SRC)/../.git`). Provide an empty one.
+    mkdir -p ${kernelSU.subdirectory}/.git
   '')
   + (lib.optionalString susfs.enable ''
     cp -r ${susfs.src}/kernel_patches/fs/* fs/
@@ -100,7 +106,7 @@ stdenv.mkDerivation {
         sed -i "/KSU_GIT_VERSION not defined/d" ${kernelSU.subdirectory}/kernel/Makefile
         sed -i "s|ccflags-y += -DKSU_VERSION=|ccflags-y += -DKSU_VERSION=\"${kernelSU.revision}\"\n#|g" ${kernelSU.subdirectory}/kernel/Makefile
         ${lib.optionalString (kernelSU.version != null) ''
-          sed -i "s|ccflags-y += -DKSU_VERSION_TAG=|ccflags-y += -DKSU_VERSION_TAG=\"${kernelSU.version}\"\n#|g" ${kernelSU.subdirectory}/kernel/Makefile
+          sed -i 's|ccflags-y += -DKSU_VERSION_TAG=|ccflags-y += -DKSU_VERSION_TAG=\\"${kernelSU.version}\\"\n#|g' ${kernelSU.subdirectory}/kernel/Makefile
         ''}
       fi
 
@@ -109,7 +115,7 @@ stdenv.mkDerivation {
         sed -i "/KSU_GIT_VERSION not defined/d" ${kernelSU.subdirectory}/kernel/Kbuild
         sed -i "s|ccflags-y += -DKSU_VERSION=|ccflags-y += -DKSU_VERSION=\"${kernelSU.revision}\"\n#|g" ${kernelSU.subdirectory}/kernel/Kbuild
         ${lib.optionalString (kernelSU.version != null) ''
-          sed -i "s|ccflags-y += -DKSU_VERSION_TAG=|ccflags-y += -DKSU_VERSION_TAG=\"${kernelSU.version}\"\n#|g" ${kernelSU.subdirectory}/kernel/Kbuild
+          sed -i 's|ccflags-y += -DKSU_VERSION_TAG=|ccflags-y += -DKSU_VERSION_TAG=\\"${kernelSU.version}\\"\n#|g' ${kernelSU.subdirectory}/kernel/Kbuild
         ''}
       fi
     ''}

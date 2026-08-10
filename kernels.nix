@@ -43,7 +43,7 @@ _: {
             "KCPPFLAGS=\"-w\""
           ];
           kernelPatches = [
-            "${sources.wildplus-kernel-patches.src}/69_hide_stuff.patch"
+            "${sources.wildplus-kernel-patches.src}/archived/69_hide_stuff.patch"
           ];
           kernelSrc = sources.linux-moto-rtwo-lineageos-21.src;
         };
@@ -72,7 +72,7 @@ _: {
             "KCPPFLAGS=\"-w\""
           ];
           kernelPatches = [
-            "${sources.wildplus-kernel-patches.src}/69_hide_stuff.patch"
+            "${sources.wildplus-kernel-patches.src}/archived/69_hide_stuff.patch"
           ];
           kernelSrc = sources.linux-moto-rtwo-lineageos-22_1.src;
         };

@@ -45,6 +45,20 @@
 + (lib.optionalString bbg.enable ''
   CONFIG_BBG=y
 '')
++ (lib.optionalString
+  (
+    kernelSU.enable
+    && !susfs.enable
+    && (
+      kernelSU.variant == "sukisu"
+      || kernelSU.variant == "sukisu-nongki"
+      || kernelSU.variant == "resukisu"
+    )
+  )
+  ''
+    # CONFIG_KSU_SUSFS is not set
+  ''
+)
 + ''
   ${additionalKernelConfig}
   EOF
