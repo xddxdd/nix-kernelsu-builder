@@ -1,5 +1,5 @@
 {
-  description = "My personal NUR repository";
+  description = "Nix repo for building Android kernels with KernelSU support";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     flake-parts.url = "github:hercules-ci/flake-parts";
