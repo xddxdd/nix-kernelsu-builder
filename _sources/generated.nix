@@ -175,15 +175,15 @@
   };
   resukisu = {
     pname = "resukisu";
-    version = "ca62a37fc328e6cb836ea6d77b7eab0c073104a6";
+    version = "aff9a23feeebe2b1c7b1919daae24766d274fa19";
     src = fetchFromGitHub {
       owner = "ReSukiSU";
       repo = "ReSukiSU";
-      rev = "ca62a37fc328e6cb836ea6d77b7eab0c073104a6";
+      rev = "aff9a23feeebe2b1c7b1919daae24766d274fa19";
       fetchSubmodules = false;
-      sha256 = "sha256-JP9Qp8Xf2dFNMFtpFVIlruCu28r2eJPQUXWn1M1A3is=";
+      sha256 = "sha256-VpmR9vhfUP9ZsQ3prVzi3yIlBUuLFg3RKEm4F+Rlxwk=";
     };
-    date = "2026-08-09";
+    date = "2026-08-12";
   };
   sukisu = {
     pname = "sukisu";
@@ -239,14 +239,14 @@
   };
   wildplus-kernel-patches = {
     pname = "wildplus-kernel-patches";
-    version = "920fab8a42ff3b8c99abddce18481d535c07a73d";
+    version = "f569cc9e69d6f03a488c391db4cc00db8ead7a59";
     src = fetchFromGitHub {
       owner = "WildPlusKernel";
       repo = "kernel_patches";
-      rev = "920fab8a42ff3b8c99abddce18481d535c07a73d";
+      rev = "f569cc9e69d6f03a488c391db4cc00db8ead7a59";
       fetchSubmodules = false;
-      sha256 = "sha256-inuP4i37h2lDu1tdpir5qUPbuvL7YzahAyWKIfxN04M=";
+      sha256 = "sha256-qfco9b+HVquK6LZKjR754OcsUk5Fznn23G3jTacWJug=";
     };
-    date = "2026-08-04";
+    date = "2026-08-11";
   };
 }
