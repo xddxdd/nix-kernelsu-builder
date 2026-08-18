@@ -175,13 +175,13 @@
   };
   resukisu = {
     pname = "resukisu";
-    version = "8e2b9945b4f8cf54c49bd5d87c0c802ed10d8ccb";
+    version = "19edfa86beab6760d41ad9420c7bf1b5f90b2bf3";
     src = fetchFromGitHub {
       owner = "ReSukiSU";
       repo = "ReSukiSU";
-      rev = "8e2b9945b4f8cf54c49bd5d87c0c802ed10d8ccb";
+      rev = "19edfa86beab6760d41ad9420c7bf1b5f90b2bf3";
       fetchSubmodules = false;
-      sha256 = "sha256-xC0gNxTzHKvvp8oGTRDKBWPibmVXLhXCAQcCT4sdEJw=";
+      sha256 = "sha256-fgDrlgeQOew0kjdsGxft3nWqb8XEOqB+U5ywESFUILg=";
     };
     date = "2026-08-17";
   };
@@ -211,31 +211,31 @@
   };
   susfs-android13-5_15 = {
     pname = "susfs-android13-5_15";
-    version = "ccb1918684b27644d17a6c842f57b60ae5966025";
+    version = "9fa194f94db076a4efb37cc5d6d48f9518f1170c";
     src = fetchgit {
       url = "https://gitlab.com/simonpunk/susfs4ksu.git";
-      rev = "ccb1918684b27644d17a6c842f57b60ae5966025";
+      rev = "9fa194f94db076a4efb37cc5d6d48f9518f1170c";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-G5tcvJLU80/JsblmC0in+AZaf4uzFJnMKZGgSRTosPo=";
+      sha256 = "sha256-4c21nJeZ/4ThK/VgfpozYvLG9HLWBh1z0+atnHJ31a8=";
     };
-    date = "2026-07-31";
+    date = "2026-08-18";
   };
   susfs-android15-6_6 = {
     pname = "susfs-android15-6_6";
-    version = "be7b7ef49a1e1b189c3abf00eacaa7ebdb4168c1";
+    version = "d1e97e60968d88c4fc8618a43b140415e2daa07e";
     src = fetchgit {
       url = "https://gitlab.com/simonpunk/susfs4ksu.git";
-      rev = "be7b7ef49a1e1b189c3abf00eacaa7ebdb4168c1";
+      rev = "d1e97e60968d88c4fc8618a43b140415e2daa07e";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-C7Xu1T+/X4I65tIeXrM4qD9qXnZaWKdjmyVy0SnQ/ZY=";
+      sha256 = "sha256-UHjpCGmawt7SDWupwNRdLgS8NarGuIj0EqF6qDAU6vc=";
     };
-    date = "2026-07-31";
+    date = "2026-08-18";
   };
   wildplus-kernel-patches = {
     pname = "wildplus-kernel-patches";
