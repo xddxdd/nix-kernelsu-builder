@@ -187,15 +187,15 @@
   };
   sukisu = {
     pname = "sukisu";
-    version = "6c5603f0c853a94256940273efc433cbbc85f57a";
+    version = "e2912817f4e1b194e582a06e0b5eacf6a3fb7083";
     src = fetchFromGitHub {
       owner = "SukiSU-Ultra";
       repo = "SukiSU-Ultra";
-      rev = "6c5603f0c853a94256940273efc433cbbc85f57a";
+      rev = "e2912817f4e1b194e582a06e0b5eacf6a3fb7083";
       fetchSubmodules = false;
-      sha256 = "sha256-SfKid3v/0jot9YMNZOx6BhPgcXasutUo0yNZs9TS7N8=";
+      sha256 = "sha256-zhEqw7Nf6FRCH1DJZfNNpuRhI4z1Jr82I5NUcWHBDZ4=";
     };
-    date = "2026-08-27";
+    date = "2026-09-01";
   };
   sukisu-patch = {
     pname = "sukisu-patch";
