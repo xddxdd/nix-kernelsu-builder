@@ -287,7 +287,7 @@
     },
     "resukisu": {
         "cargoLock": null,
-        "date": "2026-08-31",
+        "date": "2026-09-03",
         "extract": null,
         "name": "resukisu",
         "passthru": null,
@@ -299,12 +299,12 @@
             "name": null,
             "owner": "ReSukiSU",
             "repo": "ReSukiSU",
-            "rev": "0b5efe9e0102c43ca5c41174d500f5a7080cd0c7",
-            "sha256": "sha256-eE8u/5NS1eMRTVhwuMNQObALErCK8hJZ7g/GuZTxrYk=",
+            "rev": "9d0ff6aea9e25fc7dd26f4643175a41f68375e5e",
+            "sha256": "sha256-yot6fykQ1lZidsxEhG8ChBUUwB4KcTOBp4cTmOnqaf4=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "0b5efe9e0102c43ca5c41174d500f5a7080cd0c7"
+        "version": "9d0ff6aea9e25fc7dd26f4643175a41f68375e5e"
     },
     "sukisu": {
         "cargoLock": null,
