@@ -20,15 +20,15 @@
   };
   anykernel-osm0sis = {
     pname = "anykernel-osm0sis";
-    version = "af770f7b16cf8f8eb7c68614b2a693b3b361c90c";
+    version = "020dfeccf9d7e962a48400fc94d3e451df92eead";
     src = fetchFromGitHub {
       owner = "osm0sis";
       repo = "AnyKernel3";
-      rev = "af770f7b16cf8f8eb7c68614b2a693b3b361c90c";
+      rev = "020dfeccf9d7e962a48400fc94d3e451df92eead";
       fetchSubmodules = false;
-      sha256 = "sha256-VODQtTNIeWTEbYhKiQUZOk6XG+CM76U2RJnEjQ4M8P4=";
+      sha256 = "sha256-OrqaVwNvBXTcXtcS1nLJ78Hw3X88Q+2chjCPtdTdgmM=";
     };
-    date = "2026-08-21";
+    date = "2026-09-04";
   };
   baseband-guard = {
     pname = "baseband-guard";
@@ -175,15 +175,15 @@
   };
   resukisu = {
     pname = "resukisu";
-    version = "9d0ff6aea9e25fc7dd26f4643175a41f68375e5e";
+    version = "3c1882886dbbb54f4aae7ddf205f8ccde32c2a34";
     src = fetchFromGitHub {
       owner = "ReSukiSU";
       repo = "ReSukiSU";
-      rev = "9d0ff6aea9e25fc7dd26f4643175a41f68375e5e";
+      rev = "3c1882886dbbb54f4aae7ddf205f8ccde32c2a34";
       fetchSubmodules = false;
-      sha256 = "sha256-yot6fykQ1lZidsxEhG8ChBUUwB4KcTOBp4cTmOnqaf4=";
+      sha256 = "sha256-C+bIWqLS9V4XYMHl5Mu/6YhPsiYnrP+fbSKp0H7HUdo=";
     };
-    date = "2026-09-03";
+    date = "2026-09-05";
   };
   sukisu = {
     pname = "sukisu";

@@ -22,7 +22,7 @@
     },
     "anykernel-osm0sis": {
         "cargoLock": null,
-        "date": "2026-08-21",
+        "date": "2026-09-04",
         "extract": null,
         "name": "anykernel-osm0sis",
         "passthru": null,
@@ -34,12 +34,12 @@
             "name": null,
             "owner": "osm0sis",
             "repo": "AnyKernel3",
-            "rev": "af770f7b16cf8f8eb7c68614b2a693b3b361c90c",
-            "sha256": "sha256-VODQtTNIeWTEbYhKiQUZOk6XG+CM76U2RJnEjQ4M8P4=",
+            "rev": "020dfeccf9d7e962a48400fc94d3e451df92eead",
+            "sha256": "sha256-OrqaVwNvBXTcXtcS1nLJ78Hw3X88Q+2chjCPtdTdgmM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "af770f7b16cf8f8eb7c68614b2a693b3b361c90c"
+        "version": "020dfeccf9d7e962a48400fc94d3e451df92eead"
     },
     "baseband-guard": {
         "cargoLock": null,
@@ -287,7 +287,7 @@
     },
     "resukisu": {
         "cargoLock": null,
-        "date": "2026-09-03",
+        "date": "2026-09-05",
         "extract": null,
         "name": "resukisu",
         "passthru": null,
@@ -299,12 +299,12 @@
             "name": null,
             "owner": "ReSukiSU",
             "repo": "ReSukiSU",
-            "rev": "9d0ff6aea9e25fc7dd26f4643175a41f68375e5e",
-            "sha256": "sha256-yot6fykQ1lZidsxEhG8ChBUUwB4KcTOBp4cTmOnqaf4=",
+            "rev": "3c1882886dbbb54f4aae7ddf205f8ccde32c2a34",
+            "sha256": "sha256-C+bIWqLS9V4XYMHl5Mu/6YhPsiYnrP+fbSKp0H7HUdo=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "9d0ff6aea9e25fc7dd26f4643175a41f68375e5e"
+        "version": "3c1882886dbbb54f4aae7ddf205f8ccde32c2a34"
     },
     "sukisu": {
         "cargoLock": null,
