@@ -175,15 +175,15 @@
   };
   resukisu = {
     pname = "resukisu";
-    version = "3c1882886dbbb54f4aae7ddf205f8ccde32c2a34";
+    version = "f1dd81dc96d7f3f6691e6ac8b50fba9ae8a2f17c";
     src = fetchFromGitHub {
       owner = "ReSukiSU";
       repo = "ReSukiSU";
-      rev = "3c1882886dbbb54f4aae7ddf205f8ccde32c2a34";
+      rev = "f1dd81dc96d7f3f6691e6ac8b50fba9ae8a2f17c";
       fetchSubmodules = false;
-      sha256 = "sha256-C+bIWqLS9V4XYMHl5Mu/6YhPsiYnrP+fbSKp0H7HUdo=";
+      sha256 = "sha256-hkJC0kObPgStsDUubeoAPGq507+rD4jChfmAGnsh9vU=";
     };
-    date = "2026-09-05";
+    date = "2026-09-07";
   };
   sukisu = {
     pname = "sukisu";
@@ -211,31 +211,31 @@
   };
   susfs-android13-5_15 = {
     pname = "susfs-android13-5_15";
-    version = "bca0d2333c1a7d717e7278b019d7af7ba1d16005";
+    version = "415e4143ee1dd557c54d2b3d94ef098e5d1236f4";
     src = fetchgit {
       url = "https://gitlab.com/simonpunk/susfs4ksu.git";
-      rev = "bca0d2333c1a7d717e7278b019d7af7ba1d16005";
+      rev = "415e4143ee1dd557c54d2b3d94ef098e5d1236f4";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-7N7utATNuaYq47O61/s5ppVNAyRjolhj/cX31vtTvPg=";
+      sha256 = "sha256-vaK5qSHG6nJlMrgoqWAHSeubACjaEWlCM7VALU8G91U=";
     };
-    date = "2026-08-30";
+    date = "2026-09-06";
   };
   susfs-android15-6_6 = {
     pname = "susfs-android15-6_6";
-    version = "937215cb3a1b1f333d764c366c7a49972fa8e7a0";
+    version = "3f0b811b2e105afd8dc858cd71389090e01f404b";
     src = fetchgit {
       url = "https://gitlab.com/simonpunk/susfs4ksu.git";
-      rev = "937215cb3a1b1f333d764c366c7a49972fa8e7a0";
+      rev = "3f0b811b2e105afd8dc858cd71389090e01f404b";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-jp6g9b+JbyXgfKh+RjKxxpSybje27eLXEXr1+koCLNk=";
+      sha256 = "sha256-SuPpVIQ5mlDv0STZdJ6+kCJFR3Rrne3B9ENvgbv6Ujw=";
     };
-    date = "2026-08-30";
+    date = "2026-09-06";
   };
   wildplus-kernel-patches = {
     pname = "wildplus-kernel-patches";
