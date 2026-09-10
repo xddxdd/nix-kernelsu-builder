@@ -175,15 +175,15 @@
   };
   resukisu = {
     pname = "resukisu";
-    version = "f1dd81dc96d7f3f6691e6ac8b50fba9ae8a2f17c";
+    version = "23a40c0f1dc047ee73a1dfd70a3f14df70021cac";
     src = fetchFromGitHub {
       owner = "ReSukiSU";
       repo = "ReSukiSU";
-      rev = "f1dd81dc96d7f3f6691e6ac8b50fba9ae8a2f17c";
+      rev = "23a40c0f1dc047ee73a1dfd70a3f14df70021cac";
       fetchSubmodules = false;
-      sha256 = "sha256-hkJC0kObPgStsDUubeoAPGq507+rD4jChfmAGnsh9vU=";
+      sha256 = "sha256-8m/d7L15Y5IybZqj8T3qgrL9eu0/qQcudmecEPJ0duM=";
     };
-    date = "2026-09-07";
+    date = "2026-09-10";
   };
   sukisu = {
     pname = "sukisu";
